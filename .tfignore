@@ -1,0 +1,16 @@
+# Ignorar archivos caché de python
+*.pyc
+
+# Ignorar archivos pdf de la carpeta reportes
+*.pdf
+*.png
+*.doc
+*.csv
+*.htm
+*.rar
+*.zip
+*.doc
+*.xls
+*.xlsx
+*.docx
+*.dll

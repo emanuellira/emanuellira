@@ -1,0 +1,37 @@
+{
+  "version": "10",
+  "pais": "Guatemala",
+  "data": {
+    "vApp": "0_0_1",
+    "url": "https://sired.site/guatemala",
+    "urlLogo": "/images/Logo/",
+    "urlLogosSectores": "/assets/images/Logo/Sectores/",
+    "urlPlantillas": "/assets/config/json/plantillas/GTM/",
+    "urlJsonConfig": "/assets/config/json/app/GTM.json",
+    "urlDescargable": "D:\\Inetpub\\vhosts\\sired.site\\httpdocs\\Guatemala\\assets\\Descargable\\",
+	"urlDescargableApp": "/assets/Descargable/{0}/{1}/{2}",
+    "urlAPI": "https://sired.site/Guatemala/API/_3",
+    "moneda": "Quetzal",
+    "simbolo": "Q",
+    "sectores": [
+      {
+        "id": 8,
+        "nombre": "Ministerio de Agricultura, Ganadería y Alimentación",
+        "icon": "maga_app.png",
+        "abrev": "M A G A",
+        "isEnable": true,
+        "entrevista": true,
+        "label_entrevista": "Datos del afectado"
+      },
+	  {
+        "id": 2,
+        "nombre": "Ministerio de Comunicaciones, Infraestructura y Vivienda",
+        "icon": "civ_app.png",
+        "abrev": "C I V",
+        "isEnable": true,
+        "entrevista": true,
+        "label_entrevista": "Datos del afectado"
+      }
+    ]
+  }
+}

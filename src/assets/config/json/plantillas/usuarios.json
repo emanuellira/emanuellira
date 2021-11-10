@@ -1,0 +1,118 @@
+{
+  "version": {
+    "release": 6,
+    "candidate": 3,
+    "test": 1,
+    "debug": 4
+  },
+  "config": { "dias": 20 },
+  "data": [
+    {
+      "editable": [false, false, false],
+      "tipo": "label",
+      "estatus": "web",
+      "campo": "IDUsuario",
+      "alias": "Clave Usuario"
+    },
+    {
+      "editable": [false, false, true],
+      "tipo": "lista",
+      "lista": "Evento",
+      "estatus": "web",
+      "campo": "IDEvento",
+      "alias": "Clave Evento",
+      "required": ">"
+    },
+    {
+      "editable": [false, false, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "NomUsuario",
+      "alias": "Usuario",
+      "required": ">",
+      "required_nuevo": ">"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Password",
+      "alias": "Password",
+      "required_nuevo": ">"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Nombre",
+      "alias": "Nombre"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Apellidos",
+      "alias": "Apellidos"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Cargo",
+      "alias": "Cargo"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Correo",
+      "alias": "Correo",
+      "formato": "email"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "campo": "Telefono",
+      "alias": "Teléfono"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "text",
+      "estatus": "web",
+      "formato": "number",
+      "campo": "LimiteSesiones",
+      "alias": "Limite de Sesiones",
+      "required": "<>",
+      "required_nuevo": "<>"
+    },
+    {
+      "editable": [false, false, true],
+      "tipo": "lista",
+      "lista": "Perfil",
+      "estatus": "web",
+      "campo": "Tipo",
+      "alias": "Tipo",
+      "required": ">",
+      "required_nuevo": ">"
+    },
+    {
+      "editable": [false, false, true],
+      "tipo": "lista",
+      "lista": "Sector",
+      "estatus": "web",
+      "campo": "Sector",
+      "alias": "Sector"
+    },
+    {
+      "editable": [false, true, true],
+      "tipo": "date",
+      "estatus": "web",
+      "campo": "FechaExpira",
+      "alias": "Fecha de Expiración",
+      "formato": "date",
+      "required": ">",
+      "required_nuevo": ">"
+    }
+  ]
+}

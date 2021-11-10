@@ -1,0 +1,13 @@
+.oval {
+    width: 30px;
+    height: 30px;
+    background: #8cc63f;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    display: inline-grid;
+    color: white;
+  }
+.txt-paso {
+   font-size: 10px;
+ }

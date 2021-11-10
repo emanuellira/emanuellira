@@ -1,0 +1,73 @@
+<!-- [# version: 6.3.15 #] -->
+<div
+  IDDynamicTable
+  appDynamicTable
+  [count]="items.length / count"
+  (onScrollMax)="Change_Items($event)"
+  class="table-responsive table-wrapper"
+>
+  <table class="table table-hover table-sm caption-top">
+    <caption></caption>
+    <thead>
+      <tr>
+        <th></th>
+        <!-- <th>#</th> -->
+        <ng-container *ngFor="let h of items_headers">
+          <th *ngIf="Show_Web(h.estatus) && !h.ignore" scope="col">
+            {{ h.alias }}
+          </th>
+        </ng-container>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let item of dynamic_items; let i = index"
+        [ngClass]="{
+          'table-warning': item.Estatus === 'APP',
+          'table-danger': Set_Warning(item),
+          'table-success': Set_Tipo(item)
+        }"
+      >
+        <th scope="row">
+          <div *ngFor="let btn of Get_Btn_Items(item[IDData])">
+            <div *ngIf="btn.visible">
+              <button
+                [ngClass]="btn.btn"
+                class="text-white btn btn-circle btn-xxs"
+                (click)="Item_Click(btn.label, item[IDData])"
+              >
+                <i [ngClass]="btn.icon"></i>
+              </button>
+            </div>
+          </div>
+        </th>
+        <!-- <td>{{ i + 1 + (__index__ * count) }}</td> -->
+        <ng-container *ngFor="let h of items_headers">
+          <td *ngIf="Show_Web(h.estatus) && !h.ignore">
+            <app-app-edit
+              [IDAccion]="IDAccion"
+              [h]="h"
+              [editar]="Item_Editable(item[IDData])"
+              [item]="item"
+              (On_Change_Row)="Change_Table($event)"
+            ></app-app-edit>
+          </td>
+        </ng-container>
+        <th scope="row">
+          <div *ngFor="let btn of Get_Btn_Items(item[IDData])">
+            <div *ngIf="btn.visible">
+              <button
+                [ngClass]="btn.btn"
+                class="text-white btn btn-circle btn-xxs"
+                (click)="Item_Click(btn.label, item[IDData])"
+              >
+                <i [ngClass]="btn.icon"></i>
+              </button>
+            </div>
+          </div>
+        </th>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</div>

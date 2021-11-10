@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9e752b843a574b8d962af5a8dc476fe5" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="SIRED_HNDModel.AccionDef" Width="1.5" PointX="12" PointY="4.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.AccionPre" Width="1.5" PointX="7.5" PointY="5.125" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.ActivoDef" Width="1.5" PointX="9.75" PointY="1.375" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.ActivoPre" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Catalogos" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.DIV_ADMIN1" Width="1.5" PointX="11.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.DIV_ADMIN2" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.DIV_ADMIN3" Width="1.5" PointX="7.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Entrevista" Width="1.5" PointX="9.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Eventos" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Perfil" Width="1.5" PointX="0.75" PointY="6.375" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Sectores" Width="1.5" PointX="3" PointY="11.625" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Usuarios" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.VersionCatalog" Width="1.5" PointX="13.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Diagnosticos_Def" Width="1.5" PointX="11.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Diagnosticos_Pre" Width="1.5" PointX="13.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SIRED_HNDModel.Usuarios_View" Width="1.5" PointX="14.75" PointY="3.75" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_AccionDef_ActivoDef" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_AccionPre_ActivoPre" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_ActivoPre_Eventos" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_ActivoPre_Sectores" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_ActivoPre_Usuarios" />
+        <AssociationConnector Association="SIRED_HNDModel.FK_Usuarios_Perfil" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

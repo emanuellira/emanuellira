@@ -1,0 +1,192 @@
+{
+  "version": "7.0.3",
+  "login_lang_": {
+    "SIRED": "Système de collecte et d'évaluation des dommages",
+    "user": "Utilisateur",
+    "pass": "Mot de passe",
+    "ingresar": "Accéder",
+    "iniciando_sesion": "En connectant...",
+    "errores_formulario": "Il y a des erreurs dans le formulaire",
+    "form_error_1": "Vous debez entrer un nom",
+    "form_error_2": "Vous debez entrer un mot de passe",
+    "no_se_pudo_realizar_conexion": "La connexion n'a pas pu être établie"
+  },
+  "revision_lang_": {
+    "leyendo_recopilacion_d": "La compilation des dommages est en cours de lecture...",
+    "autorizando": "En cours d'autorisation...",
+    "guardando": "En cours d'être enregistré..",
+    "leyendo_info_evento": "Les informations sur les événements sont en cours de lecture ...",
+    "actualmente_edicion": "Un événement est en cours de modification ou d'ajout.",
+    "cerrar_sesion": "Souhaitez-vous déconnectez l'utilisateur actuel?",
+    "cancelar_edicion": "Souhaitez-vous annuler?",
+    "cancelar_edicion_2": "L'édition de cet élément sera annulée.",
+    "borrar_elemento": "Souhaitez-vous continuer?",
+    "borrar_elemento_2": "L'élément ne pourra pas être récupéré",
+    "item_no_relacionado_evento": "Il n'y a pas un événement lié à l'item",
+    "danios": "Daños"
+  },
+  "bvsuitecun_lang_": {
+    "generar": "Générer",
+    "cerrar": "Fermer"
+  },
+  "bvsuitefilter_lang_": {
+    "select_filtro": "Vous debez sélectionner un filtre",
+    "generar_documento": "En cours de générer un document",
+    "preparando_info": "En cours de préparer l'information...",
+    "no_se_pudo_realizar_conexion": "La connexion n'a pas pu être établie",
+    "btn_generar": "Générer de document",
+    "btn_cancelar": "Annuler",
+    "lbl_reporte_filtro": "Rapport avec Filtre",
+    "lbl_ubicacion": "Localisation",
+    "lbl_nivel_danio": "Niveau ",
+    "lbl_nivel_danio_2": "de Dommage",
+    "lbl_nivel_educativo": "Niveau",
+    "lbl_nivel_educativo_2": "Éducatif"
+  },
+  "bvsuite_create_lang_": {
+    "nombre": "Nom: ",
+    "cargo": "Poste de travail: ",
+    "btn_agregar_firma": "Ajouter la signature",
+    "firmas": "Signatures: ",
+    "generar_documento": "Générer de document"
+  },
+  "navbar_lang_": {
+    "version": "version",
+    "buscar": "Chercher"
+  },
+  "headerinfo_lang_": {
+    "usuario": "Utilisateur: ",
+    "sector": "Secteur: ",
+    "fecha_limite": "Date limite: "
+  },
+  "dynamictable_lang_": {},
+  "footers_lang_": {
+    "costo_total_danio": "Coût total des dommages: ",
+    "valor_ctd": "0",
+    "costos_administrativos": "Frais administrafis: ",
+    "valor_ca": "0",
+    "costo_total": "Coût total: ",
+    "valor_ct": "0",
+    "menaje": "Articles ménagers: ",
+    "valor_m": "-1",
+    "perdidas": "Pertes: ",
+    "valor_p": "-1"
+  },
+  "options_lang_": {
+    "ir_a_eventos": "aller à Événement",
+    "ir_a_usuarios": "aller à Utilisateurs",
+    "ir_a_catalogos": "aller à Catalogues",
+    "cerrar_sesion": "Déconnexion"
+  },
+  "eventos_lang_": {
+    "actualmente_edicion": "Un événement est en cours de modification ou d'ajout.",
+    "leyendo_eventos": "Événements en cours de lecture...",
+    "no_se_pudo_realizar_conexion": "La connexion n'a pas pu être établie",
+    "item_no_relacionado_evento": "Il n'y a pas un événement lié à l'item",
+    "desactivar_evento": "Souhaitez-vous continuer?",
+    "desactivar_evento_2": "L'événement sera désactivé et vous ne pourrez pas le consulter la prochain fois",
+    "enviando_info": "L'information est en cours d'etre envoyé...",
+    "desactivado": "En désactivant...",
+    "guardar_evento": "Événement en cours d'être enregistré...",
+    "guardar": "Enregistrer...",
+    "cancelar_nuevo_elemento": "Souhaitez-vous annuler?",
+    "cancelar_nuevo_elemento_2": "Le nouvel événement ne sera pas ajouté",
+    "cancelar_edicion": "Souhaitez-vous annuler?",
+    "cancelar_edicion_2": "L'édition de cet élément sera annulée",
+    "evento_sin_capturas": "L'événement n'a pas de captures",
+    "cerrar_sesion": "Souhaitez-vous déconnectez l'utilisateur actuel?",
+    "leyendo_lista_eventos": "La liste des événements est en cours de lecture...",
+    "clave": "Clé",
+    "nombre_fenomeno": "Nom du phénomène",
+    "nombre": "Nom",
+    "fecha_evento": "Date de l'événement",
+    "autorizado_por": "En train d'autorisation par",
+    "eventos": "Événements"
+  },
+  "lista_sectores_lang_": {
+    "lbl_selecciona_sector": "Sélectioner un secteur: ",
+    "no_se_pudo_realizar_conexion": "La connexion n'a pas pu être établie"
+  },
+  "usuarios_lang_": {
+    "preparando_info": "L'information est en cours d'être preparée...",
+    "actualmente_edicion": "Un utilisateur est en cours de modification ou d'ajout.",
+    "leyendo_usuarios": "Les utilisateurs sont en cours de lecture...",
+    "item_no_relacionado_evento": "Il n'y a pas un événement lié à l'item",
+    "cerrar_sesion": "Souhaitez-vous déconnectez l'utilisateur actuel?",
+    "borrar_usuario": "Souhaitez-vous continuer?",
+    "borrar_usuario_2": "L'utilisateur sera désactivé et vous ne pourrez pas le consulter la prochain fois",
+    "guardar_evento": "Utilisateur en cours d'être enregistré... ",
+    "guardar": "Enregistrer",
+    "cancelar_edicion": "Souhaitez-vous annuler? ",
+    "cancelar_edicion_2": "L'édition de cet élément sera annulée",
+    "desbloquear_usuario": "Utilisateur débloqué...",
+    "usuario_desbloqueado": "Utilisateur débloqué avec succès",
+    "leyendo_lista_usuarios": "La liste des utilisateurs est en cours de lecture...",
+    "eliminando": "En cours de supprimer...",
+    "eliminado": "L'utilisateur a été supprimé",
+    "capturas_asociadas": "Si el usuario es de captura, es probable que tenga información asociada, como: Eventos y/o Capturas"
+  },
+  "catalogos_lang_": {
+    "item_no_relacionado_evento": "Il n'y a pas un événement lié à l'item",
+    "obteniendo_info": "Obtention de l'information en cours, attendez un moment...",
+    "cerrar_sesion": "Souhaitez-vous déconnectez l'utilisateur actuel?",
+    "obteniendo_info_2": "Obtention de l'information en cours, attendez un moment..."
+  },
+  "cerrar_sesion_lang_": {
+    "no_se_pudo_realizar_conexion": "La connexion n'a pas pu être établie",
+    "cerrar_sesion": "En cours de déconnexion"
+  },
+  "hay_error_lang_": {
+    "no_vacio": "ne doit pas être vide",
+    "vacio": "doit être vide",
+    "mayor_0": "doit être supérieur à 0",
+    "mayor_igual_0": "doit être supérieure ou égale à 0",
+    "menor_0": "doit être inférieur à 0",
+    "menor_igual_0": "doit être inférieur ou égal à 0",
+    "igual_0": "doit être égal à 0",
+    "mayor_fecha": "doit être supérieure à la date actuelle",
+    "mayor_igual_fecha": "doit être supérieure ou égale à la date actuelle",
+    "menor_fecha": "doit être inférieur à la date actuelle",
+    "menor_igual_fecha": "doit être inférieur ou égale à la date actuelle"
+  },
+  "indicadores_lang_": {
+    "cerrar_sesion": "Souhaitez-vous déconnectez l'utilisateur actuel?",
+    "item_no_relacionado_evento": "Il n'y a pas un événement lié à l'item."
+  },
+  "bar_chart_lang_": {
+    "color_base": "rgba(30,30,30,0.3)",
+    "color_blue": "rgba(33,84,139,0.5)",
+    "color_green": "rgba(158,195,70,0.5)"
+  },
+  "filter_ubicacion_lang_": {
+    "espere": "Attendez...",
+    "departamento": "Département: ",
+    "municipio": "Municipalité: "
+  },
+  "filter_educacion_lang_": {
+    "nivel_educativo": "Niveau Éducatif: "
+  },
+  "filter_danio_lang_": {
+    "categoria_danio": "Catégorie du dommage: ",
+    "espere": "Attendez..."
+  },
+  "alerts_lang_": {
+    "bootstrap": "Bootstrap",
+    "minuts": "Il y a 11 minutes...",
+    "texto": "Bonjour, monde! Ceci est une message de toast."
+  },
+  "ayuda_lang_": {
+    "sin_video": "Aucune vidéo à montrer"
+  },
+  "imagen_lang_": {
+    "btn_verimagen": "Voir l'image"
+  },
+  "item_catalogo_lang_": {
+    "tipo": "Type",
+    "archivo": "Fichier",
+    "datos": "Data"
+  },
+  "upload_catalogo_lang_": {
+    "subir_catalogo": "Catalogue en cours d'être télechargué:"
+  }
+}

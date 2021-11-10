@@ -1,0 +1,32 @@
+<!-- [# version: 6.4.11 #] -->
+<div>
+  <!-- <span>{{
+    item[h.campo]
+      | domseguro
+        : "Libro_Blanco/Evento_" +
+            item["IDEvento"] +
+            "/Sector_" +
+            IDSector +
+            "/RespaldoFotografico/Activo_" +
+            item["IDActivo"]
+  }}</span> -->
+  <img *ngIf="ShowImage"
+    [src]="
+      item[h.campo]
+        | domseguro
+          : 'Libro_Blanco/Evento_' +
+              item['IDEvento'] +
+              '/Sector_' +
+              IDSector +
+              '/RespaldoFotografico/Activo_' +
+              item['IDActivo']
+    "
+    alt=""
+    srcset=""
+    style="width: 25px;"
+    (click)="Mostrar_Imagen_Completa()"
+  />
+</div>
+<button *ngIf="!ShowImage" (click)="Mostrar_Imagen()" class="btn btn-outline-secondary btn-sm">
+  {{this.language.btn_verimagen}}
+</button>

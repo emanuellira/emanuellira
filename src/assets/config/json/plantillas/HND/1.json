@@ -1,0 +1,215 @@
+{
+  "sector": {
+    "nombre": "Convivienda",
+    "clave": 1
+  },
+  "version": {
+    "release": 0,
+    "candidate": 0,
+    "test": 3,
+    "debug": 6
+  },
+  "data": [
+    {
+      "campo": "IDActivo",
+      "alias": "Clave"
+    },
+    {
+      "campo": "IDAccion",
+      "alias": "Clave daño"
+    },
+    {
+      "campo": "IDAccion",
+      "alias": "Clave daño"
+    },
+    {
+      "campo": "Longitud",
+      "alias": "Longitud"
+    },
+    {
+      "campo": "Latitud",
+      "alias": "Latitud"
+    },
+    {
+      "campo": "Domicilio",
+      "alias": "Domicilio"
+    },
+    {
+      "campo": "cedula",
+      "alias": "Cédula"
+    },
+    {
+      "campo": "acceso_inmueble",
+      "alias": "Acceso al inmueble"
+    },
+    {
+      "campo": "estado_acceso_inmueble",
+      "alias": "Estado de acceso al inmueble"
+    },
+    {
+      "campo": "propiedad_inmueble",
+      "alias": "Propiedad del inmueble"
+    },
+    {
+      "campo": "tipo_inmueble",
+      "alias": "Tipo de inmueble"
+    },
+    {
+      "campo": "uso_inmueble",
+      "alias": "Uso del inmueble"
+    },
+    {
+      "campo": "niveles_edificacion",
+      "alias": "Niveles de la  Edificacion"
+    },
+    {
+      "campo": "Numero_habitantes",
+      "alias": "No. de Habitantes"
+    },
+    {
+      "campo": "Numero_habitaciones",
+      "alias": "No. de Habitaciones"
+    },
+    {
+      "campo": "año_estimado_contruccion",
+      "alias": "Año estimado de contrucción"
+    },
+    {
+      "campo": "niveles_tipologia",
+      "alias": "Nivel según tipología"
+    },
+    {
+      "campo": "clave_tipologia",
+      "alias": "clave_tipologia"
+    },
+    {
+      "campo": "terreno",
+      "alias": "Área del terreno (m2)"
+    },
+    {
+      "campo": "area_edificacion",
+      "alias": "Área de la Edificación (m2)"
+    },
+    {
+      "campo": "agua_potable",
+      "alias": "Cuenta con agua potable"
+    },
+    {
+      "campo": "agua_potable",
+      "alias": "Cuenta con agua potable"
+    },
+    {
+      "campo": "drenaje",
+      "alias": "Cuenta con drenaje"
+    },
+    {
+      "campo": "energía_electrica",
+      "alias": "Cuenta con energía electrica"
+    },
+    {
+      "campo": "drenaje_pluvial_",
+      "alias": "Cuenta con drenaje pluvial"
+    },
+    {
+      "campo": "tren_aseo",
+      "alias": "Cuenta con tren de aseo"
+    },
+    {
+      "campo": "moneda",
+      "alias": "Moneda(L)"
+    },
+    {
+      "campo": "costo_unidad",
+      "alias": "Costo por Unidad"
+    },
+    {
+      "campo": "valor_reposicion",
+      "alias": "Valor de reposicion"
+    },
+    {
+      "campo": "Foto1",
+      "tipo": "imagen",
+      "alias": "Foto 1"
+    },
+    {
+      "campo": "Foto2",
+      "tipo": "imagen",
+      "alias": "Foto 2"
+    },
+    {
+      "campo": "Foto3",
+      "tipo": "imagen",
+      "alias": "Foto 3"
+    },
+    {
+      "campo": "Foto4",
+      "tipo": "imagen",
+      "alias": "Foto 4"
+    },
+    {
+      "campo": "tipo_necesidad",
+      "alias": "Tipo de Necesidad",
+      "tipo": "lista"
+    },
+    {
+      "campo": "identificacion_evento_fisico",
+      "alias": "Identificación del Evento Físico",
+      "tipo": "lista"
+    },
+    {
+      "campo": "TipoDano",
+      "alias": "Tipo de Daño",
+      "tipo": "lista"
+    },
+    {
+      "campo": "material_predominante",
+      "alias": "Material Predominante",
+      "tipo": "lista"
+    },
+    {
+      "campo": "Diagnostico",
+      "alias": "Descripción del daño",
+      "tipo": "textArea",
+      "required": ""
+    },
+    {
+      "campo": "categoría_daño",
+      "alias": "Categoría del daño"
+    },
+    {
+      "campo": "acciones_recuperacion",
+      "alias": "Acciones de Restauración",
+      "tipo": "textArea",
+      "required": ""
+    },
+    {
+      "campo": "elementos_afectado",
+      "alias": "Elementos afectados"
+    },
+    {
+      "campo": "cantidad_afectada_",
+      "alias": "Cantidad Afectada"
+    },
+    {
+      "campo": "costo_unidad",
+      "alias": "Costo por Unidad"
+    },
+    {
+      "campo": "costo_total",
+      "alias": "Costo Total"
+    },
+    {
+      "campo": "Observaciones",
+      "alias": "Observaciones",
+      "tipo": "textArea"
+    },
+    {
+      "campo": "instutucion_responsable",
+      "alias": "Institución responsable"
+    },
+    {
+      "campo": "nombre_inspector",
+      "alias": "Nombre del Inspector de Campo"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": {
+    "release": 6,
+    "candidate": 0,
+    "test": 1,
+    "debug": 3
+  },
+  "menu": {
+    "nav": [
+      {
+        "label": "Nuevo",
+        "icon": "icon-plus",
+        "btn": "",
+		"visible": true
+      },
+      {
+        "label": "Actualizar",
+        "icon": "icon-refresh",
+        "btn": "",
+		"visible": true
+      },
+      {
+        "label": "Cerrar Sesión",
+        "icon": "icon-close",
+        "btn": "text-danger",
+		"visible": true
+      }
+    ],
+    "btn": [
+      {
+        "label": "edit",
+        "icon": "icon-pencil",
+        "btn": "btn-info",
+        "visible": true
+      },
+      {
+        "label": "guardar",
+        "icon": "icon-save",
+        "btn": "btn-success",
+        "visible": false
+      },
+      {
+        "label": "delete",
+        "icon": "icon-remove",
+        "btn": "btn-danger",
+        "visible": true
+      },
+      {
+        "label": "cancelar-edicion",
+        "icon": "icon-times-circle",
+        "btn": "btn-danger",
+        "visible": false
+      },
+	  {
+        "label": "unlock-user",
+        "icon": "icon-unlock",
+        "btn": "btn-success",
+        "visible": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+<!-- [# version: 6.4.2 #] -->
+<form [formGroup]="frm">
+  <div class="row mt-1">
+    <label for="staticEmail" class="col-sm-3 col-form-label"
+      >{{this.language.departamento}}</label
+    >
+    <div class="col">
+      <select
+        formControlName="selDIVADMIN2"
+        class="form-select"
+        (change)="OnSelect_DIVADMIN2()"
+      >
+        <option *ngFor="let item of items" [value]="item.DIVADMIN2">
+          {{ item.NOMBRE }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <label for="staticEmail" class="col-sm-3 col-form-label">{{this.language.municipio}}</label>
+    <div class="col">
+      <select formControlName="selDIVADMIN3" class="form-select">
+        <option *ngFor="let mun of items_muns" [value]="mun.DIVADMIN3">
+          {{ mun.NOMBRE }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>

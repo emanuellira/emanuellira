@@ -1,0 +1,31 @@
+<!-- [# version: 6.4.3 #] -->
+<div class="card gr-1 grow-r shadow-lg m-5 rounded">
+  <div class="card-body">
+    <p style="color: #ffffff; font-size: 40px">
+      <strong>{{ item.AbrevMin }}</strong>
+    </p>
+    <p style="color: #21548b; font-size: 20px">
+      <strong>{{ item.NomSector }}</strong>
+    </p>
+    <div class="custom-icon">
+      <img
+        class="logos"
+        width="150"
+        height="150"
+        [src]="image | domseguro: 'images/Logo/Sectores'"
+      />
+    </div>
+    <div class="table-responsive">
+      <table class="table table-sm">
+        <app-tool-itemcatalogo
+          *ngFor="let cat of item.lst_cat; let idx = index"
+          [item]="cat"
+          [isFirst]="idx === 0">
+        </app-tool-itemcatalogo>
+      </table>
+    </div>
+    <button class="btn-primary btn-circle btn-lg" (click)="Enviar()">
+      <i class="icon-cloud-upload"></i>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<!-- [# version: 6.4.1 #] -->
+<label for="categoriaLoss" class="form-label">{{ item[h.campo] }}</label>
+<input
+type="range"
+class="form-range"
+min="0"
+max="1"
+step="0.05"
+id="categoriaLoss"
+(change)="On_Change()"
+[(ngModel)]="item[h.campo]"
+/>
+<label for="categoriaLoss" class="form-label text-muted fst-italic fs-7">{{ description }}</label>

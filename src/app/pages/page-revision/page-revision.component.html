@@ -1,0 +1,34 @@
+<!-- [# version: 7.4.10 #] -->
+<div class="text-center height-container p-5">
+  <app-bvsuite-create-upload-notify></app-bvsuite-create-upload-notify>
+  <app-bvsuite-create-filter></app-bvsuite-create-filter>
+  <app-tool-ver-mas></app-tool-ver-mas>
+  <app-navbar
+    [menus_items]="menu_items"
+    [items]="items"
+    [items_headers]="items_headers"
+    [modulo]="modulo"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+    (On_Item_Change)="Item_NavBar_Change($event)"
+  ></app-navbar>
+  <app-header-info
+    [count]="items.length"
+    label="Daños"
+    [evento]="evento"
+  ></app-header-info>
+  <app-dynamic-table
+    *ngIf="items.length"
+    [items]="items"
+    [editar]="editar"
+    [IDAccion]="IDAccion"
+    [items_headers]="items_headers"
+    [btn_items]="btns_items"
+    [IDData]="'IDAccion'"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+    (On_Change_Table)="Item_Change_Table($event)"
+  ></app-dynamic-table>
+  <app-footers
+    *ngIf="items.length > 0 && items_headers.length > 0"
+    [items]="items"
+  ></app-footers>
+</div>

@@ -1,0 +1,74 @@
+{
+  "version": "1.0.4",
+  "reporte": {
+    "excell": [
+      { "campo": "Fenomeno", "alias": "Fenómeno" },
+      { "campo": "IDActivo", "alias": "Clave" },
+      { "campo": "IDAccion", "alias": "Clave daño" },
+      { "campo": "Longitud", "alias": "Longitud" },
+      { "campo": "Latitud", "alias": "Latitud" },
+      { "campo": "IDDIVADMIN2", "alias": "Código Departamento" },
+      { "campo": "DIVADMIN2", "alias": "Departamento" },
+      { "campo": "IDDIVADMIN3", "alias": "Código Municipio" },
+      { "campo": "DIVADMIN3", "alias": "Municipio" },
+      { "campo": "Localidad", "alias": "Lugar poblado (aldea finca etc.)" },
+      { "campo": "PoblacionAfectada", "alias": "Total de habitantes" },
+      { "campo": "TipoDanio", "alias": "Tipo de Necesidad" },
+      { "campo": "Domicilio", "alias": "Dirección completa e indicar referencias" },
+      { "campo": "TipoAdmin", "alias": "Propiedad del inmueble" },
+      { "campo": "Nivel", "alias": "Uso predominante" },
+      { "campo": "FechaSiembra", "alias": "Año estimado de construcción" },
+      { "campo": "InfraDa", "alias": "Descripción de la tipología" },
+      { "campo": "UnidadMedida", "alias": "Unidad de medida" },
+      { "campo": "AreaTerreno", "alias": "Área del terreno(m2)" },
+      { "campo": "AguaPotable", "alias": "¿Cuenta con agua potable?" },
+      { "campo": "ZonaAfectada", "alias": "No. de habitaciones" },
+      { "campo": "Foto1", "alias": "Foto1" },
+      { "campo": "Foto2", "alias": "Foto2" },
+      { "campo": "Foto3", "alias": "Foto3" },
+      { "campo": "Foto4", "alias": "Foto4" },
+      { "campo": "Responsable", "alias": "Institución responsable" },
+      { "campo": "CES1", "alias": "Tipo de Daño" },
+      { "campo": "Diagnostico", "alias": "Descripción del daño" },
+      { "campo": "Restauracion", "alias": "Acciones de Restauración" },
+      {
+        "campo": "Unidades",
+        "alias": "Área de construcción (M²)"
+      },
+      { "campo": "CostoUnitario", "alias": "Costo por M²" },
+      { "campo": "CostoTotalObra", "alias": "Costo Total del Daño" },
+      { "campo": "CostoAdmin", "alias": "Costos Administrativos" },
+      { "campo": "CostoTotalR", "alias": "Costo Total" },
+      { "campo": "Observaciones", "alias": "Observaciones" }
+    ],
+    "titulo1": "*Informe __predef__ de Daños*",
+    "titulo2": "*__evento__*",
+    "titulo3": "__today__",
+    "textos": [
+      {
+        "titulo": "header",
+        "texto": ""
+      },
+      {
+        "titulo": "footer",
+        "texto": ""
+      },
+      {
+        "titulo": "",
+        "texto": "En el territorio Nacional los departamentos de *__deptos__* reportan daños a *__losses__*. Se estima un área dañada de *__area__ M²*, y *__familias__* familias afectadas. La estimación de la pérdida económica es de *L __montototal__*"
+      },
+      {
+        "titulo": "*__depto__*",
+        "texto": "Reporta daños de *__losses__* en el municipio de *__mpios__* se estima un área dañada de *__area__ M²*, afectando en total a *__familias__* familias. La estimación de la pérdida económica es de L *__montototal__*"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños*",
+        "texto": "Departamentos|Suma de Familias Afectadas (Total)|Suma de Estimación de área dañada (M²)|Suma de Estimación de Pérdida en Lempiras"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños por Municipio*",
+        "texto": "Departamentos|Suma de Familias Afectadas (Total)|Suma de Estimación de área dañada (M²)|Suma de Estimación de Pérdida en Lempiras"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+<div
+  style="z-index: 1050"
+  class="position-fixed d-flex align-items-center top-0 start-50 translate-middle-x"
+>
+  <div
+    normal_toast
+    class="toast fade hide border"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="d-flex">
+      <!-- <div class="row">
+        <div class="col-1"> -->
+      <i icon_toast class="box icon" style="border: transparent !important;"></i>
+      <!-- </div>
+        <div class="col-11"> -->
+      <div normal_toast_body class="toast-body"></div>
+      <!-- </div>
+      </div> -->
+      <button
+        type="button"
+        class="btn-close me-2 m-auto text-white"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+        (click)="Close()"
+      ></button>
+    </div>
+  </div>
+
+  <div
+    header_toast
+    class="toast fade hide"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="toast-header">
+      <!-- <img src="..." class="rounded me-2" alt="..." /> -->
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="toast-body">Hello, world! This is a toast message.</div>
+  </div>
+</div>

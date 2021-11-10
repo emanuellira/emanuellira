@@ -1,0 +1,29 @@
+<div class="">
+  <table class="table table-sm table-responsive position-relative">
+    <tr *ngIf="isFirst">
+      <th>{{this.language.tipo}}</th>
+      <th>{{this.language.archivo}}</th>
+      <th>{{this.language.datos}}</th>
+    </tr>
+  </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3 text-center">
+        <label>{{ item.label }}</label>
+      </div>
+      <div style="position: relative;" class="col-xs-6 col-sm-5 text-center">
+        <input
+          class="form-control form-control-sm"
+          id="formFileSm"
+          type="file"
+          file-model = "MyFile"
+          accept=".csv" required
+          (change)="selectFile($event)"/>
+      </div>
+      <div class="col-xs-6 col-sm-4 text-center">
+        <span class="badge rounded-pill bg-primary">{{item.extension}}</span>
+        <span class="badge rounded-pill bg-secondary">{{ item.size }}</span>
+      </div>
+    </div>
+  </div>
+</div>

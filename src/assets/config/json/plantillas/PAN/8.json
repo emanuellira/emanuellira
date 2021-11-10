@@ -1,0 +1,468 @@
+﻿{
+  "sector": {
+    "nombre": "MIDA",
+    "clave": 8,
+    "entrevista": true,
+    "label_entrevista": "Datos del Afectado"
+  },
+  "version": {
+    "release": 3,
+    "candidate": 6,
+    "test": 3,
+    "debug": 10
+  },
+  "data": [
+    {
+      "campo": "IDActivo",
+      "alias": "Clave",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "IDAccion",
+      "alias": "Clave daño",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Longitud",
+      "alias": "Longitud",
+      "tipo": "label",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Latitud",
+      "alias": "Latitud",
+      "estatus": "app-web",
+      "tipo": "label",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "DIVADMIN1",
+      "alias": "Provincia",
+      "tipo": "label",
+      "estatus": "",
+      "required": "",
+      "lista": "divadmin1",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "DIVADMIN2",
+      "alias": "Distrito",
+      "lista": "divadmin2",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "DIVADMIN3",
+      "alias": "Corregimiento",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "divadmin3",
+      "required": "",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "Localidad",
+      "alias": "Lugar poblado (aldea, finca, etc.)",
+      "estatus": "app-web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true],
+      "required": ">"
+    },
+    {
+      "campo": "Domicilio",
+      "alias": "Domicilio, calle y número",
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "activo": true,
+      "editable": [true, true],
+      "required": ">"
+    },
+    {
+      "campo": "TipoAdmin",
+      "alias": "Propiedad de la tierra",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "Propia|Alquilada|Posesión",
+      "activo": true,
+      "editable": [true, true],
+      "required": ">"
+    },
+    {
+      "campo": "Nivel",
+      "alias": "Tipo de bien agrícola",
+      "tipo": "lista",
+      "lista": "Cultivo|Ganado",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, true],
+      "required": ">"
+    },
+    {
+      "campo": "PoblacionAfectada",
+      "alias": "Total familias afectadas",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FechaSiembra",
+      "alias": "Fecha de siembra",
+      "tipo": "date",
+      "required": "<=",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "FiltroClave",
+      "alias": "Filtrar clave",
+      "activo": true,
+      "estatus": "app-web",
+      "tipo": "lista",
+      "lista": "Clave",
+      "required": "",
+      "ignore": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "Clave",
+      "alias": "Tipología del bien agrícola",
+      "activo": true,
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "Clave",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "InfraDa",
+      "alias": "Descripción de la tipología",
+      "tipo": "textArea",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "UnidadMedida",
+      "alias": "Unidad de medida",
+      "estatus": "app-web",
+      "tipo": "lista",
+      "lista": "UnidadM",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "AreaTerreno",
+      "alias": "Superficie sembrada",
+      "activo": true,
+      "tipo": "text",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "AguaPotable",
+      "alias": "¿Tiene agua de riego?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Drenaje",
+      "alias": "¿Tiene drenaje?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Energia",
+      "alias": "¿Tiene energía?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "ZonaAfectada",
+      "alias": "Zona Afectada",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto1",
+      "tipo": "imagen",
+      "alias": "Foto 1",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Foto2",
+      "tipo": "imagen",
+      "alias": "Foto 2",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Foto3",
+      "tipo": "imagen",
+      "alias": "Foto 3",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Foto4",
+      "tipo": "imagen",
+      "alias": "Foto 4",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Responsable",
+      "alias": "Institución responsable",
+      "estatus": "app-web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoDanio",
+      "alias": "Tipo de Necesidad",
+      "tipo": "lista",
+      "lista": "Infrasubsistencia|Subsistencia|Excedentario|Comercial",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES1",
+      "alias": "Etapa Fenológica",
+      "tipo": "lista",
+      "lista": "EF",
+      "estatus": "",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Diagnostico",
+      "alias": "Descripción del daño",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Restauracion",
+      "alias": "Acciones de Restauración",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Unidades",
+      "alias": "Área afectada, animales ó infraestructura",
+      "tipo": "text",
+      "estatus": "app-web",
+      "formato": "number",
+      "required": ">",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoUnitario",
+      "alias": "Costo por unidad",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalObra",
+      "alias": "Costo Total del Daño",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "CostoAdmin",
+      "alias": "Costos Administrativos",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">=",
+      "estatus": "web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalR",
+      "alias": "Costo Total de la Obra",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Observaciones",
+      "alias": "Observaciones",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "editable": [true, true]
+    }
+  ],
+  "entrevista": [
+    {
+      "campo": "Nombre",
+      "alias": "Nombre",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Identificacion",
+      "alias": "Identificación",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoProd",
+      "alias": "Tipo de persona entrevistada",
+      "tipo": "check",
+      "formato": "Productor|Lider comunitario",
+      "estatus": "app",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Genero",
+      "alias": "Género",
+      "tipo": "check",
+      "formato": "Mujer|Hombre",
+	  "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Edo_Civil",
+      "alias": "Estado Civil",
+      "tipo": "lista",
+      "lista": "Casado|Soltero|Separado|Viudo|Unido",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "F_Nacimiento",
+      "alias": "Fecha Nacimiento",
+      "tipo": "date",
+      "required": "<",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Idioma",
+      "alias": "Idioma",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Telefono",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">=",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Email",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": "<",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ],
+  "capturista": [
+    {
+      "campo": "Titular",
+      "alias": "Nombre",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Cargo",
+      "alias": "Cargo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoTel",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoMail",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ]
+}

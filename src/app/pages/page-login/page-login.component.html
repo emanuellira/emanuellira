@@ -1,0 +1,65 @@
+<!-- [# version: 7.1.4 #] -->
+<div class="row d-flex align-items-center vh-100">
+  <div class="offset-md-4 col-md-4">
+    <!-- <h1 class="text-white">Iniciar Sesión</h1> -->
+    <div class="hr-inicio-sesion sarc-text-gris-claro"></div>
+    <div class="md-card card-shadow md-card-padding" style="padding: 50px">
+      <div *ngIf="lang_is_ready" class="card-body enter-account">
+        <div class="text-center">
+          <img [src]="'logo.png' | domseguro: 'images/logo'" alt="" srcset="" />
+        </div>
+        <h1 class="card-title text-primary text-center">
+          <strong>SIRED-CA</strong>
+        </h1>
+        <h5
+          class="card-subtitle mb-2 text-muted text-center"
+          style="padding-bottom: 3rem"
+        >
+          {{ this.language.SIRED }}
+        </h5>
+        <form
+          appFormError
+          [isFormGroup]="formLogin"
+          [formGroup]="formLogin"
+          (ngSubmit)="Login()"
+        >
+          <!-- Nombre -->
+          <div class="mb-3 text-primary">
+            <label for="txtLoginNombre">
+              <i class="icon-user"></i>
+              {{ this.language.user }}:
+            </label>
+            <input
+              appFormError
+              [Errors]="txtLoginNombre.errors"
+              formControlName="txtLoginNombre"
+              name="txtLoginNombre"
+              type="text"
+              class="form-control text-secondary"
+            />
+          </div>
+          <!-- Usuario -->
+          <div class="mb-3 text-primary">
+            <label for="txtLoginPassword">
+              <i class="icon-lock"></i>
+              {{ this.language.pass }}:
+            </label>
+            <input
+              appFormError
+              [Errors]="txtLoginPassword.errors"
+              formControlName="txtLoginPassword"
+              name="txtLoginPassword"
+              type="password"
+              class="form-control text-secondary"
+            />
+          </div>
+          <div class="d-grid gap-2 text-center">
+            <button type="submit" class="btn btn-outline-primary btn-block">
+              {{ this.language.ingresar }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

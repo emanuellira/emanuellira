@@ -1,0 +1,44 @@
+.grow-r {
+  width: 82% !important;
+  left: 50px;
+  height: 85%;
+  transition: 0.3s;
+}
+
+.grow-r:hover {
+  width: 85% !important;
+  height: 85%;
+}
+
+.gr-1 {
+  background: linear-gradient(170deg, #0071bc 0%, #29abe2 0%, #8cc63f 100%);
+}
+/* .gr-2 {
+  background: linear-gradient(170deg, #b4ec51 0%, #429321 100%);
+}
+.gr-3 {
+  background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
+}  */
+
+.custom-icon {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12rem;
+  /* line-height: 0; */
+  opacity: 0.5;
+  color: white;
+}
+
+.logos {
+  display: block;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardmargin {
+  margin-left: auto;
+  margin-right: auto;
+}

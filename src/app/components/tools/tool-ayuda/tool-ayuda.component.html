@@ -1,0 +1,62 @@
+<!-- [# version: 6.4.10 #] -->
+<div class="topcornerrigth">
+  <div class="topcorner-img fondoAyuda">
+    <div class="container">
+      <div class="row" style="padding-top: 10px; padding-right: 10px">
+        <div class="col-10">
+          <div>
+            <label class="txt-title"
+              ><strong>{{ item_ayuda.nombre }}</strong></label
+            >
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="btn-group">
+            <button
+              class="btn-info btn-circle btn-xs"
+              (click)="Show_Video()"
+            >
+              <i class="icon-file-movie-o text-white"></i>
+            </button>
+            <button class="btn-info btn-circle btn-xs" (click)="Open_Guia()">
+              <i class="icon-file-pdf-o text-white" ></i>
+            </button>
+            <button
+              (click)="Cerrar_Ayuda()"
+              class="btn-danger btn-circle btn-xs"
+            >
+              <i class="icon-close"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!showVideo" class="container">
+      <div class="row">
+        <div
+          class="form-group"
+          style="margin: 5px"
+          *ngFor="let item of item_ayuda.pasos; let idx = index"
+        >
+          <app-tool-paso
+            #paso_{{idx}}
+            [idx]="idx"
+            [iconos]="item_ayuda.iconos"
+            [itemText]="item"
+            [tips]="item_ayuda.tips"
+          ></app-tool-paso>
+        </div>
+      </div>
+      <br />
+    </div>
+  </div>
+  <div *ngIf="showVideo" class="centervideo">
+    <div class="row" style="height: 100%;">
+      <iframe
+        [src]="video | domseguro : video_URL"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{
+	"IDAccion": 0,
+	"IDActivo": 0,
+	"Diagnostico": "",
+	"Restauracion": "",
+	"TipoDanio": "",
+	"CostoUnitario": 0,
+	"CostoTotalObra": 0,
+	"FechaCreacion": "0001-01-01T00:00:00",
+	"FechaModificacion": "0001-01-01T00:00:00",
+	"Estatus": "",
+	"CES1": "",
+	"CES2": "",
+	"Observaciones": "",
+	"Material": "",
+	"Unidades": 0,
+	"CostoAdmin": 0,
+	"CostoTotalR": 0,
+	"Eliminado": 0
+}

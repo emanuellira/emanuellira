@@ -1,0 +1,2892 @@
+{
+  "version": {
+    "release": 0,
+    "candidate": 2,
+    "test": 2,
+	"debug":2
+  },
+  "data": [
+    {
+      "captura": [
+        {
+          "id": 1,
+          "nombre": "¿Cómo agregar un nuevo daño?",
+          "video": "",
+          "tags": [
+            "add",
+            "agregar",
+            "nuevo",
+            "cargar",
+            "subir",
+            "load",
+            "upload",
+            "send"
+          ],
+          "pasos": [
+            "1. Ve a la aplicación móvil SIRED PAN y toca en la sección capturas",
+            "2. Si tienes información toca configuración [icono1] ----> enviar [icono2]",
+            "3. Inicia sesión y toca en SI para confirmar el envío"
+          ],
+          "tips": [
+            "1. Recuerda que para visualizar información primero deberás enviar tu captura mediante la aplicación móvil SIRED PAN"
+          ],
+          "iconos": [
+            "icono1",
+            "icono2"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "nombre": "¿Cómo revisar capturas?",
+          "video": "",
+          "tags": [
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el daño a revisar y haz click en editar",
+            "2. Revisa y modifica los datos necesarios",
+            "3. Haz click en guardar"
+          ],
+          "tips": [
+            "1. El daño a revisar debe cambiar a color azul",
+            "2. No olvides revisar los montos",
+            "3. El daño revisado cambiará a verde si fue modificado"
+          ],
+          "iconos": [
+            "icono3"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 3,
+          "nombre": "¿Cómo borrar un daño?",
+          "video": "",
+          "tags": [
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir",
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "cambiar"
+          ],
+          "pasos": [
+            "1. Selecciona el daño a revisar y haz click en borrar",
+            "2. Confirma que deseas eliminar el daño dando click en SI",
+            "Asegúrate de que el daño a sido eliminado"
+          ],
+          "tips": [
+            "1.El daño a borrar debe cambiar a color azul",
+            "2. Recuerda que no podrás recuperar la información eliminada"
+          ],
+          "iconos": [
+            "icono4"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 4,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "cargar"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "Espera a que el sistema cargue la información",
+            "3. Los lista de daños se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 5,
+          "nombre": "¿Cómo imprimir el reporte preliminar?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Preliminar",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "2. Recuerda que deberás agregar el nombre de la persona y su cargo",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono6"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 6,
+          "nombre": "¿Cómo exportar información?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Exportar Excel",
+            "2. Espera a que se genere el documento",
+            "3. Guarda el archivo en tu equipo"
+          ],
+          "tips": [
+            "2. Verifica que tus ventanas emergentes no estén bloqueadas",
+            "3.: La forma de guardar depende de tu navegador"
+          ],
+          "iconos": [
+            "icono7"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 7,
+          "nombre": "¿Cómo ver la ubicación de los daños?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en la opción ver mapa",
+            "2. Navega en el mapa",
+            "3. Da click en ver información para regresar"
+          ],
+          "tips": [
+            "1. La lista de daños se oculatará",
+            "2. Para ver información da click en un daño en el mapa",
+            "3. La lista de daños aparecerá de nuevo"
+          ],
+          "iconos": [
+            "icono8"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 8,
+          "nombre": "¿Cómo buscar / filtrar daños?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. Si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 9,
+          "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Localiza los campos foto",
+            "2. Selecciona la fotografía que deseas visualizar",
+            "3. La fotografía se abrirá en una nueva ventana del explorador"
+          ],
+          "tips": [
+            "1. Los campos tiene previsualización miniatura",
+            "2. Si no puedes ver un preview miniatura, no existe la imagen"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 10,
+          "nombre": "¿Por qué no puedo editar / borrar un daño?",
+          "video": "",
+          "tags": [
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir",
+            "no"
+          ],
+          "pasos": [
+            "1. Revisa la fecha límite de captura",
+            "2. Asegúrate que la fecha actual sea menor a la fecha límite",
+            "3. Si la fecha actual es mayor a la fecha límite, no podrás editar / borrar la información"
+          ],
+          "tips": [
+            "1. Podrás encontrar la fecha abajo del nombre del evento",
+            "2. la línea arriba de la fecha límite debera ser color verde eindicará el avance del tiempo",
+            "3. Si la fecha límite ya pasó la línea arriba de esta fecha será roja"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 11,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "c_normativo": [
+        {
+          "id": 12,
+          "nombre": "¿Cómo agregar un nuevo daño?",
+          "video": "",
+          "tags": [
+            "add",
+            "agregar",
+            "nueva",
+            "cargar",
+            "subir",
+            "load",
+            "upload",
+            "send"
+          ],
+          "pasos": [
+            "1. Ve a la aplicación móvil SIRED PAN y toca en la sección capturas",
+            "2. Si tienes información toca configuración [icono1] ----> enviar [icono2]",
+            "3. Inicia sesión y toca en SI para confirmar el envío"
+          ],
+          "tips": [
+            "1. Recuerda que para visualizar información primero deberás enviar tu captura mediante la aplicación móvil SIRED PAN"
+          ],
+          "iconos": [
+            "icono1",
+            "icono2"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 13,
+          "nombre": "¿Cómo revisar capturas?",
+          "video": "",
+          "tags": [
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el daño a revisar y haz click en editar",
+            "2. Revisa y modifica los datos necesarios",
+            "3. Haz click en guardar"
+          ],
+          "tips": [
+            "1. El daño a revisar debe cambiar a color azul",
+            "2. No olvides revisar los montos",
+            "3. El daño revisado cambiará a verde si fue modificado"
+          ],
+          "iconos": [
+            "icono3"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 14,
+          "nombre": "¿Cómo borrar un daño?",
+          "video": "",
+          "tags": [
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir",
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar"
+          ],
+          "pasos": [
+            "1. Selecciona el daño a revisar y haz click en borrar",
+            "2. Confirma que deseas eliminar el daño dando click en SI",
+            "3. Asegúrate de que el daño a sido eliminado"
+          ],
+          "tips": [
+            "1. El daño a borrar debe cambiar a color azul",
+            "2. Recuerda que no podrás recuperar la información eliminada"
+          ],
+          "iconos": [
+            "icono4"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 15,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. Los lista de daños se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 16,
+          "nombre": "¿Cómo imprimir el reporte preliminar?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Preliminar",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "2. Recuerda que deberás agregar el nombre de la persona y su cargo",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono6"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 17,
+          "nombre": "¿Cómo exportar informarción?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Exportar Excel",
+            "2. Espera a que se genere el documento",
+            "3. Guarda el archivo en tu equipo"
+          ],
+          "tips": [
+            "2. Verifica que tus ventanas emergentes no estén bloqueadas",
+            "3. La forma de guardar depende de tu navegador"
+          ],
+          "iconos": [
+            "icono7"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 18,
+          "nombre": "¿Cómo ver la ubicación de los daños?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en la opción ver mapa",
+            "2. Navega en el mapa",
+            "3. Da click en ver información para regresar"
+          ],
+          "tips": [
+            "1. La lista de daños se ocultará",
+            "2. Para ver información da click en un daño en el mapa",
+            "3. La lista de daños aparecerá de nuevo"
+          ],
+          "iconos": [
+            "icono8"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 19,
+          "nombre": "¿Cómo buscar / filtrar daños?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. Si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 20,
+          "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Localiza los campos foto",
+            "2. Selecciona la fotografía que deseas visualizar",
+            "3. La fotografía se abrirá en una nueva ventana del explorador"
+          ],
+          "tips": [
+            "1. Los campos tiene previsualización miniatura",
+            "2. Si no puedes ver un preview miniatura, no existe la imagen"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 21,
+          "nombre": "Por qué no puedo editar / borrar / auroizar un daño?",
+          "video": "",
+          "tags": [
+            "revisar",
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir",
+            "no"
+          ],
+          "pasos": [
+            "1. Revisa la fecha límite de captura",
+            "2. Asegúrate que la fecha actual sea mayor a la fecha límite",
+            "3. Si la fecha actual es menor a la fecha límite, no podrás editar / borrar / imprimir definitivo /autorizar la información"
+          ],
+          "tips": [
+            "1. Podrás encontrar la fecha abajo del nombre del evento",
+            "2. la línea arriba de la fecha límite debera ser color rojo e indicará el avance del tiempo",
+            "3. Si la fecha límite no se ha cumplido, la línea de arriba será verde"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 22,
+          "nombre": "¿Por qué no puedo imprimir definitivo?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "imprimir"
+          ],
+          "pasos": [
+            "1. Para poder imprimir definitivo deberá estar autorizado el daño",
+            "2. Si no ves la opción de autorizar es porque aún está en etapa de captura",
+            "3. Revisa que la fecha límite se menor a la fecha actual"
+          ],
+          "tips": [
+            "1. Todos los daños deberán aparecer en color verde para poder ser autorizados",
+            "2. La línea arriba de la fecha límite es verde",
+            "3. La línea arriba de la fecha límite debe ser colo rojo"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 23,
+          "nombre": "¿Cómo autorizo la revisión de daños?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "imprimir"
+          ],
+          "pasos": [
+            "1. Da click en la opción autorizar",
+            "2. Ingresa credenciales de usuario",
+            "3. Haz click en confirmar"
+          ],
+          "tips": [
+            "1. Recuerda que todos los daños debene star en color verde",
+            "2. las credenciales de usuario son tus datos de inicio de sesión",
+            "3. Una vez confirmado podrás imprimir Definitivo y no se podrá modificar información"
+          ],
+          "iconos": [
+            "icono10"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 24,
+          "nombre": "¿Cómo imprimir definitivo?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "imprimir"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Definitivo",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "1. Para poder imprimir deberás autorizar daños primero",
+            "2. Recuerda que deberás agregar el nombre de la persona y su cargo",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono11"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 25,
+          "nombre": "¿Cómo revisar otras capturas?",
+          "video": "",
+          "tags": [
+            "home",
+            "otras",
+            "capturas"
+          ],
+          "pasos": [
+            "1. Da click en el botón home",
+            "2. Seleccionar un evento y da click en ir a capturas",
+            "3. Seleccionar el sector a revisar y dar click en continuar"
+          ],
+          "tips": [
+            "1. Se mostrará la lista de eventos",
+            "2. el evento seleccionado cambiará  a color azul",
+            "3. se mostrará la lista de daños del sector / evento seleccionado"
+          ],
+          "iconos": [
+            "icono12"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 26,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "e_normativo": [
+        {
+          "id": 27,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. Los lista de daños se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la información a actualizar y la velocidad de conexión a internet",
+            "3.: Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 28,
+          "nombre": "¿Cómo revisar otras capturas de datos?",
+          "video": "",
+          "tags": [
+            "otras",
+            "revisar",
+            "other"
+          ],
+          "pasos": [
+            "1. Selecciona el evento a revisar",
+            "2. Da click en la opción ir a capturas",
+            "3. Seleccionar el sector a revisar y dar click en continuar a capturas"
+          ],
+          "tips": [
+            "1. El evento deberá cambiar a color azul",
+            "2. se mostrará una lista con el sector o sectores",
+            "3. Se mostrará la lista de daños a revisar"
+          ],
+          "iconos": [
+            "icono13"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 29,
+          "nombre": "¿Cómo buscar / filtrar eventos?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 30,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "u_admin": [
+        {
+          "id": 31,
+          "nombre": "¿Cómo crear un nuevo usuario?",
+          "video": "",
+          "tags": [
+            "crear",
+            "nuevo",
+            "usuario",
+            "new",
+            "user"
+          ],
+          "pasos": [
+            "1. Da click en agregar",
+            "2. Llena el formulario con la información del nuevo usuario",
+            "3. Da click en guardar o en cualquier lado de la lista"
+          ],
+          "tips": [
+            "1. Aparecerá una fila para agregar el usuario",
+            "2. Si el usuario es de captura no olvides relacionar el evento",
+            "3. Puedes hacer click en cancelar edición para no guardar los cambios"
+          ],
+          "iconos": [
+            "icono14"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 32,
+          "nombre": "¿Cómo editar un usuario?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el usuario a modificar y haz click en editar",
+            "2. Revisa y modifica los datos necesarios",
+            "3. Haz click en guardar"
+          ],
+          "tips": [
+            "1. El daño a revisar debe cambiar a color azul",
+            "2. Si no se modifica la contraseña, se conservará la anterior",
+            "3. Puedes hacer click en cancelar para no guardar cambios"
+          ],
+          "iconos": [
+            "icono3"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 33,
+          "nombre": "¿Cómo borrar un usuario?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el usuario y haz click en borrar",
+            "2. Confirma que deseas eliminar el usuario dando click en SI",
+            "3. Asegúrate que el usuario a sido eliminado"
+          ],
+          "tips": [
+            "1. El usuario a borrar debe cambiar a color azul",
+            "2. Recuerda que no podrás recuperar la información eliminada"
+          ],
+          "iconos": [
+            "icono4"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 34,
+          "nombre": "¿Cómo desbloquear un usuario?",
+          "video": "",
+          "tags": [
+            "desbloquear",
+            "unblock",
+            "usuario",
+            "user"
+          ],
+          "pasos": [
+            "1. Selecciona el usuario y haz click en desbloquear",
+            "2. Confirma que deseas desbloquear el usuario dando click en SI",
+            "3. Asegúrate que el usuario a sido desbloqueado"
+          ],
+          "tips": [
+            "1. El usuario a desbloquear debe cambiar a color azul",
+            "2. El número de sesiones se modifica a 0",
+            "3. No olvides recordar a los usuarios que cierren sesión"
+          ],
+          "iconos": [
+            "icono16"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 35,
+          "nombre": "¿Cómo actulizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. La lista de usuarios se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 36,
+          "nombre": "¿Cómo buscar / filtrar usuarios?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 37,
+          "nombre": "¿Cómo regresar al menú principal?",
+          "video": "",
+          "tags": [
+            "menu",
+            "inicio",
+            "regresar"
+          ],
+          "pasos": [
+            "1. Da click en el botón home",
+            "2. Se mostrará el menú de opciones",
+            "3. Elige la opción"
+          ],
+          "tips": [
+            
+          ],
+          "iconos": [
+            "icono12"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 38,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "e_admin": [
+        {
+          "id": 39,
+          "nombre": "¿Cómo crear un nuevo evento?",
+          "video": "",
+          "tags": [
+            "crear",
+            "nuevo",
+            "evento",
+            "new",
+            "event"
+          ],
+          "pasos": [
+            "1. Da click en nuevo",
+            "2. Llena el formulario con la información del nuevo usuario",
+            "3. Da click en guardar o en cualquier otra fila"
+          ],
+          "tips": [
+            "1. Aparecerá una fila para agregar el evento",
+            "2. El nombre completo se generará conforme a los datos que se introduzcan ",
+            "3. Puedes hacer click en cancelar edición para no guardar los cambios"
+          ],
+          "iconos": [
+            "icono17"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 40,
+          "nombre": "¿Cómo editar un evento?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el evento a modificar y haz click en editar",
+            "2. Revisa y modifica los datos necesarios",
+            "3. Haz click en guardar o en cualquier otra fila"
+          ],
+          "tips": [
+            "1. El evento a revisar debe cambiar a color azul",
+            "2. El nombre completo se generará conforme a los datos que se introduzcan",
+            "3. Puedes hacer click en cancelar para no guardar cambios"
+          ],
+          "iconos": [
+            "icono3"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 41,
+          "nombre": "¿Cómo borrar un evento?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Selecciona el evento y haz click en borrar",
+            "2. Confirma que deseas eliminar el evento dando click en SI",
+            "3. Asegúrate que el evento a sido eliminado"
+          ],
+          "tips": [
+            "1. El usuario a borrar debe cambiar a color azul",
+            "2. Recuerda que no podrás recuperar la información eliminada"
+          ],
+          "iconos": [
+            "icono4"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 42,
+          "nombre": "¿Cómo actualizar la lista de eventos?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "eventos"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. La lista de usuarios se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 43,
+          "nombre": "¿Cómo buscar /filtrar eventos?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar [icono9] para eliminar filtros",
+            "2. si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 44,
+          "nombre": "¿Cómo revisar otras capturas de daños?",
+          "video": "",
+          "tags": [
+            "otras",
+            "revisar",
+            "other",
+            "daños"
+          ],
+          "pasos": [
+            "1. Selecciona el evento a revisar",
+            "2. Da click en la opción ir a capturas",
+            "3. Seleccionar el sector a revisar y dar click en continuar a capturas"
+          ],
+          "tips": [
+            "1. El evento deberá cambiar a color azul",
+            "2. Se mostrará una lista con el sector (es)",
+            "3. Recuerda que no puedes editar la información"
+          ],
+          "iconos": [
+            "icono13"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 45,
+          "nombre": "¿Cómo regresar al menú principal?",
+          "video": "",
+          "tags": [
+            "menu",
+            "inicio",
+            "regresar"
+          ],
+          "pasos": [
+            "1. Da click en el botón home",
+            "2. Se mostrará el menú de opciones",
+            "3. Elige la opción"
+          ],
+          "tips": [
+            
+          ],
+          "iconos": [
+            "icono12"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 46,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "c_admin": [
+        {
+          "id": 47,
+          "nombre": "¿Cómo actualizar catálogos?",
+          "video": "",
+          "tags": [
+            "catálogos",
+            "actualizar"
+          ],
+          "pasos": [
+            "1. Selecciona el sector y el tipo de catálogo",
+            "2. Da click en examinar / buscar catálogo CSV",
+            "3.Da click en cargar"
+          ],
+          "tips": [
+            "1. El formato del archivo deberá coincidir con el tipo de catálogo seleccionado",
+            "2. Antes de cargar el catálogo abre y revisa la información del archivo",
+            "3. Si el sistema marca error, revisa el manual paso a paso de catálogos y revisa nuevamente el archivo"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 48,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "rc_admin": [
+        {
+          "id": 49,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. La lista de daños se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 50,
+          "nombre": "¿Cómo revisar otras capturas de daños?",
+          "video": "",
+          "tags": [
+            "otras",
+            "revisar",
+            "other",
+            "capturas",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en el botón home",
+            "2. Seleccionar un evento y da click en ir a capturas",
+            "3. Seleccionar el sector a revisar y dar click en continuar"
+          ],
+          "tips": [
+            "1. Se mostrará la lista de eventos",
+            "2. el evento seleccionado cambiará  a color azul",
+            "3. se mostrará la lista de daños del sector / evento seleccionado"
+          ],
+          "iconos": [
+            "icono12"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 51,
+          "nombre": "¿Cómo buscar / filtrar daños?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 52,
+          "nombre": "¿Cómo autirzo la revisión de daños?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar"
+          ],
+          "pasos": [
+            "1. Da click en la opción autorizar",
+            "2. Ingresa credenciales de usuario",
+            "3. Haz click en confirmar"
+          ],
+          "tips": [
+            "1.Recuerda que todos los daños deben estar en color verde",
+            "2. las credenciales de usuario son los datos de inicio de sesión",
+            "3. Recuerda que solo deberías autorizar en casos extraordinarios"
+          ],
+          "iconos": [
+            "icono10"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 53,
+          "nombre": "¿Cómo imprimir el reporte preliminar?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Preliminar",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "1. Es necesario agregar al menos un nombre y cargo",
+            "2. El nombre y cargo pueden ser tus datos",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono6"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 54,
+          "nombre": "¿Cómo imprimir definitivo?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "imprimir"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Definitivo",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "1. Es necesario agregar al menos un nombre y cargo",
+            "2. El nombre y cargo pueden ser tus datos",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono11"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 55,
+          "nombre": "¿Cómo exportar información en excel?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Exportar a Excel",
+            "2. Espera a que se genere el documento",
+            "3. Guarda el archivo en tu equipo"
+          ],
+          "tips": [
+            "2. Verifica que tus ventanas emergentes no estén bloqueadas",
+            "3. La forma de guardar depende de tu navegador"
+          ],
+          "iconos": [
+            "icono7"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 56,
+          "nombre": "¿Cómo ver la ubicación de los daños?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en la opción ver mapa",
+            "2. Navega en el mapa",
+            "3. Da click en ver información para regresar"
+          ],
+          "tips": [
+            "1. La lista de daños se ocultará",
+            "2. Para ver información da click en un daño en el mapa",
+            "3. La lista de daños aparecerá de nuevo"
+          ],
+          "iconos": [
+            "icono8"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 57,
+          "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Localiza los campos foto",
+            "2. Selecciona la fotografía que deseas visualizar",
+            "3. La fotografía se abrirá en una nueva ventana del explorador"
+          ],
+          "tips": [
+            "1. Los campos tiene previsualización miniatura",
+            "2. Si no puedes ver un preview miniatura, no existe la imagen"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 58,
+          "nombre": "¿Por qué no puedo ver datos?",
+          "video": "",
+          "tags": [
+            "usuarios",
+            "no",
+            "vacío"
+          ],
+          "pasos": [
+            "1. El sector que deseas revisar no ha enviado información al sistema",
+            "2. Si el usuario ya envió la información da click en autorizar",
+            "3. Revisa tu conexión a internet"
+          ],
+          "tips": [
+            "1. Pregunta al normativo del sector si la información ha sido enviada",
+            "2. Si el normativo ya subió la infromación espera que la información cargue"
+          ],
+          "iconos": [
+            
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 59,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "admin": [
+        {
+          "id": 60,
+          "nombre": "¿Cómo crear un nuevo usuario?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            ""
+          ],
+          "ida": [
+            28
+          ]
+        },
+        {
+          "id": 61,
+          "nombre": "¿Cómo editar un usuario?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono18"
+          ],
+          "ida": [
+            29
+          ]
+        },
+        {
+          "id": 62,
+          "nombre": "¿Cómo borrar un usuario?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono18"
+          ],
+          "ida": [
+            30
+          ]
+        },
+        {
+          "id": 63,
+          "nombre": "¿Cómo desbloquear un usuario?",
+          "video": "",
+          "tags": [
+            "desbloquear",
+            "unblock"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono18"
+          ],
+          "ida": [
+            31
+          ]
+        },
+        {
+          "id": 64,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono18"
+          ],
+          "ida": [
+            32
+          ]
+        },
+        {
+          "id": 65,
+          "nombre": "¿Cómo buscar / filtros usuarios?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono18"
+          ],
+          "ida": [
+            33
+          ]
+        },
+        {
+          "id": 66,
+          "nombre": "¿Cómo crear un nuevo evento?",
+          "video": "",
+          "tags": [
+            "crear",
+            "nuevo",
+            "evento",
+            "new",
+            "event"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            35
+          ]
+        },
+        {
+          "id": 67,
+          "nombre": "¿Cómo editar un evento?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            36
+          ]
+        },
+        {
+          "id": 68,
+          "nombre": "¿Cómo borrar un evento?",
+          "video": "",
+          "tags": [
+            "editar",
+            "modificar",
+            "check",
+            "edit",
+            "change",
+            "Cambiar",
+            "borrar",
+            "eliminar",
+            "delete",
+            "suprimir"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            37
+          ]
+        },
+        {
+          "id": 69,
+          "nombre": "¿Cómo actualizar la lista de eventos?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "eventos"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            38
+          ]
+        },
+        {
+          "id": 70,
+          "nombre": "¿Cómo buscar / filtrar eventos?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            39
+          ]
+        },
+        {
+          "id": 71,
+          "nombre": "¿Cómo revisar otras capturas de daños?",
+          "video": "",
+          "tags": [
+            "otras",
+            "revisar",
+            "other",
+            "capturas",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            40
+          ]
+        },
+        {
+          "id": 72,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            43
+          ]
+        },
+        {
+          "id": 73,
+          "nombre": "¿Cómo buscar / filtrar daños?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            44
+          ]
+        },
+        {
+          "id": 74,
+          "nombre": "¿Cómo autorizo la revisión de daños?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            45
+          ]
+        },
+        {
+          "id": 75,
+          "nombre": "¿Cómo imprimir el reporte preliminar?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            47
+          ]
+        },
+        {
+          "id": 76,
+          "nombre": "¿Cómo imprimir definitivo?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "definitivo",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            48
+          ]
+        },
+        {
+          "id": 77,
+          "nombre": "¿Cómo exportar información a Excel?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "definitivo",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            49
+          ]
+        },
+        {
+          "id": 78,
+          "nombre": "¿Cómo ver la ubicación de los daños?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            50
+          ]
+        },
+        {
+          "id": 79,
+          "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            51
+          ]
+        },
+        {
+          "id": 80,
+          "nombre": "¿Por qué no puedo ver datos?",
+          "video": "",
+          "tags": [
+            "usuarios",
+            "no",
+            "vacío"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            52
+          ]
+        },
+        {
+          "id": 81,
+          "nombre": "¿Cómo actualizar catálogos?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "catálogos"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Catálogos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de catálogos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono20"
+          ],
+          "ida": [
+            42
+          ]
+        },
+        {
+          "id": 82,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "rc_admin_b": [
+        {
+          "id": 83,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da Click en la opción Actualizar",
+            "2. Espera a que el sistema cargue la información",
+            "3. La lista de daños se ha actualizado"
+          ],
+          "tips": [
+            "2. El tiempo de espera dependerá de la información a actualizar y la velocidad de conexión a internet",
+            "3. Si no ves cambios, verifica la velocidad y conexión a internet"
+          ],
+          "iconos": [
+            "icono5"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 84,
+          "nombre": "¿Cómo revisar otras capturas de daños?",
+          "video": "",
+          "tags": [
+            "menu",
+            "inicio",
+            "regresar"
+          ],
+          "pasos": [
+            "1. Da click en el botón home",
+            "2. Seleccionar un evento y da click en ir a capturas",
+            "3. Seleccionar el sector a revisar y dar click en continuar"
+          ],
+          "tips": [
+            "1. Se mostrará la lista de eventos",
+            "2. el evento seleccionado cambiará  a color azul",
+            "3. se mostrará la lista de daños del sector / evento seleccionado"
+          ],
+          "iconos": [
+            "icono12"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 85,
+          "nombre": "¿Cómo buscar / filtrar daños?",
+          "video": "",
+          "tags": [
+            "buscar",
+            "filtros",
+            "filtrar",
+            "seleccionar",
+            "filter",
+            "search",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en la opción buscar",
+            "2. Teclea / Selecciona el campo a buscar y da enter",
+            "3. Teclea / Selecciona el dato a buscar y da enter"
+          ],
+          "tips": [
+            "1. Puedes dar click en la opción de borrar para eliminar filtros",
+            "2. si deseas cambiar de campo teclea / selecciona filtros",
+            "3. Puedes cambiar el dato a buscar en cualquier momento"
+          ],
+          "iconos": [
+            "icono9"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 86,
+          "nombre": "¿Cómo imprimir el reporte preliminar?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Preliminar",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "1. Es necesario agregar al menos un nombre y cargo",
+            "2. El nombre y cargo pueden ser tus datos",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono6"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 87,
+          "nombre": "¿Cómo imprimir definitivo?",
+          "video": "",
+          "tags": [
+            "definitivo",
+            "autorizar",
+            "imprimir"
+          ],
+          "pasos": [
+            "1. Da click en la opción Imprimir Definitivo",
+            "2. Ingresa los datos de las personas a firmar el documento",
+            "3. Da click en imprimir"
+          ],
+          "tips": [
+            "1. Es necesario agregar al menos un nombre y cargo",
+            "2. El nombre y cargo pueden ser tus datos",
+            "3. Recuerda que el documento se abrirá en una nueva pestaña"
+          ],
+          "iconos": [
+            "icono11"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 88,
+          "nombre": "¿Cómo exportar información a Excel?",
+          "video": "",
+          "tags": [
+            "imprimir",
+            "preliminar",
+            "reporte",
+            "print",
+            "exportar",
+            "excel",
+            "export",
+            "descargar",
+            "download"
+          ],
+          "pasos": [
+            "1. Da click en Exportar a Excel",
+            "2. Espera a que se genere el documento",
+            "3. Guarda el archivo en tu equipo"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información",
+            "Tip 2: Verifica que tus ventanas emergentes no estén bloqueadas",
+            "Tip 3: La forma de guardar depende de tu navegador"
+          ],
+          "iconos": [
+            "icono7"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 89,
+          "nombre": "¿Cómo ver la ubicación de los daños?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Da click en la opción ver mapa",
+            "2. Navega en el mapa",
+            "3. Da click en ver información para regresar"
+          ],
+          "tips": [
+            "1. La lista de daños se ocultará",
+            "2. Para ver información da click en un daño en el mapa",
+            "3. La lista de daños aparecerá de nuevo"
+          ],
+          "iconos": [
+            "icono8"
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 90,
+          "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+          "video": "",
+          "tags": [
+            "ubicación",
+            "localización",
+            "daños",
+            "mapa",
+            "fotos",
+            "imágenes",
+            "location",
+            "maps",
+            "photo",
+            "image"
+          ],
+          "pasos": [
+            "1. Localiza los campos foto",
+            "2. Selecciona la fotografía que deseas visualizar",
+            "3. La fotografía se abrirá en una nueva ventana del explorador"
+          ],
+          "tips": [
+            "1. Los campos tiene previsualización miniatura",
+            "2. Si no puedes ver un preview miniatura, no existe la imagen"
+          ],
+          "iconos": [
+            ""
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 91,
+          "nombre": "¿Por qué no puedo ver datos?",
+          "video": "",
+          "tags": [
+            "usuarios",
+            "no",
+            "vacío"
+          ],
+          "pasos": [
+            "1. El sector que deseas revisar no ha enviado información al sistema",
+            "2. Si el usuario ya envió la información da click en autorizar",
+            "3. Revisa tu conexión a internet"
+          ],
+          "tips": [
+            "1. Pregunta al normativo del sector si la información ha sido enviada",
+            "2. Si el normativo ya subió la información espera que la información cargue"
+          ],
+          "iconos": [
+            ""
+          ],
+          "ida": [
+            0
+          ]
+        },
+        {
+          "id": 92,
+          "nombre": "¿Cómo cerrar sesión?",
+          "video": "",
+          "tags": [
+            "cerrar",
+            "sesión",
+            "close",
+            "salir",
+            "exit"
+          ],
+          "pasos": [
+            "1. Da click en Cerrar sesión",
+            "2. Confirma que deseas cerrar sesión"
+          ],
+          "tips": [
+            ""
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ],
+      "admin_b": [
+        {
+          "id": 93,
+          "nombre": "¿Cómo actualizar la lista de daños?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh",
+            "daños"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            75
+          ]
+        },
+        {
+          "id": 94,
+          "nombre": "¿Cómo revisar otras capturas de daños?",
+          "video": "",
+          "tags": [
+            "menu",
+            "inicio",
+            "regresar",
+            "otros"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Eventos",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de eventos podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            76
+          ]
+        },
+        {
+          "id": 95,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            77
+          ]
+        },
+        {
+          "id": 96,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            78
+          ]
+        },
+        {
+          "id": 97,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            79
+          ]
+        },
+        {
+          "id": 98,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            80
+          ]
+        },
+        {
+          "id": 99,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            81
+          ]
+        },
+        {
+          "id": 100,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            82
+          ]
+        },
+        {
+          "id": 101,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono19"
+          ],
+          "ida": [
+            83
+          ]
+        },
+        {
+          "id": 102,
+          "nombre": "¿Cómo actualizar la lista de usuarios?",
+          "video": "",
+          "tags": [
+            "actualizar",
+            "refrescar",
+            "refresh"
+          ],
+          "pasos": [
+            "1. Da click en Ir a Usuarios",
+            "2. Espera a que cargue la información",
+            "3. Espera a que cargue la ayuda"
+          ],
+          "tips": [
+            "3. En el módulo de usuarios podrás consultar más información"
+          ],
+          "iconos": [
+            "icono15"
+          ],
+          "ida": [
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

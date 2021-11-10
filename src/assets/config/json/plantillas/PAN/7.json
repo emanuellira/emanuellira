@@ -1,0 +1,581 @@
+{
+  "sector": {
+    "nombre": "ETESA",
+    "clave": 4,
+    "entrevista": false,
+    "label_entrevista": "Información del aspirante"
+  },
+  "version": {
+    "release": 3,
+    "candidate": 6,
+    "test": 3,
+    "debug": 9
+  },
+  "data": [
+    {
+      "campo": "IDActivo",
+      "alias": "Clave",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "IDAccion",
+      "alias": "Clave daño",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Longitud",
+      "alias": "Longitud",
+      "tipo": "label",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Latitud",
+      "alias": "Latitud",
+      "estatus": "app-web",
+      "tipo": "label",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "CPS",
+      "alias": "Administración Urbana",
+      "tipo": "label",
+      "estatus": "app-web",
+      "required": "",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "InmuebleDaniado",
+      "alias": "Tipo de Infraestructura",
+      "tipo": "label",
+      "estatus": "app-web",
+      "required": "",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "DIVADMIN1",
+      "alias": "Provincia",
+      "tipo": "label",
+      "estatus": "",
+      "required": "",
+      "lista": "divadmin1",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "DIVADMIN2",
+      "alias": "Distrito",
+      "lista": "divadmin2",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "DIVADMIN3",
+      "alias": "Corregimiento",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "divadmin3",
+      "required": "",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "Localidad",
+      "alias": "Lugar poblado (aldea, finca, etc.)",
+      "estatus": "web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Domicilio",
+      "alias": "Dirección completa e indicar referencias",
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "AccesoInm",
+      "alias": "Tipo de Administración",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "Público|Privada",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoAdmin",
+      "alias": "Propiedad del inmueble",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "dominio pleno|dominio útil|arrendamiento|hipoteca|promesa de venta|herencia|prestada|otro",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "CES1Activo",
+      "alias": "Tipo del inmueble",
+      "tipo": "lista",
+      "lista": "vivienda unifamiliar|vivienda multifamiliar|condominio vertical|otro",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Nivel",
+      "alias": "Niveles de Servicio",
+      "tipo": "lista",
+      "lista": "Residencial|Comercial|Público|Privado",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "PoblacionAfectada",
+      "alias": "No. de habitantes",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "CantInfra",
+      "alias": "No. de habitaciones",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FechaSiembra",
+      "alias": "Fecha de Construcción",
+      "tipo": "date",
+      "required": "<",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "FiltroClave",
+      "alias": "Niveles según tipología",
+      "activo": true,
+      "estatus": "app-web",
+      "tipo": "lista",
+      "lista": "",
+      "required": "",
+      "editable": [true, true],
+      "ignore": true
+    },
+    {
+      "campo": "Clave",
+      "alias": "Clave de la tipología",
+      "activo": true,
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "Clave",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "InfraDa",
+      "alias": "Descripción de la tipología",
+      "tipo": "textArea",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "UnidadMedida",
+      "alias": "Unidad de medida",
+      "estatus": "app-web",
+      "tipo": "lista",
+      "lista": "UnidadM",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "AreaTerreno",
+      "alias": "Área del terreno(m2)",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "AreaConstruccion",
+      "alias": "Área de la edificación(m2)",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "AguaPotable",
+      "alias": "¿La infraestructura se encuentra en una zona urbana?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Drenaje",
+      "alias": "¿Cuenta con drenaje sanitario?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Energia",
+      "alias": "¿Cuenta con energía eléctrica?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "DrenajePluvial",
+      "alias": "¿Cuenta con drenaje pluvial?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "TrenAseo",
+      "alias": "¿Cuenta con tren de aseo?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "ZonaAfectada",
+      "alias": "Zona Afectada",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto1",
+      "tipo": "imagen",
+      "alias": "Foto 1",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto2",
+      "tipo": "imagen",
+      "alias": "Foto 2",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto3",
+      "tipo": "imagen",
+      "alias": "Foto 3",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto4",
+      "tipo": "imagen",
+      "alias": "Foto 4",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Responsable",
+      "alias": "Institución responsable",
+      "estatus": "app-web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoDanio",
+      "alias": "Tipo de Necesidad",
+      "tipo": "lista",
+      "lista": "Rehabilitación|Reconstrucción",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES1",
+      "alias": "Tipo de Daño",
+      "tipo": "lista",
+      "lista": "Supercial|Infraestructura",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Material",
+      "alias": "Material predominante",
+      "tipo": "lista",
+      "lista": "agregar|madera|ladrillo|bloque de concreto|adobe|lámina",
+      "activo": false,
+      "estatus": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Diagnostico",
+      "alias": "Descripción del daño",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Restauracion",
+      "alias": "Acciones de Restauración",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": "",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Unidades",
+      "alias": "Tipo de Unidad Afectada",
+      "tipo": "text",
+      "estatus": "app-web",
+      "formato": "number",
+      "required": ">",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoUnitario",
+      "alias": "Costo por unidad",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalObra",
+      "alias": "Costo Total del Daño",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "CostoAdmin",
+      "alias": "Costos Administrativos",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">=",
+      "estatus": "web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalR",
+      "alias": "Costo Total",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Observaciones",
+      "alias": "Observaciones",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "editable": [true, true]
+    }
+  ],
+  "entrevista": [
+    {
+      "campo": "Nombre",
+      "alias": "Nombre completo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Identificacion",
+      "alias": "Identificación",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoDoc",
+      "alias": "Tipo de documento",
+      "tipo": "lista",
+      "lista": "Pasaporte|Identidad|Partida de nacimiento",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Genero",
+      "alias": "Género",
+      "tipo": "check",
+      "formato": "Mujer|Hombre",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Edo_Civil",
+      "alias": "Estado Civil",
+      "tipo": "lista",
+      "lista": "Casado|Soltero|Separado|Viudo|Unión libre",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "F_Nacimiento",
+      "alias": "Fecha Nacimiento",
+      "tipo": "date",
+      "required": "<",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Edad",
+      "alias": "Edad",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Idioma",
+      "alias": "Idioma",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Telefono",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">=",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Email",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Nombre2",
+      "alias": "Nombre completo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Telefono2",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">=",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Email2",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ],
+  "capturista": [
+    {
+      "campo": "Titular",
+      "alias": "Nombre",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Cargo",
+      "alias": "Cargo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoTel",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoMail",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<!-- [# version: 6.4.2 #] -->
+<form [formGroup]="frm">
+  <div class="row mt-1">
+    <label for="staticCatDanio" class="col-sm-3 col-form-label"
+      >{{this.language.categoria_danio}}</label
+    >
+    <div class="col">
+      <select
+        size = "4"
+        multiple = "multiple"
+        formControlName="selCatDanio"
+        class="form-select"
+        (change)="OnSelect_CatDanio()"
+      >
+        <option checked *ngFor="let item of items" [value]="item.Valor">
+          {{ item.Descripcion }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>

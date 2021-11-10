@@ -1,0 +1,12 @@
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\DataAccess.dll.config
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\DataAccess.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\DataAccess.pdb
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\EntityFramework.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\EntityFramework.SqlServer.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\EntityFramework.xml
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Release\EntityFramework.SqlServer.xml
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Release\DataAccess.csproj.AssemblyReference.cache
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Release\DataAccess.csproj.CoreCompileInputs.cache
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Release\DataAccess.csproj.CopyComplete
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Release\DataAccess.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Release\DataAccess.pdb

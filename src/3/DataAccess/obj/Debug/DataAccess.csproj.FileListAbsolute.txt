@@ -1,0 +1,12 @@
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\DataAccess.dll.config
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\DataAccess.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\DataAccess.pdb
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\EntityFramework.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\EntityFramework.xml
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Debug\DataAccess.dll
+D:\VSCODE\SIRED-CA\sired-ca\src\3\DataAccess\obj\Debug\DataAccess.pdb

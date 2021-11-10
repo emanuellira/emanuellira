@@ -1,0 +1,118 @@
+<!-- [# version: 6.2.4 #] -->
+<label>DATOS DEL ENTREVISTADO</label>
+
+<form>
+  <div *ngFor="let h of headers" class="form-group row">
+    <label class="col-sm-3 col-form-label">
+      <div>{{ h.alias }}</div>
+    </label>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        class="form-control"
+        value="{{ items[h.campo] }}"
+        disabled
+      />
+    </div>
+  </div>
+  <br />
+
+  <!-- <div class="row">
+    <label
+      class="col-sm-2 col-form-label"
+    >
+      <div>{{ h.alias}}</div>
+    </label>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado[h.campo]"
+        disabled
+      />
+    </div>
+  </div> -->
+  <!-- <div class="row mt-1">
+    <label class="col-sm-2 col-form-label">Clave:</label>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.Identificacion"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label"
+      >Tipo de persona:</label
+    >
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.TipoProd"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label"
+      >Estado Civil:</label
+    >
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.Edo_Civil"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label"
+      >Fecha Nacimiento:</label
+    >
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.F_Nacimiento"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label">Idioma:</label>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.Idioma"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label">Teléfono:</label>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.Telefono"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="row mt-1">
+    <label class="col-sm-2 col-form-label">Email:</label>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        [value]="entrevistado.Email"
+        disabled
+      />
+    </div>
+  </div> -->
+</form>

@@ -1,0 +1,50 @@
+﻿{
+  "version": {
+    "release": 6,
+    "candidate": 2,
+    "test": 1,
+    "debug": 4
+  },
+  "menu": {
+    "nav": [
+      {
+        "label": "Actualizar",
+        "icon": "icon-refresh",
+        "btn": "",
+        "visible": true
+      },
+      {
+        "label": "Cerrar Sesión",
+        "icon": "icon-close",
+        "btn": "text-danger",
+        "visible": true
+      }
+    ],
+    "btn": [
+      {
+        "label": "Enviar",
+        "icon": "icon-save",
+        "btn": "btn-success",
+        "visible": false
+      }
+    ],
+    "catalogos": [
+      {
+        "label": "Tipología",
+        "campo": "Clave"
+      },
+      {
+        "label": "Tipo de necesidad",
+        "campo": "TipoD"
+      },
+      {
+        "label": "Material",
+        "campo": "Material"
+      },
+      {
+        "label": "Equipamiento",
+        "campo": "Equip"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<select
+  *ngIf="h.campo.length > 0"
+  (ngModelChange)="Change_Select($event)"
+  style="width: 200px"
+  [(ngModel)]="item[h.campo]"
+  class="form-select"
+  required
+>
+  <option *ngFor="let l of lista">{{ l }}</option>
+</select>

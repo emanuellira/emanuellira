@@ -1,0 +1,2421 @@
+{
+  "version": {
+    "release": 0,
+    "candidate": 2,
+    "test": 2,
+    "debug": 2
+  },
+  "data": {
+    "revision": [
+      {
+        "id": 1,
+        "nombre": "¿Cómo agregar un nuevo daño?",
+        "video": "",
+        "tags": [
+          "add",
+          "agregar",
+          "nuevo",
+          "cargar",
+          "subir",
+          "load",
+          "upload",
+          "send"
+        ],
+        "pasos": [
+          "Ve a la aplicación móvil SIRED CA y toca en la sección de capturas [icon-capturas-movil]",
+          "Si hay capturas realizadas seleccione la opción enviar [btn-enviar]",
+          "Inicia sesión y seleccione SI para confirmar el envío"
+        ],
+        "tips": [
+          "Recuerde que para visualizar información primero deberás enviar tu captura mediante la aplicación móvil SIRED-CA"
+        ],
+        "iconos": [
+          "btn-enviar",
+		  "icon-capturas-movil"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "¿Cómo revisar capturas?",
+        "video": "",
+        "tags": [
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "cambiar",
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir"
+        ],
+        "pasos": [
+          "Selecciona el daño a revisar y de clic en editar [icon-editar]",
+          "Revisa y modifica los datos necesarios",
+          "De clic en guardar [icon-guardar]"
+        ],
+        "tips": [
+          "El daño a revisar debe cambiar a color azul",
+          "No olvides revisar los montos",
+          "El daño revisado cambiará a verde si fue modificado"
+        ],
+        "iconos": [
+          "icon-editar",
+		  "icon-guardar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "¿Cómo borrar un daño?",
+        "video": "",
+        "tags": [
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir",
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "cambiar"
+        ],
+        "pasos": [
+          "Selecciona el daño a revisar y haz clic en borrar [icon-borrar]",
+          "Confirma que desea eliminar el daño dando clic en SI [icon-si]",
+          "Revisa la lista de daños y asegurese que el daño a sido eliminado"
+        ],
+        "tips": [
+          "El daño a borrar debe cambiar a color azul",
+          "Recuerda que no podrás recuperar la información eliminada"
+        ],
+        "iconos": [
+          "icon-borrar",
+		  "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          "actualizar",
+          "refrescar",
+          "refresh",
+          "cargar"
+        ],
+        "pasos": [
+          "Da clic en la opción Actualizar",
+          "Espera a que el sistema cargue la información",
+          "La lista de daños se ha actualizado"
+        ],
+        "tips": [
+          "El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+          "Si no ves cambios, verifica la velocidad y conexión a internet"
+        ],
+        "iconos": [
+          "icono5"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "¿Cómo imprimir el Reporte Preliminar?",
+        "video": "",
+        "tags": [
+          "imprimir",
+          "preliminar",
+          "reporte",
+          "print",
+          "exportar",
+          "excel",
+          "export",
+          "descargar",
+          "download"
+        ],
+        "pasos": [
+          "De clic en la opción Imprimir Preliminar [icon-imprimir-pre]",
+          "Ingresa los datos de las personas a firmar el documento y de clic en Agregar Firma [icon-add-firm]",
+          "Da clic en Generar Documento [icon-generar-doc]"
+        ],
+        "tips": [
+          "Recuerda que deberás agregar el nombre de la persona y su cargo",
+          "Recuerda que el documento se abrirá en una nueva pestaña"
+        ],
+        "iconos": [
+          "icon-imprimir-pre",
+		  "icon-generar-doc",
+		  "icon-add-firm"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          "imprimir",
+          "preliminar",
+          "reporte",
+          "print",
+          "exportar",
+          "excel",
+          "export",
+          "descargar",
+          "download"
+        ],
+        "pasos": [
+          "1. Da clic en Exportar Excel [icon-export-excel]",
+          "2. Espere a que se genere el documento",
+          "3. Guarda el archivo en tu equipo"
+        ],
+        "tips": [
+          "2. Verifica que tus ventanas emergentes no estén bloqueadas",
+          "3.: La forma de guardar depende de tu navegador"
+        ],
+        "iconos": [
+          "icon-export-excel"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "nombre": "¿Cómo ver la ubicación de los daños?",
+        "video": "",
+        "tags": [
+          "ubicación",
+          "localización",
+          "daños",
+          "mapa",
+          "fotos",
+          "imágenes",
+          "location",
+          "maps",
+          "photo",
+          "image"
+        ],
+        "pasos": [
+          "Da clic en la opción ver mapa",
+          "Navega en el mapa",
+          "Da clic en ver información para regresar"
+        ],
+        "tips": [
+          "La lista de daños se ocultará",
+          "Para ver información da clic en un daño en el mapa",
+          "La lista de daños aparecerá de nuevo"
+        ],
+        "iconos": [
+          ""
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "nombre": "¿Cómo buscar / filtrar daños?",
+        "video": "",
+        "tags": [
+          "buscar",
+          "filtros",
+          "filtrar",
+          "seleccionar",
+          "filter",
+          "search"
+        ],
+        "pasos": [
+          "Da clic en el botón buscar para habilitar las opciones de filtrado y teclee la opción deseada",
+          "Una vez tecleada o selecciona la opción, teclee el valor a buscar para que realice el filtrado solo aquellos que contienen el valor tecleado",
+          "Se puede cambiar el valor y realizar otra búsqueda dando clic en la opción borrar [icon-borrar-busqueda] y para mostrar la lista completa de los elementos sin filtros dar clic en la opción eliminar filtro [icon-borrar-busqueda]"
+        ],
+        "tips": [
+          "Puedes dar clic en la opción de borrar para eliminar filtros",
+          "Si deseas cambiar de campo teclea / selecciona filtros",
+          "Puedes cambiar el dato a buscar en cualquier momento"
+        ],
+        "iconos": [
+          "icon-borrar-busqueda"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          "ubicación",
+          "localización",
+          "daños",
+          "mapa",
+          "fotos",
+          "imágenes",
+          "location",
+          "maps",
+          "photo",
+          "image"
+        ],
+        "pasos": [
+          "Localice los campos foto",
+          "Seleccione la fotografía que deseas visualizar",
+          "La fotografía se abrirá en una nueva ventana del explorador"
+        ],
+        "tips": [
+          "Los campos tiene previsualización miniatura",
+          "Si no puedes ver un preview miniatura, no existe la imagen"
+        ],
+        "iconos": [
+		
+		],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 10,
+        "nombre": "¿Por qué no puedo editar / borrar un daño?",
+        "video": "",
+        "tags": [
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "Cambiar",
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir",
+          "no"
+        ],
+        "pasos": [
+          "Revisa la fecha límite de captura",
+          "Asegúrese que la fecha actual sea menor a la fecha límite",
+          "Si la fecha actual es mayor a la fecha límite, no podrás editar o borrar la información"
+        ],
+        "tips": [
+          "Podrás encontrar la fecha abajo del nombre del evento",
+          "La línea arriba de la fecha límite debera ser color verde eindicará el avance del tiempo",
+          "Si la fecha límite ya pasó la línea arriba de esta fecha será roja"
+        ],
+        "iconos": [],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          "cerrar",
+          "sesión",
+          "close",
+          "salir",
+          "exit"
+        ],
+        "pasos": [
+          "De clic en Cerrar sesión [icon-cerrar-sesion]",
+          "Confirme que deseas cerrar sesión dando clic en si [icon-si]",
+		  "Recuerda siempre cerrar sesión al terminar de modificar un daño, ya que si no se cierra sesión, se podría bloquear su usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-cerrar-sesion"
+        ],
+        "ida": [
+          0
+        ]
+      }
+    ],
+
+    "r_normativo": [
+      {
+        "id": 12,
+        "nombre": "¿Cómo agregar un nuevo daño?",
+        "video": "",
+        "tags": [
+          "add",
+          "agregar",
+          "nuevo",
+          "cargar",
+          "subir",
+          "load",
+          "upload",
+          "send"
+        ],
+        "pasos": [
+          "Vaya a la aplicación móvil SIRED CA y selecciona la opción de capturas [icon-capturas-movil]",
+          "Si hay capturas realizadas, seleccione la opción de enviar [icon-enviar]",
+          "Inicia sesión y toca en SI [icon-si] para confirmar el envío"
+        ],
+        "tips": [
+          "Recuerda que para visualizar información primero deberás enviar tu captura mediante la aplicación móvil SIRED CA"
+        ],
+        "iconos": [
+          "icon-capturas-movil",
+          "icon-enviar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 13,
+        "nombre": "¿Cómo revisar capturas?",
+        "video": "",
+        "tags": [
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "cambiar",
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir"
+        ],
+        "pasos": [
+          "Selecciona el daño a revisar y haz clic en editar [icon-editar]",
+          "Revise y modifica los datos necesarios",
+          "De clic en guardar [icon-guardar]"
+        ],
+        "tips": [
+          "El daño a revisar debe cambiar a color azul",
+          "No olvides revisar los montos",
+          "El daño revisado cambiará a verde si fue modificado"
+        ],
+        "iconos": [
+          "icon-editar",
+		  "icon-guardar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 14,
+        "nombre": "¿Cómo borrar un daño?",
+        "video": "",
+        "tags": [
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir",
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "cambiar"
+        ],
+        "pasos": [
+          "Selecciona el daño a revisar y haz clic en borrar [icon-borrar]",
+          "Confirma que deseas eliminar el daño dando clic en SI [icon-si]",
+          "Revisa la lista de daños y asegurese que el daño se eliminó"
+        ],
+        "tips": [
+          "El daño a borrar debe cambiar a color azul",
+          "Recuerda que no podrás recuperar la información eliminada"
+        ],
+        "iconos": [
+          "icon-borrar",
+		  "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 15,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          "actualizar",
+          "refrescar",
+          "refresh",
+          "cargar"
+        ],
+        "pasos": [
+          "De clic en la opción Actualizar [icon-actualizar]",
+          "Espere a que el sistema cargue la información",
+          "Los lista de daños se ha actualizado"
+        ],
+        "tips": [
+          "El tiempo de espera dependerá de la infromación a actualizar y la velocidad de conexión a internet",
+          "Si no ves cambios, verifica la velocidad y conexión a internet"
+        ],
+        "iconos": [
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 16,
+        "nombre": "¿Cómo imprimir el reporte preliminar?",
+        "video": "",
+        "tags": [
+          "imprimir",
+          "preliminar",
+          "reporte",
+          "print",
+          "exportar",
+          "excel",
+          "export",
+          "descargar",
+          "download"
+        ],
+        "pasos": [
+          "De clic en la opción Imprimir Preliminar [icon-imprimir-pre]",
+          "Ingresa los datos de las personas a firmar el documento y de clic en Agregar Firmas [icon-add-firm]",
+          "Da clic en Generar Documento"
+        ],
+        "tips": [
+          "Recuerda que deberás agregar el nombre de la persona y su cargo",
+          "Recuerda que el documento se abrirá en una nueva pestaña"
+        ],
+        "iconos": [
+          "icon-imprimir-pre",
+		  "icon-add-firm"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 17,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          "imprimir",
+          "preliminar",
+          "reporte",
+          "print",
+          "exportar",
+          "excel",
+          "export",
+          "descargar",
+          "download"
+        ],
+        "pasos": [
+          "Da clic en Exportar Excel [icon-export-excel]",
+          "Espera a que se genere el documento",
+          "Guarda el archivo en tu equipo"
+        ],
+        "tips": [
+          "Verifica que tus ventanas emergentes no estén bloqueadas",
+          "La forma de guardar depende de tu navegador"
+        ],
+        "iconos": [
+          "icon-export-excel"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 18,
+        "nombre": "¿Cómo ver la ubicación de los daños?",
+        "video": "",
+        "tags": [
+          "ubicación",
+          "localización",
+          "daños",
+          "mapa",
+          "fotos",
+          "imágenes",
+          "location",
+          "maps",
+          "photo",
+          "image"
+        ],
+        "pasos": [
+          "Da clic en la opción ver mapa",
+          "Navega en el mapa",
+          "Da clic en ver información para regresar"
+        ],
+        "tips": [
+          "La lista de daños se oculatará",
+          "Para ver información da clic en un daño en el mapa",
+          "La lista de daños aparecerá de nuevo"
+        ],
+        "iconos": [
+          "icono8"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 19,
+        "nombre": "¿Cómo buscar / filtrar daños?",
+        "video": "",
+        "tags": [
+          "buscar",
+          "filtros",
+          "filtrar",
+          "seleccionar",
+          "filter",
+          "search"
+        ],
+        "pasos": [
+          "Da clic en el botón buscar para habilitar las opciones de filtrado y teclee la opción deseada",
+          "Una vez tecleada o selecciona la opción, teclee el valor a buscar para que realice el filtrado solo aquellos que contienen el valor tecleado",
+          "Se puede cambiar el valor y realizar otra búsqueda dando clic en la opción borrar [icon-eliminar-filtro] y para mostrar la lista completa de los elementos sin filtros dar clic en la opción eliminar filtro [icon-eliminar-filtro]"
+        ],
+        "tips": [
+          "Puedes dar clic en la opción de borrar para eliminar filtros",
+          "Si deseas cambiar de campo teclea / selecciona filtros",
+          "Puedes cambiar el dato a buscar en cualquier momento"
+        ],
+        "iconos": [
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 20,
+        "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          "ubicación",
+          "localización",
+          "daños",
+          "mapa",
+          "fotos",
+          "imágenes",
+          "location",
+          "maps",
+          "photo",
+          "image"
+        ],
+        "pasos": [
+          "Localiza los campos foto",
+          "Selecciona la fotografía que deseas visualizar",
+          "La fotografía se abrirá en una nueva ventana del explorador"
+        ],
+        "tips": [
+          "Los campos tiene previsualización miniatura",
+          "Si no puedes ver un preview miniatura, no existe la imagen"
+        ],
+        "iconos": [],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 21,
+        "nombre": "¿Por qué no puedo editar / borrar un daño?",
+        "video": "",
+        "tags": [
+          "revisar",
+          "editar",
+          "modificar",
+          "check",
+          "edit",
+          "change",
+          "Cambiar",
+          "borrar",
+          "eliminar",
+          "delete",
+          "suprimir",
+          "no"
+        ],
+        "pasos": [
+          "Revise la fecha límite de captura",
+          "Asegúrase que la fecha actual sea menor a la fecha límite",
+          "Si la fecha actual es mayor a la fecha límite, no podrá editar o borrar la información"
+        ],
+        "tips": [
+          "Podrás encontrar la fecha abajo del nombre del evento",
+          "La línea arriba de la fecha límite debera ser color verde eindicará el avance del tiempo",
+          "Si la fecha límite ya pasó la línea arriba de esta fecha será roja"
+        ],
+        "iconos": [],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 22,
+        "nombre": "¿Porque no puedo imprimir definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Para poder impirmir definitivo deberá estar autorizado el daño",
+          "Si no se ve la opción de autorizar es porque aún se encuentra en la etapa de captura"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icono15"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 23,
+        "nombre": "¿Como autorizar la revisión de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de capturas [icon-capturas] del evento que desea autorizar. Se abrirá la lista de capturas realizadas para dicho evento",
+          "De clic en la opción Autorizar [icon-actualizar]",
+          "Y listo se han autorizado las capturas"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas",
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  
+	  {
+        "id": 24,
+        "nombre": "¿Como imprimir reporte definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de capturas [icon-capturas] del evento que desea autorizar. Se abrirá la lista de capturas realizadas para dicho evento",
+          "De clic en la opción Imprimir Definitivo [icon-imprimir-def] e ingrese los datos de las personas a firmar el documento y de clic en Agregar Firmas [icon-add-firm]",
+          "Y listo se han autorizado las capturas"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas",
+          "icon-imprimir-def"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 25,
+        "nombre": "¿Cómo revisar capturas?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de capturas [icon-capturas] del fénomeno que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+          "Para revisar capturas de otros eventos, regresa a la pantalla anterior dando clic en Regresar [icon-regresar]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas",
+          "icon-regresar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 26,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          "cerrar",
+          "sesión",
+          "close",
+          "salir",
+          "exit"
+        ],
+        "pasos": [
+          "Da clic en Cerrar Sesión [icon-cerrar-sesion]",
+          "Confirma que deseas cerrar sesión dando clic en si [icon-si]",
+		  "Recuerde siempre cerrar sesión al terminar de modificar un daño, ya que si no se cierra sesión se podría bloquear tu usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-cerrar-sesion",
+		  "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      }
+    ],
+    "e_normativo": [
+      {
+        "id": 27,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+           "actualizar",
+          "refrescar",
+          "refresh",
+          "cargar"
+        ],
+        "pasos": [
+          "De clic en la opción Actualizar [icon-actualizar]",
+          "Espere a que el sistema cargue la información",
+          "La lista se ha actualizado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 28,
+        "nombre": "¿Cómo revisar capturas de otros eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de capturas [icon-capturas] del fenómeno que desea revisar",
+		  "Aparecerán todas las capturas realizadas en dicho evento",
+          "Para revisar capturas de otros eventos, regresa a la pantalla anterior dando clic en Regresar [icon-regresar]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas",
+		  "icon-regresar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 29,
+        "nombre": "¿Cómo buscar / filtrar daños?",
+        "video": "",
+        "tags": [
+          "buscar",
+          "filtros",
+          "filtrar",
+          "seleccionar",
+          "filter",
+          "search"
+        ],
+        "pasos": [
+          "Da clic en el botón buscar [icon-buscar] para habilitar las opciones de filtrado y teclee la opción deseada",
+          "Una vez tecleada o selecciona la opción, teclee el valor a buscar para que realice el filtrado solo aquellos que contienen el valor tecleado",
+          "Se puede cambiar el valor y realizar otra búsqueda dando clic en la opción borrar [icon-eliminar-filtro] y para mostrar la lista completa de los elementos sin filtros darclic en la opción eliminar filtro [icon-eliminar-filtro]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          ""
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 30,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          "cerrar",
+          "sesión",
+          "close",
+          "salir",
+          "exit"
+        ],
+        "pasos": [
+          "De clic en cerrar sesión",
+          "Confirme que desea cerrar sesión",
+		  "De clic en si [icon-si]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-si",
+		  "icon-cerrar-sesion"
+        ],
+        "ida": [
+          0
+        ]
+      }
+    ],
+    "u_admin": [
+      {
+        "id": 31,
+        "nombre": "¿Cómo crear un nuevo usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Al dar clic sobre la opción Agregar [icon-nuevo] aparecerán los cuadros de texto para capturar la información del nuevo usuario",
+          "Llenar todos los campos solicitados(Clave de usuario, clave del evento, usuario, contraseña, nombre, apellidos, cargo, correo, telefono, limites de sesiones, tipo, nombre del sector, fecha de expiración)",
+          "Dar clic en el icon guardar [icon-guardar]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-guardar",
+		  "icon-nuevo"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 32,
+        "nombre": "¿Cómo editar un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Seleccione el usuario a modificar y haga clic en editar [icon-editar]",
+          "Revise a modifique los datos necesarios",
+          "Dar clic en guardar [icon-guardar]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-guardar",
+          "icon-editar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 33,
+        "nombre": "¿Cómo borrar un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Seleccione el usuario a borrar y haga clic en BORRAR [icon-borrar]",
+          "Confirme que desea eliminar el usuario dando clic en SI [icon-si]",
+          "Asegurese que el usuario ha sido eliminado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-borrar",
+          "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 34,
+        "nombre": "¿Cómo desbloquear un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Seleccione el usuario a desbloquear y de clic en Desbloquear [icon-desbloquear]",
+          "Confirme que desea desbloquear el usuario dando clic en SI [icon-si]",
+          "Asegurese que el usuario ha sido desbloqueado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-desbloquear",
+          "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 35,
+        "nombre": "¿Cómo actualizar la lista un usuarios?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en la opción Actualizar [icon-actualizar]",
+          "Espere a que el sistema cargue la información",
+          "La lista se ha actualizado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 36,
+        "nombre": "¿Cómo buscar/filtrar usuarios?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el botón buscar [icon-buscar] para habilitar las opciones de filtrado. Una vez habilitado el filtro, teclee la opción deseada",
+          "Tecleada o seleccionada la opción para filtro, teclee el valor a buscar, el SIRED ha realizado una busqueda por todos los elementos de captura, filtrando solo aquellos que contienen el valor de MAGA y la opción Barrios",
+          "Se puede cambiar de valor y realizar otra búsqueda dando clic en la opción borrar [icon-eliminar-filtro] . Para mostrar la información de captura sin filtros, da clic en la opción eliminar filtro [icon-eliminar-filtro]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 37,
+        "nombre": "¿Cómo regresar al menú principal?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en el botón Regresar [icon-regresar]",
+          "Se mostrará el menú Opciones [icon-opciones]",
+          "Elige la opción"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-regresar",
+          "icon-opciones"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 38,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en cerrar sesión [icon-cerrar-sesion]",
+          "Confirme que desea cerrar sesión dando clic en si [icon-si]",
+          "Recuerde siempre cerrar sesión al terminar de modificar, ya que si no se cierra sesión se podría bloquear tu usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-cerrar-sesion",
+          "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      }
+    ],
+    "e_admin": [
+      {
+        "id": 39,
+        "nombre": "¿Cómo editar un evento?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono editar [icon-editar]",
+          "El elemento ha cambiado a modo edición, es posible modificar los campos de fenómeno, nombre y fecha. Haga clic en la opción de guardar [icon-guardar] una vez que ha revisado y editado la información",
+          "Puede cancelar la edición haciendo clic en la opción de cancelar [icon-cancelar]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-editar",
+          "icon-guardar",
+		  "icon-cancelar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 40,
+        "nombre": "¿Cómo borrar un evento?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Seleccione el evento a borrar y de clic en BORRAR [icon-borrar]",
+          "Confirme que desea eliminar el evento dando clic en SI [icon_si]",
+          "Asegúrese que el evento ha sido eliminado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-borrar",
+          "icon-si"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 41,
+        "nombre": "¿Cómo actualizar la lista de eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en la opción de Actualizar [icon-actualizar]",
+          "Espere a que el sistema cargue la información",
+          "La lista se ha actualizado"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 42,
+        "nombre": "¿Cómo buscar/filtrar eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el botón buscar [icon-buscar] para habilitar las opciones de filtrado. Una vez habilitado el filtro, teclee la opción deseada",
+          "Una vez tecleada o seleccionada la opción para filtro, teclee el valor a buscar. El SIRED ha realizado una búsqueda por todos los elementos de captura, filtrando solo aquellos que contienen el valor de Huracán la opción de Mega",
+          "Se puede cambiar de valor y realizar otra búsqueda dando clic en la opción BORRAR [icon-borrar] . Para mostrar la información de captura sin filtros, da clic en la opción eliminar filtro [icon-eliminar-filtro]"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 43,
+        "nombre": "¿Cómo revisar capturas de otros eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de capturas del fenómeno que desea revisar. Aparecerás todas las capturas realizadas en dicho evento",
+          "Para revisar capturas de otros eventos, regresa a la pantalla anterior dando clic en SIRED-CA",
+          "En caso de no haber información de captura del evento y sector seleccionad, el sistema le aviará con una leyenda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 44,
+        "nombre": "¿Cómo regresar al menú principal?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en el botón REGRESAR",
+          "Se mostrará el menú Opciones",
+          "Elige la opción"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+      {
+        "id": 45,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en cerrar sesión",
+          "Confirme que desea cerrar sesión",
+          "Recuerde siempre cerrar sesión al terminar de modificar un daño, ya que si no se cierra sesión se podría bloquear tu usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      }
+    ],
+	"c_admin": [
+	 {
+        "id": 46,
+        "nombre": "¿Cómo actualizar catálogos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic para abrir la herramienta de carga masiva de catálogos",
+          "De clic en la opción ACTUALIAR",
+          "Espere a que el sistema cargue la información"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 47,
+        "nombre": "¿Cómo actualizar catálogos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en cerrar sesión",
+          "Confirme que desea cerrar sesión",
+          "Nos redirige a la pantalla de login después de cerrar la sesión"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-eliminar-filtro"
+        ],
+        "ida": [
+          0
+        ]
+      }
+	],
+	"r_admin": [
+	{
+        "id": 48,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el ícono de Capturas [icon-capturas]",
+		  "De clic en la opción Actualizar [icon-actualizar]",
+		  "Espere a que el sistema cargue la información"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 49,
+        "nombre": "¿Cómo revisar capturas de otros eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el ícono de capturas y seleccione el sector que desea revisar",
+		  "Mostrará todas las capturas realizadas en dicho evento",
+		  "Para revisar capturas de otros eventos, regresa a la pantalla anterior dando clic en atrás"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 50,
+        "nombre": "¿Cómo buscar / filtrar daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en el botón buscar para habilitar las opciones de filtrado y teclee la opción deseada",
+          "Una vez tecleada o selecciona la opción, teclee el valor a buscar para que realice el filtrado solo aquellos que contienen el valor tecleado",
+          "Se puede cambiar el valor y realizar otra búsqueda dando clic en la opción borrar y para mostrar la lista completa de los elementos sin filtros darclic en la opción eliminar filtro"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 51,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Dar clic en Exportar Excel. Espere a que se genere el documento",
+		  "Guarde el archivo en tu equipo"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-buscar",
+          "icon-actualizar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 52,
+        "nombre": "¿Cómo imprimir reporte preliminar?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Dar clic en la opción Imprimir Preliminar [icon-ipreliminar] e ingrese los datos de las personas a firmar el documento y de clic en agregar firmas",
+		  "Dar clic en Generar Documento"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ipreliminar"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 53,
+        "nombre": "¿Cómo imprimir reporte definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Dar clic en la opción Imprimir Definitivo [icon-idefinitivo] e ingrese los datos de las personas a firmar el documento y de clic en agregar firmas",
+		  "Dar clic en Generar Documento"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-idefinitivo"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 54,
+        "nombre": "¿Cómo imprimir exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Dar clic en Exportar Excel y espere a qye se genere el documento",
+		  "Guarde el archivo en tu equipo"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-idefinitivo"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 56,
+        "nombre": "¿Cómo visualizar el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Dar clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Localice los campos foto y seleccione la fotografía que deseas visualizar",
+		  "La fotografía se abrirá en una nueva ventana del explorador"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-idefinitivo"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 58,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en cerrar sesión",
+          "Confirme que desea cerrar sesión",
+          "Recuerde siempre cerrar sesión al terminar de modificar, ya que si no se cierra sesión se podría bloquear tu usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-idefinitivo"
+        ],
+        "ida": [
+          0
+        ]
+      }
+	],
+	"admin":[
+	{
+        "id": 59,
+        "nombre": "¿Cómo crear un nuevo usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Usuarios [icon-iusuarios]",
+          "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-iusuarios"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 60,
+        "nombre": "¿Cómo editar un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Usuarios [icon-iusuarios]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-iusuarios"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 61,
+        "nombre": "¿Cómo borrar un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Usuarios [icon-iusuarios]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-iusuarios"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 62,
+        "nombre": "¿Cómo desbloquear un usuario?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Usuarios [icon-iusuarios]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-iusuarios"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 63,
+        "nombre": "¿Cómo actualizar la lista de usuarios?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Usuarios [icon-iusuarios]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-iusuarios"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 65,
+        "nombre": "¿Cómo crear un nuevo evento?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 66,
+        "nombre": "¿Cómo editar un evento?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 67,
+        "nombre": "¿Cómo borrar un nuevo evento?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 68,
+        "nombre": "¿Cómo actualizar la lista de eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 69,
+        "nombre": "¿Cómo buscar o filtrar eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 70,
+        "nombre": "¿Cómo revisar otras capturas de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 71,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 72,
+        "nombre": "¿Cómo buscar o filtrar daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 74,
+        "nombre": "¿Cómo imprimir el reporte preliminar?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 75,
+        "nombre": "¿Cómo imprimir el reporte definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 76,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 77,
+        "nombre": "¿Cómo ver la ubicación de los daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 78,
+        "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 79,
+        "nombre": "¿Por qué no puedo ver datos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 79,
+        "nombre": "¿Por qué no puedo ver datos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-ieventos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 80,
+        "nombre": "¿Cómo actualizar catálogos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Catálogos [icon-icatalogos]",
+		  "Espere a que cargue la información",
+          "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-icatalogos"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 81,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en cerrar sesión",
+		  "Confirme que desea cerrar sesión",
+		  "Recuerde siempre cerrar sesión al terminar de modificar un daño, ya que si no se cierra sesión se podría bloquear el usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-icatalogos"
+        ],
+        "ida": [
+          0
+        ]
+      }
+	],
+	"r_admin_b": [
+		{
+        "id": 82,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de Capturas [icon-capturas]",
+		  "De clic en la opción Actualizar",
+		  "Espere a que el sistema cargue la información"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 83,
+        "nombre": "¿Cómo revisar capturas de otros eventos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el icono de Capturas [icon-capturas] y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "Para revisar capturas de totros eventos, regresa a la pantalla anterior dando clic en el botón Atrás",
+		  "En caso de no haber información de captura del evento y sector seleccionado, el sistema le aviará con una leyenda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 84,
+        "nombre": "¿Cómo buscar / filtrar daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Da clic en el botón buscar para habilitar las opciones de filtrado y teclee la opción deseada",
+          "Una vez tecleada o selecciona la opción, teclee el valor a buscar para que realice el filtrado solo aquellos que contienen el valor tecleado",
+          "Se puede cambiar el valor y realizar otra búsqueda dando clic en la opción borrar y para mostrar la lista completa de los elementos sin filtros dar clic en la opción eliminar filtro"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 85,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "De clic en Exportar Excel",
+		  "Espera a que se genere el documento"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 86,
+        "nombre": "¿Cómo imprimir reporte preliminar?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el ícono de capturas [icon-capturas] y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "De clic en la opción Imprimir Preliminar e ingrese los datos de las personas a firmar el documento y de clic en Agregar Firmas",
+		  "De clic en Generar Documento"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 87,
+        "nombre": "¿Cómo imprimir reporte definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el ícono de capturas [icon-capturas] y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "De clic en la opción Imprimir Definitivo [icon-idefinitivo] e ingrese los datos de las personas a firmar el documento y de clic en Agregar Firmas",
+		  "De clic en Generar Documento"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	   {
+        "id": 88,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en el ícono de capturas [icon-capturas] y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		  "De clic en Exportar Excel y espere a que se genere el documento",
+		  "Guarde el archivo en tu equipo"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 89,
+        "nombre": "¿Cómo visualizar el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+         "De clic en el ícono de capturas y seleccione el sector que desea revisar. Aparecerán todas las capturas realizadas en dicho evento",
+		 "Localice los campos foto y seleccione la fotografía que deseas visualizar",
+		 "La fotografía se abrirá en una nueva ventana del explorador"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 90,
+        "nombre": "¿Por qué no puedo ver datos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "Puede ser que el sector que desea no ha enviado información ha sido enviada",
+		  "Si el usuario ya envió la información recuerde que debe autorizar el daño",
+		  "Si el usuario ya envió información y se autorizó el daño, revise su conexión a internet"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 91,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en cerrar sesión",
+		  "Confirme que desea cerrar sesión",
+		  "Recuerde siempre cerrar sesión al terminar de modificar un daño, ya que si no se cierra sesión se podría bloquear tu usuario"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      }
+	],
+	"admin_b": [
+	{
+        "id": 92,
+        "nombre": "¿Cómo actualizar la lista de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 93,
+        "nombre": "¿Cómo revisar otras capturas de daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 94,
+        "nombre": "¿Cómo buscar o filtrar daños?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 95,
+        "nombre": "¿Cómo imprimir el reporte preliminar?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 96,
+        "nombre": "¿Cómo imprimir el reporte definitivo?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 97,
+        "nombre": "¿Cómo exportar información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 98,
+        "nombre": "¿Cómo ver la ubicación de los datos información?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 99,
+        "nombre": "¿Cómo visualizo el respaldo fotográfico?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 100,
+        "nombre": "¿Por qué no puedo ver datos?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en Ir a Eventos [icon-ieventos]",
+		  "Espere a que cargue la información",
+		  "Espere a que cargue la ayuda"
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      },
+	  {
+        "id": 101,
+        "nombre": "¿Cómo cerrar sesión?",
+        "video": "",
+        "tags": [
+          ""
+        ],
+        "pasos": [
+          "De clic en cerrar sesión",
+		  "Confirme que desea cerrar sesión",
+		  "Recuerde siempre cerrar sesión al terminar de modificar un daño, ya que si no se "
+        ],
+        "tips": [
+          ""
+        ],
+        "iconos": [
+          "icon-capturas"
+        ],
+        "ida": [
+          0
+        ]
+      }
+	]
+  }
+}

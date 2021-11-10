@@ -1,0 +1,37 @@
+{
+  "version": "17",
+  "pais": "Honduras",
+  "data": {
+    "vApp": "0_2_7",
+    "url": "https://sired.site/Honduras",
+    "urlLogo": "/images/Logo/",
+    "urlLogosSectores": "/assets/images/Logo/Sectores/",
+    "urlPlantillas": "/assets/config/json/plantillas/HND/",
+    "urlJsonConfig": "/assets/config/json/app/HND.json",
+    "urlDescargable": "D:\\Inetpub\\vhosts\\sired.site\\httpdocs\\Honduras\\assets\\Descargable\\",
+	"urlDescargableApp": "/assets/Descargable/{0}/{1}/{2}",
+    "urlAPI": "https://sired.site/Honduras/API/_3",
+    "moneda": "Lempira",
+    "simbolo": "L.",
+    "sectores": [
+      {
+        "id": 2,
+        "nombre": "Comision Nacional de Vivienda y Asentamientos Humanos",
+        "icon": "convivienda_app.jpg",
+        "abrev": "C O N V I V I E N D A",
+        "isEnable": true,
+        "entrevista": true,
+        "label_entrevista": "Información del afectado"
+      },
+	   {
+        "id": 4,
+        "nombre": "Secretaría de Educación",
+        "icon": "se_app.png",
+        "abrev": "S E",
+        "isEnable": true,
+        "entrevista": false,
+        "label_entrevista": "Información del afectado"
+      }
+    ]
+  }
+}

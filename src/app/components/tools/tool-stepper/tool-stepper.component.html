@@ -1,0 +1,48 @@
+<!-- [# version: 6.4.3 #] -->
+
+<div class="row" style="width: 300px;" *ngFor="let item of sDatos; let idx = index">
+  <div class="col-6">
+    <label style="font-size: small" class="control-label"
+      >{{ sDatosLbl[idx] }}:</label
+    >
+  </div>
+  <div class="col">
+    <div class="input-group mb-3">
+      <button
+        id="btn_stepper_menos_{{ idx }}"
+        type="button"
+        class="btn btn-outline-danger btn-circle btn-sm"
+        (click)="SetStepper(true, idx)"
+      >
+        -
+      </button>
+      <input
+        type="text"
+        aria-describedby=""
+        disabled="true"
+        style="height: 30px"
+        class="form-control text-center"
+        [(ngModel)]="sDatos[idx]"
+      />
+      <button
+        type="button"
+        style="margin: 2px"
+        class="btn btn-outline-primary btn-circle btn-sm"
+        (click)="SetStepper(false, idx)"
+      >
+        +
+      </button>
+    </div>
+  </div>
+  <!-- <div class="col">
+    <div class="input-group">
+      <span style="margin: 2px;" class="input-group-btn">
+        
+      </span>
+      
+      <span class="input-group-btn">
+        
+      </span>
+    </div>
+  </div> -->
+</div>

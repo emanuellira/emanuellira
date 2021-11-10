@@ -1,0 +1,10 @@
+<!-- [# version: 6.0.0 #] -->
+<button
+  type="button"
+  class="btn btn-circle btn-xl"
+  [ngClass]="{'btn-dark': Btn==='1','btn-primary':Btn==='2','btn-danger':Btn==='3'}"
+  (click)="View()"
+>
+  <i [ngClass]="Icon"></i>
+</button>
+<div><strong>{{ Label | uppercase }}</strong></div>

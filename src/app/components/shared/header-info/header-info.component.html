@@ -1,0 +1,19 @@
+<!-- [# version: 6.0.6 #] -->
+<div class="cardH">
+  <h4>
+    {{ evento.Fenomeno }} {{ evento.Nombre }}
+    <label style="font-size: 12px">
+      <label><strong> | {{this.language.usuario}} </strong>{{ usuario.NomUsuario }} </label>
+    </label>
+    <label *ngIf="usuario.NomSector !== 'null'" style="font-size: 12px">
+      <strong>&nbsp;| {{this.language.sector}} </strong>{{ usuario.NomSector }}
+    </label>
+  </h4>
+  <div id="idavance" style="background: red; width: 100%; height: 1px"></div>
+  <label style="font-size: 9px" *ngIf="show_expira"
+    >{{this.language.fecha_limite}} {{ usuario.FechaExpira | date: "dd-MMM-yyyy" }}</label
+  >
+  <br />
+  <label style="font-size: 9px">{{ label }}: {{ count }}</label>
+  
+</div>

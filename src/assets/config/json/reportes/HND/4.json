@@ -1,0 +1,135 @@
+{
+  "version": "1.0.4",
+  "reporte": {
+    "excell": [
+      { "campo": "Fenomeno", "alias": "Fenómeno" },
+      { "campo": "IDActivo", "alias": "Clave" },
+      { "campo": "IDAccion", "alias": "Clave daño" },
+      { "campo": "Latitud", "alias": "Latitud" },
+      { "campo": "Longitud", "alias": "Longitud" },
+      { "campo": "IDDIVADMIN2", "alias": "Código Departamento" },
+      { "campo": "DIVADMIN2", "alias": "Departamento" },
+      { "campo": "IDDIVADMIN3", "alias": "Código Municipio" },
+      { "campo": "DIVADMIN3", "alias": "Municipio" },
+      { "campo": "Localidad", "alias": "Aldea" },
+      { "campo": "Domicilio", "alias": "Dirección completa" },
+      { "campo": "CPS", "alias": "Código SACE" },
+      { "campo": "InmuebleDaniado", "alias": "Nombre del centro educativo" },
+      {
+        "campo": "AccesoInm",
+        "alias": "Acceso al centro educativo con vehículo"
+      },
+      {
+        "campo": "TipoAdmin",
+        "alias": "Nombre de quién está la propiedad donde funciona el centro educativo"
+      },
+      { "campo": "Nivel", "alias": "Nivel del centro educativo" },
+
+      { "campo": "CES1Activo", "alias": "Lugar donde se imparten clases" },
+      {
+        "campo": "CES2Activo",
+        "alias": "Matrícula|Maestros|Personal administrativo",
+        "replace": "",
+        "tipo": "stepper"
+      },
+      {
+        "campo": "PoblacionAfectada",
+        "alias": "Total de población afectada"
+      },
+      { "campo": "ZonaAfectada", "alias": "No. de Aulas del Centro Educativo" },
+      {
+        "campo": "FechaSiembra",
+        "alias": "Año estimado de construcción del centro educativo"
+      },
+      {
+        "campo": "Clave",
+        "alias": "Clave de la tipología del Centro Educativo"
+      },
+      {
+        "campo": "InfraDa",
+        "alias": "Descripción de la tipología del Centro Educativo"
+      },
+      { "campo": "UnidadMedida", "alias": "Unidad de medida" },
+      { "campo": "TipoZonaAfectada", "alias": "Tipo de ambiente evaluado" },
+      { "campo": "AreaTerreno", "alias": "Área del terreno(m2)" },
+      {
+        "campo": "AguaPotable",
+        "alias": "¿Cuenta con abastecimiento de agua?",
+        "replace": "0:No|1:Si"
+      },
+      {
+        "campo": "Drenaje",
+        "alias": "¿Cuenta con sistema de evacuación de aguas negras?",
+        "replace": "0:No|1:Si"
+      },
+      {
+        "campo": "Energia",
+        "alias": "¿Cuenta con energía eléctrica?",
+        "replace": "0:No|1:Si"
+      },
+      {
+        "campo": "DrenajePluvial",
+        "alias": "¿Cuenta con Internet?",
+        "replace": "0:No|1:Si"
+      },
+      {
+        "campo": "TrenAseo",
+        "alias": "¿Esta siendo este espacio utilizado para el fin que fue creado?",
+        "replace": "0:No|1:Si"
+      },
+      { "campo": "Foto1", "alias": "Foto1" },
+      { "campo": "Foto2", "alias": "Foto2" },
+      { "campo": "Foto3", "alias": "Foto3" },
+      { "campo": "Foto4", "alias": "Foto4" },
+      { "campo": "Responsable", "alias": "Institución responsable" },
+      { "campo": "TipoDanio", "alias": "Tipo de Necesidad" },
+      { "campo": "CES1", "alias": "Tipo de Daño" },
+      { "campo": "Material", "alias": "Material predominante" },
+      { "campo": "Diagnostico", "alias": "Descripción del daño" },
+      { "campo": "Restauracion", "alias": "Acciones de Restauración" },
+      {
+        "campo": "CES2",
+        "alias": "Nivel de daño",
+        "replace": "0.15:Menor|0.3:Leve|0.5:Moderado|0.75:Severo|1:Colapso"
+      },
+      {
+        "campo": "Unidades",
+        "alias": "Área de construcción afectada (M²)"
+      },
+      { "campo": "CostoUnitario", "alias": "Costo por M²" },
+      { "campo": "CostoTotalObra", "alias": "Costo Total del Daño" },
+      { "campo": "CostoAdmin", "alias": "Costos Administrativos" },
+      { "campo": "CostoTotalR", "alias": "Costo Total" },
+      { "campo": "Observaciones", "alias": "Observaciones" }
+    ],
+    "titulo1": "*Informe __predef__ de Daños del Sector Educativo*",
+    "titulo2": "*__evento__*",
+    "titulo3": "__today__",
+    "textos": [
+      {
+        "titulo": "header",
+        "texto": ""
+      },
+      {
+        "titulo": "footer",
+        "texto": ""
+      },
+      {
+        "titulo": "",
+        "texto": "En el territorio Nacional los departamentos de *__deptos__* reportan daños a *__losses__*. Se estima un área dañada de *__area__ M²*, y *__familias__* familias afectadas. La estimación de la pérdida económica es de *L __montototal__*"
+      },
+      {
+        "titulo": "*__depto__*",
+        "texto": "Reporta daños de *__losses__* en el municipio de *__mpios__* se estima un área dañada de *__area__ M²*, afectando en total a *__familias__* familias. La estimación de la pérdida económica es de L *__montototal__*"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños*",
+        "texto": "Departamentos|Suma de la Población Afectada (Total)|Suma de Estimación de área dañada (M²)|Suma de Estimación de Pérdida en Lempiras"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños por Municipio*",
+        "texto": "Departamentos|Suma de la Población Afectada (Total)|Suma de Estimación de área dañada (M²)|Suma de Estimación de Pérdida en Lempiras"
+      }
+    ]
+  }
+}

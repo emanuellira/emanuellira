@@ -1,0 +1,30 @@
+<!-- [# version: 6.3.2 #] -->
+<div class="text-center height-container p-5">
+  <app-navbar
+    *ngIf="menu_items.length > 0"
+    [menus_items]="menu_items"
+    [modulo]="modulo"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+  >
+  </app-navbar>
+  <!-- <div style="overflow: auto; max-height: 100%">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-4">
+          <app-tool-uploadcatalogo *ngFor="let item of items" [item]="item">
+          </app-tool-uploadcatalogo>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div style="overflow: auto; max-height: 100%; max-width: 80%; margin: 0 151px;">
+    <div class="row justify-content-md-center">
+       <div class="col-6" *ngFor="let item of items">
+          <app-tool-uploadcatalogo [item]="item" [lst_cat] = "lst_cat" >
+          </app-tool-uploadcatalogo>
+       </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+{
+  "version": "7.5.5",
+  "config": {
+    "Uri3": "https://sired.site/Panama/API/_3",
+    "sired_api_key": "142b9630-c9e6-43fe-a723-0ec076ce5436",
+    "pais_abrv": "PAN",
+    "plantillas": "https://sired.site/Panama/assets/config/json",
+    "imagenes": "https://sired.site/Panama/assets",
+    "pais_reporte": "sired.site/Panama",
+    "ssl": true,
+    "culture": "es-PA|,|.",
+    "sim_moneda": "B"
+  }
+}

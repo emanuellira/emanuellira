@@ -1,0 +1,13 @@
+<!-- [# version: 6.4.10 #] -->
+<div *ngIf="show" class="row justify-content-md-center">
+  
+  <div class="col-2 text-center oval">
+    <strong>{{ idx + 1 }}</strong>
+  </div>
+  <div [innerHTML]="newText | safeHTML" class="col-10" #txtPasoAyuda></div>
+</div>
+<div style="height: 5px;" *ngIf="tip" class="col-9  row">
+  <label style="font-size: 10px;" class="text-primary col-10">
+   <strong>Tip: </strong> {{tip}}
+  </label> 
+</div>

@@ -1,0 +1,102 @@
+<!-- [# version: 7.5.13 #] -->
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light fixed-top md-card"
+  style="height: 47px"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        [src]="'sarc.png' | domseguro: 'images'"
+        alt=""
+        width="30"
+        height="24"
+        class="d-inline-block align-top"
+      />
+      SIRED-CA
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div *ngFor="let item of menus_items">
+          <li
+            *ngIf="item.visible"
+            class="nav-item icon nav-link"
+            [ngClass]="{ 'text-danger': item.btn === 'text-danger' }"
+            (click)="Item_Click(item.label)"
+          >
+            <i [ngClass]="item.icon"> </i>
+            {{ item.label }}
+          </li>
+        </div>
+      </ul>
+
+      <form [formGroup]="formSearch" class="d-flex center-nav">
+        <div class="dropdown">
+          <li
+            class="nav-item icon nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            id="mnuHelp"
+            aria-expanded="false"
+          >
+            <i class="icon-question"></i>
+          </li>
+          <ul class="dropdown-menu" aria-labelledby="mnuHelp">
+            <li *ngFor="let item_ayuda of ayuda_items">
+              <a
+                (click)="OnSelectAyuda(true, item_ayuda, true)"
+                class="icon dropdown-item"
+                >{{ item_ayuda.nombre }}</a
+              >
+            </li>
+          </ul>
+        </div>
+        <input
+          *ngIf="items.length > 0"
+          (keyup.enter)="Buscar()"
+          formControlName="txtSearch"
+          class="form-control me-2"
+          type="text"
+          placeholder="Buscar"
+          aria-label="Search"
+        />
+        <li
+          *ngIf="items.length > 0"
+          (click)="Buscar()"
+          class="nav-item icon nav-link text-success"
+        >
+          <i class="icon-search"></i>
+        </li>
+        <li
+          *ngIf="buscando"
+          (click)="Borrar_Busqueda()"
+          class="nav-item icon nav-link text-danger"
+        >
+          <i class="icon-close"></i>
+        </li>
+      </form>
+
+      <small class="text-muted fs-7 text-wrap center-nav" style="width: 4rem"
+        >{{ this.language.version }}: {{ version }}</small
+      >
+    </div>
+  </div>
+</nav>
+<app-tool-ayuda
+  (OnSelectAyuda)="OnSelectAyuda($event, ayuda_item, false)"
+  [item_ayuda]="ayuda_item"
+  [modulo]="modulo"
+  [showVideo]="showVideo"
+  [video]="video"
+  *ngIf="showAyuda"
+>
+</app-tool-ayuda>

@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SIRED_HNDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SIRED_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccionDef" EntityType="SIRED_HNDModel.AccionDef" />
+    <EntitySet Name="AccionPre" EntityType="SIRED_HNDModel.AccionPre" />
+    <EntitySet Name="ActivoDef" EntityType="SIRED_HNDModel.ActivoDef" />
+    <EntitySet Name="ActivoPre" EntityType="SIRED_HNDModel.ActivoPre" />
+    <EntitySet Name="DIV_ADMIN2" EntityType="SIRED_HNDModel.DIV_ADMIN2" />
+    <EntitySet Name="DIV_ADMIN3" EntityType="SIRED_HNDModel.DIV_ADMIN3" />
+    <EntitySet Name="Entrevista" EntityType="SIRED_HNDModel.Entrevista" />
+    <EntitySet Name="Eventos" EntityType="SIRED_HNDModel.Eventos" />
+    <EntitySet Name="Usuarios" EntityType="SIRED_HNDModel.Usuarios" />
+    <EntitySet Name="Catalogos" EntityType="SIRED_HNDModel.Catalogos" />
+    <EntitySet Name="VersionCatalog" EntityType="SIRED_HNDModel.VersionCatalog" />
+    <EntitySet Name="Usuarios_View" EntityType="SIRED_HNDModel.Usuarios_View" />
+    <AssociationSet Name="FK_AccionPre_ActivoPre" Association="SIRED_HNDModel.FK_AccionPre_ActivoPre">
+      <End Role="ActivoPre" EntitySet="ActivoPre" />
+      <End Role="AccionPre" EntitySet="AccionPre" />
+    </AssociationSet>
+    <EntitySet Name="Diagnosticos_Pre" EntityType="SIRED_HNDModel.Diagnosticos_Pre" />
+    <EntitySet Name="Diagnosticos_Def" EntityType="SIRED_HNDModel.Diagnosticos_Def" />
+    <EntitySet Name="Sectores" EntityType="SIRED_HNDModel.Sectores" />
+  </EntityContainer>
+  <EntityType Name="AccionDef">
+    <Key>
+      <PropertyRef Name="IDAccion" />
+    </Key>
+    <Property Name="IDAccion" Type="Int32" Nullable="false" />
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Unidades" Type="Double" Nullable="false" />
+    <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+    <Property Name="Eliminado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccionPre">
+    <Key>
+      <PropertyRef Name="IDAccion" />
+    </Key>
+    <Property Name="IDAccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Unidades" Type="Double" Nullable="false" />
+    <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+    <Property Name="Eliminado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ActivoPre" Relationship="SIRED_HNDModel.FK_AccionPre_ActivoPre" FromRole="AccionPre" ToRole="ActivoPre" />
+  </EntityType>
+  <EntityType Name="ActivoDef">
+    <Key>
+      <PropertyRef Name="IDActivo" />
+    </Key>
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitud" Type="Double" Nullable="false" />
+    <Property Name="Latitud" Type="Double" Nullable="false" />
+    <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDSector" Type="Int32" Nullable="false" />
+    <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ministerio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+    <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InmuebleDaniado" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Eliminado" Type="Int32" Nullable="false" />
+    <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+    <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+    <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+    <Property Name="Drenaje" Type="Int32" Nullable="false" />
+    <Property Name="Energia" Type="Int32" Nullable="false" />
+    <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+    <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+    <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+    <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivoPre">
+    <Key>
+      <PropertyRef Name="IDActivo" />
+    </Key>
+    <Property Name="IDActivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitud" Type="Double" Nullable="false" />
+    <Property Name="Latitud" Type="Double" Nullable="false" />
+    <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDSector" Type="Int32" Nullable="false" />
+    <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ministerio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+    <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InmuebleDaniado" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Eliminado" Type="Int32" Nullable="false" />
+    <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+    <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+    <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+    <Property Name="Drenaje" Type="Int32" Nullable="false" />
+    <Property Name="Energia" Type="Int32" Nullable="false" />
+    <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+    <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+    <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+    <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AccionPre" Relationship="SIRED_HNDModel.FK_AccionPre_ActivoPre" FromRole="ActivoPre" ToRole="AccionPre" />
+  </EntityType>
+  <EntityType Name="DIV_ADMIN2">
+    <Key>
+      <PropertyRef Name="OBJECTID" />
+    </Key>
+    <Property Name="OBJECTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Shape" Type="Geometry" />
+    <Property Name="NOMBRE" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DIVADMIN1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CVE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DIV_ADMIN3">
+    <Key>
+      <PropertyRef Name="OBJECTID" />
+    </Key>
+    <Property Name="OBJECTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Shape" Type="Geometry" />
+    <Property Name="NOMBRE" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="DIVADMIN1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DIVADMIN3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CVE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Entrevista">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoDoc" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Identificacion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Genero" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Edo_Civil" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="F_Nacimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Idioma" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoProd" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre_2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono_2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email_2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Eventos">
+    <Key>
+      <PropertyRef Name="IDEvento" />
+    </Key>
+    <Property Name="IDEvento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaEvento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Eliminado" Type="Int32" />
+    <Property Name="Autoriza" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="IDPerfil" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NomUsuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Key1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sesiones" Type="Int32" Nullable="false" />
+    <Property Name="LimiteSesiones" Type="Int32" Nullable="false" />
+    <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Bloqueo" Type="Int32" />
+    <Property Name="Hit" Type="Int32" />
+    <Property Name="Sector" Type="Int32" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDProvincia" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalogos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Grupo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Valor" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sectores" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VersionCatalog">
+    <Key>
+      <PropertyRef Name="VersionCatalogos" />
+    </Key>
+    <Property Name="VersionCatalogos" Type="Int32" Nullable="false" />
+    <Property Name="Fecha_Actualizacion" Type="DateTime" Precision="3" />
+    <Property Name="Sectores" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Usuarios_View">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="NomUsuario" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Apellidos" />
+      <PropertyRef Name="IDEvento" />
+      <PropertyRef Name="Sesiones" />
+      <PropertyRef Name="LimiteSesiones" />
+      <PropertyRef Name="IDPerfil" />
+      <PropertyRef Name="Nivel" />
+      <PropertyRef Name="Descripcion" />
+      <PropertyRef Name="Tipo" />
+      <PropertyRef Name="FechaCreado" />
+      <PropertyRef Name="FechaModificado" />
+      <PropertyRef Name="FechaExpira" />
+      <PropertyRef Name="IDProvincia" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="NomUsuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Key1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sesiones" Type="Int32" Nullable="false" />
+    <Property Name="LimiteSesiones" Type="Int32" Nullable="false" />
+    <Property Name="IDPerfil" Type="Int32" Nullable="false" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Sector" Type="Int32" />
+    <Property Name="NomSector" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IDProvincia" Type="Int32" Nullable="false" />
+    <Property Name="Provincia" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_AccionPre_ActivoPre">
+    <End Type="SIRED_HNDModel.ActivoPre" Role="ActivoPre" Multiplicity="1" />
+    <End Type="SIRED_HNDModel.AccionPre" Role="AccionPre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivoPre">
+        <PropertyRef Name="IDActivo" />
+      </Principal>
+      <Dependent Role="AccionPre">
+        <PropertyRef Name="IDActivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Diagnosticos_Pre">
+    <Key>
+      <PropertyRef Name="IDActivo" />
+      <PropertyRef Name="IDAccion" />
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDDIVADMIN1" />
+      <PropertyRef Name="DIVADMIN1" />
+      <PropertyRef Name="IDDIVADMIN3" />
+      <PropertyRef Name="DIVADMIN3" />
+      <PropertyRef Name="IDDIVADMIN2" />
+      <PropertyRef Name="Reunion" />
+      <PropertyRef Name="Domicilio" />
+      <PropertyRef Name="Longitud" />
+      <PropertyRef Name="Latitud" />
+      <PropertyRef Name="Foto1" />
+      <PropertyRef Name="Foto2" />
+      <PropertyRef Name="Foto3" />
+      <PropertyRef Name="Foto4" />
+      <PropertyRef Name="IDSector" />
+      <PropertyRef Name="EstatusAseguramiento" />
+      <PropertyRef Name="ApoyosAnteriores" />
+      <PropertyRef Name="PoblacionAfectada" />
+      <PropertyRef Name="UnidadMedida" />
+      <PropertyRef Name="ZonaAfectada" />
+      <PropertyRef Name="TipoZonaAfectada" />
+      <PropertyRef Name="Responsable" />
+      <PropertyRef Name="Titular" />
+      <PropertyRef Name="Cargo" />
+      <PropertyRef Name="IDEvento" />
+      <PropertyRef Name="FechaCreacion" />
+      <PropertyRef Name="FechaModificacion" />
+      <PropertyRef Name="Diagnostico" />
+      <PropertyRef Name="Restauracion" />
+      <PropertyRef Name="TipoDanio" />
+      <PropertyRef Name="CostoUnitario" />
+      <PropertyRef Name="CostoTotalObra" />
+      <PropertyRef Name="NomSector" />
+      <PropertyRef Name="AbrevMin" />
+      <PropertyRef Name="CostoAdmin" />
+      <PropertyRef Name="CostoTotalR" />
+      <PropertyRef Name="Fenomeno" />
+      <PropertyRef Name="FechaExpira" />
+      <PropertyRef Name="FContactoMail" />
+      <PropertyRef Name="CES1Activo" />
+      <PropertyRef Name="CES2Activo" />
+      <PropertyRef Name="Localidad" />
+      <PropertyRef Name="TipoAdmin" />
+      <PropertyRef Name="Nivel" />
+      <PropertyRef Name="AreaTerreno" />
+      <PropertyRef Name="AguaPotable" />
+      <PropertyRef Name="Drenaje" />
+      <PropertyRef Name="Energia" />
+      <PropertyRef Name="AccesoInm" />
+      <PropertyRef Name="AreaConstruccion" />
+      <PropertyRef Name="DrenajePluvial" />
+      <PropertyRef Name="TrenAseo" />
+      <PropertyRef Name="Unidades" />
+    </Key>
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="IDAccion" Type="Int32" Nullable="false" />
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitud" Type="Double" Nullable="false" />
+    <Property Name="Latitud" Type="Double" Nullable="false" />
+    <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDSector" Type="Int32" Nullable="false" />
+    <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+    <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InmuebleDaniado" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+    <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+    <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+    <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+    <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+    <Property Name="Drenaje" Type="Int32" Nullable="false" />
+    <Property Name="Energia" Type="Int32" Nullable="false" />
+    <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+    <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+    <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+    <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+    <Property Name="Unidades" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Diagnosticos_Def">
+    <Key>
+      <PropertyRef Name="IDActivo" />
+      <PropertyRef Name="IDAccion" />
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDDIVADMIN1" />
+      <PropertyRef Name="DIVADMIN1" />
+      <PropertyRef Name="IDDIVADMIN3" />
+      <PropertyRef Name="DIVADMIN3" />
+      <PropertyRef Name="IDDIVADMIN2" />
+      <PropertyRef Name="Reunion" />
+      <PropertyRef Name="Domicilio" />
+      <PropertyRef Name="Longitud" />
+      <PropertyRef Name="Latitud" />
+      <PropertyRef Name="Foto1" />
+      <PropertyRef Name="Foto2" />
+      <PropertyRef Name="Foto3" />
+      <PropertyRef Name="Foto4" />
+      <PropertyRef Name="IDSector" />
+      <PropertyRef Name="EstatusAseguramiento" />
+      <PropertyRef Name="ApoyosAnteriores" />
+      <PropertyRef Name="PoblacionAfectada" />
+      <PropertyRef Name="UnidadMedida" />
+      <PropertyRef Name="ZonaAfectada" />
+      <PropertyRef Name="TipoZonaAfectada" />
+      <PropertyRef Name="InmuebleDaniado" />
+      <PropertyRef Name="Responsable" />
+      <PropertyRef Name="Titular" />
+      <PropertyRef Name="Cargo" />
+      <PropertyRef Name="IDEvento" />
+      <PropertyRef Name="FechaCreacion" />
+      <PropertyRef Name="FechaModificacion" />
+      <PropertyRef Name="Diagnostico" />
+      <PropertyRef Name="Restauracion" />
+      <PropertyRef Name="TipoDanio" />
+      <PropertyRef Name="CostoUnitario" />
+      <PropertyRef Name="CostoTotalObra" />
+      <PropertyRef Name="Unidades" />
+      <PropertyRef Name="NomSector" />
+      <PropertyRef Name="AbrevMin" />
+      <PropertyRef Name="CostoAdmin" />
+      <PropertyRef Name="CostoTotalR" />
+      <PropertyRef Name="Fenomeno" />
+      <PropertyRef Name="FechaExpira" />
+      <PropertyRef Name="FContactoMail" />
+      <PropertyRef Name="CES1Activo" />
+      <PropertyRef Name="CES2Activo" />
+      <PropertyRef Name="Localidad" />
+      <PropertyRef Name="TipoAdmin" />
+      <PropertyRef Name="Nivel" />
+      <PropertyRef Name="AreaTerreno" />
+      <PropertyRef Name="AguaPotable" />
+      <PropertyRef Name="Drenaje" />
+      <PropertyRef Name="Energia" />
+      <PropertyRef Name="AccesoInm" />
+      <PropertyRef Name="AreaConstruccion" />
+      <PropertyRef Name="DrenajePluvial" />
+      <PropertyRef Name="TrenAseo" />
+    </Key>
+    <Property Name="IDActivo" Type="Int32" Nullable="false" />
+    <Property Name="IDAccion" Type="Int32" Nullable="false" />
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+    <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitud" Type="Double" Nullable="false" />
+    <Property Name="Latitud" Type="Double" Nullable="false" />
+    <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDSector" Type="Int32" Nullable="false" />
+    <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+    <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InmuebleDaniado" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IDEvento" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+    <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Unidades" Type="Double" Nullable="false" />
+    <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+    <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+    <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+    <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+    <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+    <Property Name="Drenaje" Type="Int32" Nullable="false" />
+    <Property Name="Energia" Type="Int32" Nullable="false" />
+    <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+    <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+    <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+    <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sectores">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClaveSector" Type="Int32" Nullable="false" />
+    <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Tipo" Type="Int32" />
+    <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Activo" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

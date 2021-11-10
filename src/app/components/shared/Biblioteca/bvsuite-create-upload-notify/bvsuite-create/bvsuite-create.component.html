@@ -1,0 +1,90 @@
+ <!-- [# version: 6.3.5 #] -->
+<form
+  *ngIf="Mostrar_Firmas"
+  appFormError
+  [isFormGroup]="formFirma"
+  [formGroup]="formFirma"
+  (ngSubmit)="CrearFirma()"
+>
+  <div>
+    <!-- Nombre -->
+    <div class="row">
+      <div class="col-2">
+        <label>{{this.language.nombre}}</label>
+      </div>
+      <div class="col">
+        <input
+          appFormError
+          name="txtFirmasNombre"
+          formControlName="txtFirmasNombre"
+          [Errors]="txtFirmasNombre.errors"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <!-- Cargo -->
+    <div class="row mt-1">
+      <div class="col-2">
+        <label class="">{{this.language.cargo}}</label>
+      </div>
+      <div class="col">
+        <input
+          formControlName="txtFirmasCargo"
+          appFormError
+          name="txtFirmasCargo"
+          [Errors]="txtFirmasCargo.errors"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <!-- Botón: Agregar firma-->
+    <div class="row mt-1">
+      <div class="col text-end">
+        <button
+          class="btn btn-outline-primary btn-block ng-binding"
+          type="submit"
+        >
+          {{this.language.btn_agregar_firma}}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firmas -->
+  <br />
+  <div>
+    <div class="row">
+      <div class="col-4">
+        <label for="">{{this.language.firmas}}</label>
+      </div>
+      <div class="col-2">
+        <button
+          type="button"
+          class="btn-close-custom"
+          aria-label="Close"
+          (click)="BorrarFirma()"
+        >
+          <i class="icon-bin2 text-danger"></i>
+        </button>
+      </div>
+    </div>
+    <div class="col mt-1">
+      <select class="form-control" size="5" formControlName="cboFirmasList">
+        <option *ngFor="let item of firmas">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<!-- Botón: Generar documento -->
+<!-- data-bs-dismiss="modal" -->
+<div class="row mt-1">
+  <div class="col text-end">
+    <button class="btn btn-primary btn-block" (click)="GenerarDocumento()">
+      {{this.language.generar_documento}}
+    </button>
+  </div>
+</div>

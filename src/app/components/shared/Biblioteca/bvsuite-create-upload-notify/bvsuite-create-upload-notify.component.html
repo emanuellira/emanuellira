@@ -1,0 +1,68 @@
+<!-- [# version: 6.3.5 #] -->
+<div
+  class="modal fade"
+  id="biblioteca_virtual_suite"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li
+              [ngClass]="{ activeBvSuite: es_firma }"
+              class="breadcrumb-item"
+              (click)="app = 0"
+            >
+            {{ this.language.generar }}
+            </li>
+            <!-- <li
+              [ngClass]="{ activeBvSuite: es_upload }"
+              class="breadcrumb-item"
+              (click)="app = 1"
+            >
+              Upload
+            </li>
+            <li
+              [ngClass]="{ activeBvSuite: es_notificar }"
+              class="breadcrumb-item"
+              (click)="app = 2"
+            >
+              Notificar
+            </li> -->
+          </ol>
+        </nav>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- [formGroup]="formFirma" #f="ngForm" -->
+        <div *ngIf="es_firma">
+          <app-bvsuite-create
+            [tipo]="tipo"
+            [es_preliminar]="es_preliminar"
+          ></app-bvsuite-create>
+        </div>
+
+        <div *ngIf="es_upload">
+          <!-- <app-bvsuite-upload></app-bvsuite-upload> -->
+        </div>
+
+        <div *ngIf="es_notificar">
+          <!-- <app-bvsuite-notify></app-bvsuite-notify> -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          {{this.language.cerrar}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

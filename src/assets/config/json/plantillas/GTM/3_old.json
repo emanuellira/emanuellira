@@ -1,0 +1,175 @@
+{
+    "sector": {
+        "nombre": "Salud",
+        "clave": 3
+    },
+    "version": {
+        "release": 0,
+        "candidate": 0,
+        "test": 3,
+        "debug": 5
+    },
+    "data": [
+        {
+            "campo": "IDActivo",
+            "alias": "Clave",
+            "tipo": "label",
+            "isloading": "icon-spinner10"
+        },
+        {
+            "campo": "IDAccion",
+            "alias": "Clave Daño",
+            "tipo": "label"
+        },
+        {
+            "campo": "Longitud",
+            "alias": "Longitud",
+            "tipo": "label"
+        },
+        {
+            "campo": "Latitud",
+            "alias": "Latitud",
+            "tipo": "label"
+        },
+        {
+            "campo": "Provincia",
+            "alias": "Provincia",
+            "tipo": "label",
+            "required": ""
+        },
+        {
+            "campo": "Municipio",
+            "alias": "Municipio",
+            "tipo": "label",
+            "required": ""
+        },
+        {
+            "campo": "Domicilio",
+            "alias": "Domicilio",
+            "tipo": "textArea"
+        },
+        {
+            "campo": "Clave",
+            "alias": "Clave del Inmueble",
+            "tipo": "lista",
+            "lista": "Clave",
+            "required": ""
+        },
+        {
+            "campo": "InfraDa",
+            "alias": "Infraestructura Dañada",
+            "tipo": "label"
+        },
+        {
+            "campo": "PoblacionAfectada",
+            "alias": "Población Afectada",
+            "tipo": "text",
+            "required": ">",
+            "formato": "number"
+        },
+        {
+            "campo": "UnidadMedida",
+            "alias": "Unidad de medida",
+            "tipo": "lista",
+            "lista": "UnidadM"
+        },
+        {
+            "campo": "ZonaAfectada",
+            "alias": "Zona Afectada",
+            "tipo": "lista",
+            "lista": "Geometria"
+        },
+        {
+            "campo": "Foto1",
+            "tipo": "imagen",
+            "alias": "Foto 1"
+        },
+        {
+            "campo": "Foto2",
+            "tipo": "imagen",
+            "alias": "Foto 2"
+        },
+        {
+            "campo": "Foto3",
+            "tipo": "imagen",
+            "alias": "Foto 3"
+        },
+        {
+            "campo": "Foto4",
+            "tipo": "imagen",
+            "alias": "Foto 4"
+        },
+        {
+            "campo": "TipoDanio",
+            "alias": "Tipo de Necesidad",
+            "tipo": "lista",
+            "lista": "TipoD"
+        },
+        {
+            "campo": "Material",
+            "alias": "Material",
+            "tipo": "lista",
+            "lista": "Material"
+        },
+        {
+            "campo": "Responsable",
+            "alias": "Responsable",
+            "tipo": "text",
+            "required": ""
+        },
+        {
+            "campo": "Diagnostico",
+            "alias": "Descripción del daño",
+            "tipo": "textArea",
+            "required": ""
+        },
+        {
+            "campo": "Restauracion",
+            "alias": "Acciones de Restauración",
+            "tipo": "textArea",
+            "required": ""
+        },
+        {
+            "campo": "Unidades",
+            "alias": "Unidades",
+            "tipo": "text",
+            "formato": "number",
+            "required": ">"
+        },
+        {
+            "campo": "CostoUnitario",
+            "alias": "Costo Unitario",
+            "tipo": "text",
+            "formato": "money",
+            "required": ">",
+            "editable": "false"
+        },
+        {
+            "campo": "CostoTotalObra",
+            "alias": "Costo Total del Daño",
+            "tipo": "text",
+            "formato": "money",
+            "required": ">"
+        },
+        {
+            "campo": "CostoAdmin",
+            "alias": "Costos Administrativos",
+            "tipo": "text",
+            "formato": "money",
+            "required": ">="
+        },
+        {
+            "campo": "CostoTotalR",
+            "alias": "Costo Total de la Obra",
+            "tipo": "text",
+            "formato": "money",
+            "required": ">",
+            "editable": "false"
+        },
+        {
+            "campo": "Observaciones",
+            "alias": "Observaciones",
+            "tipo": "textArea"
+        }
+    ]
+}

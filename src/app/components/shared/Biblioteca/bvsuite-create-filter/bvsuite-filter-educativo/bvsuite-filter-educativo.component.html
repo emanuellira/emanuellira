@@ -1,0 +1,21 @@
+<!-- [# version: 6.4.2 #] -->
+<form [formGroup]="frm">
+  <div class="row mt-1">
+    <label for="staticNivEdu" class="col-sm-3 col-form-label"
+      >{{this.language.nivel_educativo}}</label
+    >
+    <div class="col">
+      <select
+        size = "4"
+        multiple
+        formControlName="selNIVELEDUCATIVO"
+        class="form-select"
+        (change)="OnSelect_NIVELEDUCATIVO()"
+      >
+        <option *ngFor="let item of items" [value]="item.Valor">
+          {{ item.Valor }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>

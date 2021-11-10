@@ -1,0 +1,14 @@
+{
+  "version": "7.5.5",
+  "config": {
+    "Uri3": "https://sired.site/Honduras/API/_3",
+    "sired_api_key": "168c547e-afb7-407f-8c25-7fc038898a89",
+    "pais_abrv": "HND",
+    "plantillas": "https://sired.site/Honduras/assets/config/json",
+    "imagenes": "https://sired.site/Honduras/assets",
+    "pais_reporte": "sired.site/Honduras",
+    "ssl": true,
+    "culture": "es-HN|,|.",
+    "sim_moneda": "L"
+  }
+}

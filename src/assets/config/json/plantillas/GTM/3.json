@@ -1,0 +1,590 @@
+{
+  "sector": {
+    "nombre": "MSPAS",
+    "clave": 3,
+    "entrevista": false,
+    "label_entrevista": "Información del aspirante"
+  },
+  "version": {
+    "release": 4,
+    "candidate": 6,
+    "test": 3,
+    "debug": 9
+  },
+  "data": [
+    {
+      "campo": "IDActivo",
+      "alias": "Clave",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "IDAccion",
+      "alias": "Clave daño",
+      "tipo": "label",
+      "estatus": "web",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Latitud",
+      "alias": "Latitud",
+      "estatus": "app-web",
+      "required": ">",
+      "tipo": "label",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Longitud",
+      "alias": "Longitud",
+      "tipo": "label",
+      "estatus": "app-web",
+      "required": ">",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "DIVADMIN2",
+      "alias": "Departamento",
+      "lista": "divadmin2",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "DIVADMIN3",
+      "alias": "Municipio",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "divadmin3",
+      "required": "",
+      "activo": true,
+      "editable": [true, false]
+    },
+    {
+      "campo": "Localidad",
+      "alias": "Lugar poblado (aldea, finca, etc.)",
+      "estatus": "web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Domicilio",
+      "alias": "Dirección completa e indicar referencias",
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": ">",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CPS",
+      "alias": "Clave",
+      "tipo": "label",
+      "estatus": "app-web",
+      "required": ">",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "AccesoInm",
+      "alias": "Servicios de Apoyo",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "required": ">",
+      "lista": "Radiología e Imagen|Centro de Atención de Salud Móvil|Ambulancias",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoAdmin",
+      "alias": "Instalaciones Especiales",
+      "tipo": "lista",
+      "estatus": "app-web",
+      "required": ">",
+      "lista": "Eléctrico y Vapor|Hidrosanitario|Oxígeno",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Nivel",
+      "alias": "Clasificación por Nivel de Atención",
+      "tipo": "lista",
+      "lista": "Nivel 1 - Puesto de Salud|Nivel 1 - Consultorio general|Nivel 1 - Centro de Salud tipo A|Nivel 1 - Centro de Salud tipo B|Nivel 1 - Centro de Salud tipo C|Nivel 1 - Puesto de Salud|Nivel 1 - Establecimientos de salud en establecimientos educativos|Nivel 2 - Consultorio especialidades|Nivel 2 - Centro de especialidades|Nivel 2 - Centro clínico quirúrgico ambulatorio|Nivel 2 - Hospital básico|Nivel 2 - Hospital general|Nivel 2 - Establecimientos de salud en establecimientos educativos|Nivel 3 - Centro especializado|      Nivel 3 - Hospital especializado|Nivel 3 - Hospital especialidades|Nivel 3 - Establecimientos de salud en establecimientos educativos|Nivel 4 - Centro de experimentación",
+      "estatus": "app-web",
+      "required": ">",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES1Activo",
+      "alias": "Segundo Nivel de Atención",
+      "tipo": "lista",
+      "required": ">",
+      "lista": "Consultorio Especialidades|Centro de Especialidades|Centro Clínico Quirúrgico Ambulatorio|Hospital Básico|Establecimientos de Salud en Establecimientos Educativos",
+      "estatus": "",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES2Activo",
+      "alias": "Tercer Nivel de Atención",
+      "tipo": "stepper",
+      "lista": "Centro Especializado|Hospital Especializado|Hospital Especialidades|Establecimientos de Salud es Establecimientos Educativos",
+      "estatus": "",
+      "activo": true,
+      "required": ">",
+      "formato": "number",
+      "detalle": "PoblacionAfectada",
+      "editable": [true, true]
+    },
+    {
+      "campo": "PoblacionAfectada",
+      "alias": "Población Afectada",
+      "activo": true,
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [false, false]
+    },
+    {
+      "campo": "FechaSiembra",
+      "alias": "Año estimado de construcción",
+      "tipo": "date",
+      "required": "<",
+      "estatus": "app-web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "FiltroClave",
+      "alias": "Cuarto Nivel de Atención",
+      "activo": true,
+      "estatus": "",
+      "tipo": "lista",
+      "lista": "Centro de Experimentación",
+      "required": ">=",
+      "editable": [true, true],
+      "ignore": true
+    },
+    {
+      "campo": "Clave",
+      "alias": "Clave de la tipología",
+      "activo": true,
+      "tipo": "lista",
+      "estatus": "app-web",
+      "lista": "Clave",
+      "required": ">",
+      "editable": [true, true]
+    },
+    {
+      "campo": "InfraDa",
+      "alias": "Descripción de la tipología",
+      "tipo": "textArea",
+      "estatus": "app-web",
+      "required": ">",
+      "activo": true,
+      "editable": [false, false]
+    },
+    {
+      "campo": "UnidadMedida",
+      "alias": "Unidad de medida",
+      "estatus": "app-web",
+      "tipo": "lista",
+      "required": ">",
+      "lista": "UnidadM",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "AreaTerreno",
+      "alias": "Área del terreno(m2)",
+      "activo": true,
+      "tipo": "text",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "AreaConstruccion",
+      "alias": "Área de la edificación(m2)",
+      "activo": true,
+      "tipo": "text",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "AguaPotable",
+      "alias": "¿Cuenta con agua potable?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Drenaje",
+      "alias": "¿Cuenta con drenaje sanitario?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Energia",
+      "alias": "¿Cuenta con energía eléctrica?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "DrenajePluvial",
+      "alias": "¿Cuenta con drenaje pluvial?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">=",
+      "estatus": "app-web",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "TrenAseo",
+      "alias": "¿Cuenta con tren de aseo?",
+      "activo": true,
+      "tipo": "switch",
+      "required": ">=",
+      "estatus": "",
+      "formato": "number",
+      "editable": [true, true]
+    },
+    {
+      "campo": "ZonaAfectada",
+      "alias": "Zona Afectada",
+      "estatus": "",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto1",
+      "tipo": "imagen",
+      "alias": "Foto 1",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto2",
+      "tipo": "imagen",
+      "alias": "Foto 2",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto3",
+      "tipo": "imagen",
+      "alias": "Foto 3",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Foto4",
+      "tipo": "imagen",
+      "alias": "Foto 4",
+      "estatus": "web",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "Responsable",
+      "alias": "Institución responsable",
+      "estatus": "app-web",
+      "tipo": "text",
+      "activo": true,
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoDanio",
+      "alias": "Tipo de Necesidad",
+      "tipo": "lista",
+      "required": ">",
+      "lista": "Construcción clinicas temporales|Campaña para control de vectores|Contratacion de personal adicional",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES1",
+      "alias": "Tipo de Daño",
+      "tipo": "lista",
+      "required": ">",
+      "lista": "terreno|edificación|infraestructura|electrodomésticos|acceso al inmueble",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Material",
+      "alias": "Equipamiento",
+      "tipo": "lista",
+      "required": ">",
+      "lista": "Crítico(Imagen,Neo,Quirófanos)|Básico(Consulta Externa, Monitores|Apoyo(Esterilización, Lavanadería, Cocina|Determinación(Laboratorio)|Mobiliario",
+      "activo": false,
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Diagnostico",
+      "alias": "Descripción del daño",
+      "activo": false,
+      "required": ">",
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Restauracion",
+      "alias": "Acciones de recuperación",
+      "activo": false,
+      "estatus": "app-web",
+      "tipo": "textArea",
+      "required": ">",
+      "editable": [true, true]
+    },
+    {
+      "campo": "CES2",
+      "alias": "Nivel de daño",
+      "tipo": "slider",
+      "lista": ".15¬Menor (15%): Descripción ¬#97fca5|.30¬Leve (30%): Descripción ¬#42994e|.50¬Moderado (50%): Descripción ¬#F9E79F|.75¬Severo (75%): Descripción ¬#EDBB99|1¬Colapso (100%): Descripción ¬#CD6155",
+      "activo": false,
+      "required": ">",
+      "detalle": "Unidades|CostoUnitario|CostoTotalObra",
+      "estatus": "app-web",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Unidades",
+      "alias": "Área de construcción(M²)",
+      "tipo": "text",
+      "estatus": "app-web",
+      "formato": "number",
+      "required": ">",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoUnitario",
+      "alias": "Precio Unitario",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalObra",
+      "alias": "Costo Total del daño",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "app-web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "CostoAdmin",
+      "alias": "Costos Administrativos",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">=",
+      "estatus": "web",
+      "activo": false,
+      "editable": [true, true]
+    },
+    {
+      "campo": "CostoTotalR",
+      "alias": "Costo Total",
+      "tipo": "text",
+      "formato": "money",
+      "required": ">",
+      "estatus": "web",
+      "activo": false,
+      "editable": [false, false]
+    },
+    {
+      "campo": "Observaciones",
+      "alias": "Observaciones",
+      "activo": false,
+      "estatus": "app-web",
+      "required": ">=",
+      "tipo": "textArea",
+      "editable": [true, true]
+    }
+  ],
+
+  "entrevista": [
+    {
+      "campo": "Nombre",
+      "alias": "Nombre completo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Identificacion",
+      "alias": "Identificación",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "TipoDoc",
+      "alias": "Tipo de documento",
+      "tipo": "lista",
+      "lista": "Pasaporte|Identidad|Partida de nacimiento",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Genero",
+      "alias": "Género",
+      "tipo": "check",
+      "formato": "Mujer|Hombre",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Edo_Civil",
+      "alias": "Estado Civil",
+      "tipo": "lista",
+      "lista": "Casado|Soltero|Separado|Viudo|Unión libre",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "F_Nacimiento",
+      "alias": "Fecha Nacimiento",
+      "tipo": "date",
+      "required": "<",
+      "detalle": "lblAux-F_Nacimiento|Edad del beneficiario: {0} años",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Idioma",
+      "alias": "Idioma",
+      "tipo": "text",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Telefono",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Email",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "OtroContacto",
+      "alias": "Otro Contacto",
+      "tipo": "box",
+      "required": ">=",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Nombre2",
+      "alias": "Nombre completo",
+      "tipo": "text",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Telefono2",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Email2",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": "",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ],
+  "capturista": [
+    {
+      "campo": "Titular",
+      "alias": "Nombre",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "Cargo",
+      "alias": "Cargo",
+      "tipo": "text",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoTel",
+      "alias": "Teléfono",
+      "tipo": "text",
+      "formato": "number",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    },
+    {
+      "campo": "FContactoMail",
+      "alias": "Correo Electrónico",
+      "tipo": "text",
+      "formato": "email",
+      "required": ">",
+      "estatus": "app",
+      "editable": [true, true]
+    }
+  ]
+}

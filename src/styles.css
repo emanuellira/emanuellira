@@ -1,0 +1,169 @@
+/* [# version: 6.4.13 #] */
+.height-container {
+  height: 94vh;
+  background: rgba(255, 255, 255, 0.85);
+  top: 50px;
+  margin: 0 10px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+}
+
+.btn-close-custom {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #000;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+
+.fondo {
+  /*background-color: aqua;*/
+  background-image: url(./assets/images/V3.png);
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+  background-size: cover;
+  overflow: hidden;
+  /* width: 99vw;
+  height: 50vh; */
+  /* width: 100%; */
+  /* height: 70%; */
+}
+
+.table-wrapper {
+  max-height: 100%;
+  overflow: scroll;
+  /* display:inline-block; */
+}
+
+.card-shadow {
+  padding: 0 !important;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cardH {
+  text-align: left;
+  top: 54px;
+  left: 13px;
+  padding: 0px 15px;
+  position: fixed;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.md-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.md-card-padding {
+  padding: 3rem 5rem !important;
+}
+
+.box {
+  border-radius: 3px;
+  border: solid 1px var(--bs-white);
+  padding: 3px;
+  margin-left: 5px;
+  margin-top: 10px;
+  max-height: 24px;
+}
+
+.text-error {
+  /* display: none; */
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: var(--bs-danger);
+}
+
+.ng-touched .ng-invalid {
+  border-color: var(--bs-danger);
+  padding-right: calc(1.5em + 0.75rem);
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.btn-circle {
+  /*sm*/
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 15px !important;
+}
+
+  .btn-circle.btn-xxs {
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    padding: 0 0;
+    font-size: 12px;
+    line-height: 0;
+    border-radius: 15px !important;
+  }
+
+  .btn-circle.btn-xs {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 0 0;
+    font-size: 14px;
+    line-height: 0;
+    border-radius: 25px !important;
+  }
+
+  .btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 25px !important;
+  }
+
+  .btn-circle.btn-lg {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1;
+    border-radius: 35px !important;
+  }
+
+  .btn-circle.btn-xl {
+    width: 90px;
+    height: 90px;
+    padding: 10px 16px;
+    font-size: 34px;
+    line-height: 1.33;
+    border-radius: 45px !important;
+  }
+
+.topcorner {
+  position: absolute;
+  right: 200px;
+  padding-top: 6px;
+}
+
+.topcorner-img {
+  padding: 100px, 10px, 10px, 50px;
+  background-image: url(./assets/images/ayuda_fondo.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

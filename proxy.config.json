@@ -1,0 +1,8 @@
+{
+  "/_3/*": {
+    "target": "https://localhost:44319",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

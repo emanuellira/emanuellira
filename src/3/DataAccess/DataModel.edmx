@@ -1,0 +1,2166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SIRED_HNDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccionDef">
+          <Key>
+            <PropertyRef Name="IDAccion" />
+          </Key>
+          <Property Name="IDAccion" Type="int" Nullable="false" />
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="Diagnostico" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restauracion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoDanio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CostoUnitario" Type="float" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="float" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="Estatus" Type="nvarchar(max)" />
+          <Property Name="CES1" Type="nvarchar(max)" />
+          <Property Name="CES2" Type="nvarchar(max)" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+          <Property Name="Material" Type="nvarchar(max)" />
+          <Property Name="Unidades" Type="float" Nullable="false" />
+          <Property Name="CostoAdmin" Type="float" Nullable="false" />
+          <Property Name="CostoTotalR" Type="float" Nullable="false" />
+          <Property Name="Eliminado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AccionPre">
+          <Key>
+            <PropertyRef Name="IDAccion" />
+          </Key>
+          <Property Name="IDAccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="Diagnostico" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restauracion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoDanio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CostoUnitario" Type="float" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="float" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="Estatus" Type="nvarchar(max)" />
+          <Property Name="CES1" Type="nvarchar(max)" />
+          <Property Name="CES2" Type="nvarchar(max)" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+          <Property Name="Material" Type="nvarchar(max)" />
+          <Property Name="Unidades" Type="float" Nullable="false" />
+          <Property Name="CostoAdmin" Type="float" Nullable="false" />
+          <Property Name="CostoTotalR" Type="float" Nullable="false" />
+          <Property Name="Eliminado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ActivoDef">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+          </Key>
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="IDUsuario" Type="int" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN3" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN2" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="nvarchar(max)" />
+          <Property Name="Reunion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Domicilio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Longitud" Type="float" Nullable="false" />
+          <Property Name="Latitud" Type="float" Nullable="false" />
+          <Property Name="Foto1" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto3" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto4" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDSector" Type="int" Nullable="false" />
+          <Property Name="CPS" Type="nvarchar(max)" />
+          <Property Name="Ministerio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EstatusAseguramiento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApoyosAnteriores" Type="int" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="float" Nullable="false" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InmuebleDaniado" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Material" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Responsable" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Titular" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Cargo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="InfraDa" Type="nvarchar(max)" />
+          <Property Name="Clave" Type="nvarchar(max)" />
+          <Property Name="Eliminado" Type="int" Nullable="false" />
+          <Property Name="FContactoTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="FContactoMail" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CES1Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CES2Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaSiembra" Type="datetime" />
+          <Property Name="Localidad" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoAdmin" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaTerreno" Type="float" Nullable="false" />
+          <Property Name="AguaPotable" Type="int" Nullable="false" />
+          <Property Name="Drenaje" Type="int" Nullable="false" />
+          <Property Name="Energia" Type="int" Nullable="false" />
+          <Property Name="FechaCaptura" Type="datetime" />
+          <Property Name="AccesoInm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaConstruccion" Type="float" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="int" Nullable="false" />
+          <Property Name="TrenAseo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ActivoPre">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+          </Key>
+          <Property Name="IDActivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDUsuario" Type="int" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN3" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN2" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="nvarchar(max)" />
+          <Property Name="Reunion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Domicilio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Longitud" Type="float" Nullable="false" />
+          <Property Name="Latitud" Type="float" Nullable="false" />
+          <Property Name="Foto1" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto3" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto4" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDSector" Type="int" Nullable="false" />
+          <Property Name="CPS" Type="nvarchar(max)" />
+          <Property Name="Ministerio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EstatusAseguramiento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApoyosAnteriores" Type="int" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="float" Nullable="false" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InmuebleDaniado" Type="nvarchar(max)" />
+          <Property Name="Material" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Responsable" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Titular" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Cargo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="InfraDa" Type="nvarchar(max)" />
+          <Property Name="Clave" Type="nvarchar(max)" />
+          <Property Name="Eliminado" Type="int" Nullable="false" />
+          <Property Name="FContactoTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="FContactoMail" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CES1Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CES2Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaSiembra" Type="datetime" />
+          <Property Name="Localidad" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoAdmin" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaTerreno" Type="float" Nullable="false" />
+          <Property Name="AguaPotable" Type="int" Nullable="false" />
+          <Property Name="Drenaje" Type="int" Nullable="false" />
+          <Property Name="Energia" Type="int" Nullable="false" />
+          <Property Name="FechaCaptura" Type="datetime" />
+          <Property Name="AccesoInm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaConstruccion" Type="float" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="int" Nullable="false" />
+          <Property Name="TrenAseo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Catalogos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Grupo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Valor" Type="nvarchar" MaxLength="255" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+          <Property Name="Sectores" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN1">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Shape" Type="geometry" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="30" />
+          <Property Name="DIVADMIN1" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN2">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Shape" Type="geometry" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="30" />
+          <Property Name="DIVADMIN1" Type="nvarchar" MaxLength="10" />
+          <Property Name="DIVADMIN2" Type="nvarchar" MaxLength="10" />
+          <Property Name="CVE" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN3">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Shape" Type="geometry" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="40" />
+          <Property Name="DIVADMIN1" Type="nvarchar" MaxLength="10" />
+          <Property Name="DIVADMIN2" Type="nvarchar" MaxLength="10" />
+          <Property Name="DIVADMIN3" Type="nvarchar" MaxLength="10" />
+          <Property Name="CVE" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Entrevista">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoDoc" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Identificacion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Genero" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Edo_Civil" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="F_Nacimiento" Type="datetime" Nullable="false" />
+          <Property Name="Idioma" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoProd" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Nombre_2" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Telefono_2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email_2" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Eventos">
+          <Key>
+            <PropertyRef Name="IDEvento" />
+          </Key>
+          <Property Name="IDEvento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fenomeno" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaEvento" Type="datetime" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="Estatus" Type="text" />
+          <Property Name="Eliminado" Type="int" />
+          <Property Name="Autoriza" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Perfil">
+          <Key>
+            <PropertyRef Name="IDPerfil" />
+          </Key>
+          <Property Name="IDPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sectores">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClaveSector" Type="int" Nullable="false" />
+          <Property Name="NomSector" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tipo" Type="int" />
+          <Property Name="AbrevMin" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Ministerio" Type="nvarchar(max)" />
+          <Property Name="Activo" Type="int" Nullable="false" />
+          <Property Name="FechaCreado" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificado" Type="datetime" Nullable="false" />
+          <Property Name="VersionCat" Type="int" Nullable="false" />
+          <Property Name="FechaVersionCat" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+          </Key>
+          <Property Name="IDUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="IDPerfil" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="NomUsuario" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaCreado" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificado" Type="datetime" Nullable="false" />
+          <Property Name="Token" Type="nvarchar(max)" />
+          <Property Name="Key1" Type="nvarchar(max)" />
+          <Property Name="IV" Type="nvarchar(max)" />
+          <Property Name="Sesiones" Type="int" Nullable="false" />
+          <Property Name="LimiteSesiones" Type="int" Nullable="false" />
+          <Property Name="FechaExpira" Type="datetime" Nullable="false" />
+          <Property Name="Bloqueo" Type="int" />
+          <Property Name="Hit" Type="int" />
+          <Property Name="Sector" Type="int" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cargo" Type="nvarchar(max)" />
+          <Property Name="IDProvincia" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SIRED_HND.dbo.VersionCatalog' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="VersionCatalog">
+          <Key>
+            <PropertyRef Name="VersionCatalogos" />
+          </Key>
+          <Property Name="VersionCatalogos" Type="int" Nullable="false" />
+          <Property Name="Fecha_Actualizacion" Type="datetime" />
+          <Property Name="Sectores" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SIRED_HND.dbo.Diagnosticos_Def' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Diagnosticos_Def">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+            <PropertyRef Name="IDAccion" />
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="IDDIVADMIN1" />
+            <PropertyRef Name="DIVADMIN1" />
+            <PropertyRef Name="IDDIVADMIN3" />
+            <PropertyRef Name="DIVADMIN3" />
+            <PropertyRef Name="IDDIVADMIN2" />
+            <PropertyRef Name="Reunion" />
+            <PropertyRef Name="Domicilio" />
+            <PropertyRef Name="Longitud" />
+            <PropertyRef Name="Latitud" />
+            <PropertyRef Name="Foto1" />
+            <PropertyRef Name="Foto2" />
+            <PropertyRef Name="Foto3" />
+            <PropertyRef Name="Foto4" />
+            <PropertyRef Name="IDSector" />
+            <PropertyRef Name="EstatusAseguramiento" />
+            <PropertyRef Name="ApoyosAnteriores" />
+            <PropertyRef Name="PoblacionAfectada" />
+            <PropertyRef Name="UnidadMedida" />
+            <PropertyRef Name="ZonaAfectada" />
+            <PropertyRef Name="TipoZonaAfectada" />
+            <PropertyRef Name="InmuebleDaniado" />
+            <PropertyRef Name="Responsable" />
+            <PropertyRef Name="Titular" />
+            <PropertyRef Name="Cargo" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="FechaCreacion" />
+            <PropertyRef Name="FechaModificacion" />
+            <PropertyRef Name="Diagnostico" />
+            <PropertyRef Name="Restauracion" />
+            <PropertyRef Name="TipoDanio" />
+            <PropertyRef Name="CostoUnitario" />
+            <PropertyRef Name="CostoTotalObra" />
+            <PropertyRef Name="NomSector" />
+            <PropertyRef Name="AbrevMin" />
+            <PropertyRef Name="CostoAdmin" />
+            <PropertyRef Name="CostoTotalR" />
+            <PropertyRef Name="Fenomeno" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="FContactoMail" />
+            <PropertyRef Name="CES1Activo" />
+            <PropertyRef Name="CES2Activo" />
+            <PropertyRef Name="Localidad" />
+            <PropertyRef Name="TipoAdmin" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="AreaTerreno" />
+            <PropertyRef Name="AguaPotable" />
+            <PropertyRef Name="Drenaje" />
+            <PropertyRef Name="Energia" />
+            <PropertyRef Name="AccesoInm" />
+            <PropertyRef Name="AreaConstruccion" />
+            <PropertyRef Name="DrenajePluvial" />
+            <PropertyRef Name="TrenAseo" />
+            <PropertyRef Name="Unidades" />
+          </Key>
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="IDAccion" Type="int" Nullable="false" />
+          <Property Name="IDUsuario" Type="int" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN3" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN2" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="nvarchar(max)" />
+          <Property Name="Reunion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Domicilio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Longitud" Type="float" Nullable="false" />
+          <Property Name="Latitud" Type="float" Nullable="false" />
+          <Property Name="Foto1" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto3" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto4" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDSector" Type="int" Nullable="false" />
+          <Property Name="CPS" Type="nvarchar(max)" />
+          <Property Name="EstatusAseguramiento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApoyosAnteriores" Type="int" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="float" Nullable="false" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InmuebleDaniado" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Responsable" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Titular" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Cargo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="Diagnostico" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restauracion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoDanio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CostoUnitario" Type="float" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="float" Nullable="false" />
+          <Property Name="Estatus" Type="nvarchar(max)" />
+          <Property Name="CES1" Type="nvarchar(max)" />
+          <Property Name="CES2" Type="nvarchar(max)" />
+          <Property Name="InfraDa" Type="nvarchar(max)" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+          <Property Name="Material" Type="nvarchar(max)" />
+          <Property Name="Clave" Type="nvarchar(max)" />
+          <Property Name="NomSector" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AbrevMin" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Ministerio" Type="nvarchar(max)" />
+          <Property Name="CostoAdmin" Type="float" Nullable="false" />
+          <Property Name="CostoTotalR" Type="float" Nullable="false" />
+          <Property Name="Fenomeno" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaExpira" Type="datetime" Nullable="false" />
+          <Property Name="FContactoTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="FContactoMail" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CES1Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CES2Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaSiembra" Type="datetime" />
+          <Property Name="Localidad" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoAdmin" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaTerreno" Type="float" Nullable="false" />
+          <Property Name="AguaPotable" Type="int" Nullable="false" />
+          <Property Name="Drenaje" Type="int" Nullable="false" />
+          <Property Name="Energia" Type="int" Nullable="false" />
+          <Property Name="FechaCaptura" Type="datetime" />
+          <Property Name="AccesoInm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaConstruccion" Type="float" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="int" Nullable="false" />
+          <Property Name="TrenAseo" Type="int" Nullable="false" />
+          <Property Name="Unidades" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SIRED_HND.dbo.Diagnosticos_Pre' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Diagnosticos_Pre">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+            <PropertyRef Name="IDAccion" />
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="IDDIVADMIN1" />
+            <PropertyRef Name="DIVADMIN1" />
+            <PropertyRef Name="IDDIVADMIN3" />
+            <PropertyRef Name="DIVADMIN3" />
+            <PropertyRef Name="IDDIVADMIN2" />
+            <PropertyRef Name="Reunion" />
+            <PropertyRef Name="Domicilio" />
+            <PropertyRef Name="Longitud" />
+            <PropertyRef Name="Latitud" />
+            <PropertyRef Name="Foto1" />
+            <PropertyRef Name="Foto2" />
+            <PropertyRef Name="Foto3" />
+            <PropertyRef Name="Foto4" />
+            <PropertyRef Name="IDSector" />
+            <PropertyRef Name="EstatusAseguramiento" />
+            <PropertyRef Name="ApoyosAnteriores" />
+            <PropertyRef Name="PoblacionAfectada" />
+            <PropertyRef Name="UnidadMedida" />
+            <PropertyRef Name="ZonaAfectada" />
+            <PropertyRef Name="TipoZonaAfectada" />
+            <PropertyRef Name="Responsable" />
+            <PropertyRef Name="Titular" />
+            <PropertyRef Name="Cargo" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="FechaCreacion" />
+            <PropertyRef Name="FechaModificacion" />
+            <PropertyRef Name="Diagnostico" />
+            <PropertyRef Name="Restauracion" />
+            <PropertyRef Name="TipoDanio" />
+            <PropertyRef Name="CostoUnitario" />
+            <PropertyRef Name="CostoTotalObra" />
+            <PropertyRef Name="NomSector" />
+            <PropertyRef Name="AbrevMin" />
+            <PropertyRef Name="CostoAdmin" />
+            <PropertyRef Name="CostoTotalR" />
+            <PropertyRef Name="Fenomeno" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="FContactoMail" />
+            <PropertyRef Name="CES1Activo" />
+            <PropertyRef Name="CES2Activo" />
+            <PropertyRef Name="Localidad" />
+            <PropertyRef Name="TipoAdmin" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="AreaTerreno" />
+            <PropertyRef Name="AguaPotable" />
+            <PropertyRef Name="Drenaje" />
+            <PropertyRef Name="Energia" />
+            <PropertyRef Name="AccesoInm" />
+            <PropertyRef Name="AreaConstruccion" />
+            <PropertyRef Name="DrenajePluvial" />
+            <PropertyRef Name="TrenAseo" />
+            <PropertyRef Name="Unidades" />
+          </Key>
+          <Property Name="IDActivo" Type="int" Nullable="false" />
+          <Property Name="IDAccion" Type="int" Nullable="false" />
+          <Property Name="IDUsuario" Type="int" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN3" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDDIVADMIN2" Type="int" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="nvarchar(max)" />
+          <Property Name="Reunion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Domicilio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Longitud" Type="float" Nullable="false" />
+          <Property Name="Latitud" Type="float" Nullable="false" />
+          <Property Name="Foto1" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto3" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto4" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDSector" Type="int" Nullable="false" />
+          <Property Name="CPS" Type="nvarchar(max)" />
+          <Property Name="EstatusAseguramiento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApoyosAnteriores" Type="int" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="float" Nullable="false" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoZonaAfectada" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InmuebleDaniado" Type="nvarchar(max)" />
+          <Property Name="Responsable" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Titular" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Cargo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+          <Property Name="Diagnostico" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restauracion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TipoDanio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CostoUnitario" Type="float" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="float" Nullable="false" />
+          <Property Name="Estatus" Type="nvarchar(max)" />
+          <Property Name="CES1" Type="nvarchar(max)" />
+          <Property Name="CES2" Type="nvarchar(max)" />
+          <Property Name="InfraDa" Type="nvarchar(max)" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+          <Property Name="Material" Type="nvarchar(max)" />
+          <Property Name="Clave" Type="nvarchar(max)" />
+          <Property Name="NomSector" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AbrevMin" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Ministerio" Type="nvarchar(max)" />
+          <Property Name="CostoAdmin" Type="float" Nullable="false" />
+          <Property Name="CostoTotalR" Type="float" Nullable="false" />
+          <Property Name="Fenomeno" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaExpira" Type="datetime" Nullable="false" />
+          <Property Name="FContactoTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="FContactoMail" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CES1Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CES2Activo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FechaSiembra" Type="datetime" />
+          <Property Name="Localidad" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoAdmin" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaTerreno" Type="float" Nullable="false" />
+          <Property Name="AguaPotable" Type="int" Nullable="false" />
+          <Property Name="Drenaje" Type="int" Nullable="false" />
+          <Property Name="Energia" Type="int" Nullable="false" />
+          <Property Name="FechaCaptura" Type="datetime" />
+          <Property Name="AccesoInm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AreaConstruccion" Type="float" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="int" Nullable="false" />
+          <Property Name="TrenAseo" Type="int" Nullable="false" />
+          <Property Name="Unidades" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SIRED_HND.dbo.Usuarios_View' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Usuarios_View">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="NomUsuario" />
+            <PropertyRef Name="Password" />
+            <PropertyRef Name="Nombre" />
+            <PropertyRef Name="Apellidos" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="Sesiones" />
+            <PropertyRef Name="LimiteSesiones" />
+            <PropertyRef Name="IDPerfil" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="Descripcion" />
+            <PropertyRef Name="Tipo" />
+            <PropertyRef Name="FechaCreado" />
+            <PropertyRef Name="FechaModificado" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="IDProvincia" />
+          </Key>
+          <Property Name="IDUsuario" Type="int" Nullable="false" />
+          <Property Name="NomUsuario" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IDEvento" Type="int" Nullable="false" />
+          <Property Name="Token" Type="nvarchar(max)" />
+          <Property Name="Key1" Type="nvarchar(max)" />
+          <Property Name="IV" Type="nvarchar(max)" />
+          <Property Name="Sesiones" Type="int" Nullable="false" />
+          <Property Name="LimiteSesiones" Type="int" Nullable="false" />
+          <Property Name="IDPerfil" Type="int" Nullable="false" />
+          <Property Name="Nivel" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaCreado" Type="datetime" Nullable="false" />
+          <Property Name="FechaModificado" Type="datetime" Nullable="false" />
+          <Property Name="Sector" Type="int" />
+          <Property Name="NomSector" Type="nvarchar(max)" />
+          <Property Name="FechaExpira" Type="datetime" Nullable="false" />
+          <Property Name="IDProvincia" Type="int" Nullable="false" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cargo" Type="nvarchar(max)" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+          <Property Name="Provincia" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <Association Name="FK_AccionDef_ActivoDef">
+          <End Role="ActivoDef" Type="Self.ActivoDef" Multiplicity="1" />
+          <End Role="AccionDef" Type="Self.AccionDef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActivoDef">
+              <PropertyRef Name="IDActivo" />
+            </Principal>
+            <Dependent Role="AccionDef">
+              <PropertyRef Name="IDActivo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccionPre_ActivoPre">
+          <End Role="ActivoPre" Type="Self.ActivoPre" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AccionPre" Type="Self.AccionPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActivoPre">
+              <PropertyRef Name="IDActivo" />
+            </Principal>
+            <Dependent Role="AccionPre">
+              <PropertyRef Name="IDActivo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Eventos">
+          <End Role="Eventos" Type="Self.Eventos" Multiplicity="1" />
+          <End Role="ActivoPre" Type="Self.ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eventos">
+              <PropertyRef Name="IDEvento" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDEvento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Sectores">
+          <End Role="Sectores" Type="Self.Sectores" Multiplicity="1" />
+          <End Role="ActivoPre" Type="Self.ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sectores">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDSector" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Usuarios">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1" />
+          <End Role="ActivoPre" Type="Self.ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="IDUsuario" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Perfil">
+          <End Role="Perfil" Type="Self.Perfil" Multiplicity="1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Perfil">
+              <PropertyRef Name="IDPerfil" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IDPerfil" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SIRED_HNDModelStoreContainer">
+          <EntitySet Name="AccionDef" EntityType="Self.AccionDef" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AccionPre" EntityType="Self.AccionPre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ActivoDef" EntityType="Self.ActivoDef" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ActivoPre" EntityType="Self.ActivoPre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Catalogos" EntityType="Self.Catalogos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DIV_ADMIN1" EntityType="Self.DIV_ADMIN1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DIV_ADMIN2" EntityType="Self.DIV_ADMIN2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DIV_ADMIN3" EntityType="Self.DIV_ADMIN3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Entrevista" EntityType="Self.Entrevista" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Eventos" EntityType="Self.Eventos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Perfil" EntityType="Self.Perfil" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sectores" EntityType="Self.Sectores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VersionCatalog" EntityType="Self.VersionCatalog" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VersionCatalog].[VersionCatalogos] AS [VersionCatalogos], 
+    [VersionCatalog].[Fecha_Actualizacion] AS [Fecha_Actualizacion], 
+    [VersionCatalog].[Sectores] AS [Sectores]
+    FROM [dbo].[VersionCatalog] AS [VersionCatalog]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Diagnosticos_Def" EntityType="Self.Diagnosticos_Def" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Diagnosticos_Def].[IDActivo] AS [IDActivo], 
+    [Diagnosticos_Def].[IDAccion] AS [IDAccion], 
+    [Diagnosticos_Def].[IDUsuario] AS [IDUsuario], 
+    [Diagnosticos_Def].[IDDIVADMIN1] AS [IDDIVADMIN1], 
+    [Diagnosticos_Def].[DIVADMIN1] AS [DIVADMIN1], 
+    [Diagnosticos_Def].[IDDIVADMIN3] AS [IDDIVADMIN3], 
+    [Diagnosticos_Def].[DIVADMIN3] AS [DIVADMIN3], 
+    [Diagnosticos_Def].[IDDIVADMIN2] AS [IDDIVADMIN2], 
+    [Diagnosticos_Def].[DIVADMIN2] AS [DIVADMIN2], 
+    [Diagnosticos_Def].[Reunion] AS [Reunion], 
+    [Diagnosticos_Def].[Domicilio] AS [Domicilio], 
+    [Diagnosticos_Def].[Longitud] AS [Longitud], 
+    [Diagnosticos_Def].[Latitud] AS [Latitud], 
+    [Diagnosticos_Def].[Foto1] AS [Foto1], 
+    [Diagnosticos_Def].[Foto2] AS [Foto2], 
+    [Diagnosticos_Def].[Foto3] AS [Foto3], 
+    [Diagnosticos_Def].[Foto4] AS [Foto4], 
+    [Diagnosticos_Def].[IDSector] AS [IDSector], 
+    [Diagnosticos_Def].[CPS] AS [CPS], 
+    [Diagnosticos_Def].[EstatusAseguramiento] AS [EstatusAseguramiento], 
+    [Diagnosticos_Def].[ApoyosAnteriores] AS [ApoyosAnteriores], 
+    [Diagnosticos_Def].[PoblacionAfectada] AS [PoblacionAfectada], 
+    [Diagnosticos_Def].[UnidadMedida] AS [UnidadMedida], 
+    [Diagnosticos_Def].[ZonaAfectada] AS [ZonaAfectada], 
+    [Diagnosticos_Def].[TipoZonaAfectada] AS [TipoZonaAfectada], 
+    [Diagnosticos_Def].[InmuebleDaniado] AS [InmuebleDaniado], 
+    [Diagnosticos_Def].[Responsable] AS [Responsable], 
+    [Diagnosticos_Def].[Titular] AS [Titular], 
+    [Diagnosticos_Def].[Cargo] AS [Cargo], 
+    [Diagnosticos_Def].[IDEvento] AS [IDEvento], 
+    [Diagnosticos_Def].[FechaCreacion] AS [FechaCreacion], 
+    [Diagnosticos_Def].[FechaModificacion] AS [FechaModificacion], 
+    [Diagnosticos_Def].[Diagnostico] AS [Diagnostico], 
+    [Diagnosticos_Def].[Restauracion] AS [Restauracion], 
+    [Diagnosticos_Def].[TipoDanio] AS [TipoDanio], 
+    [Diagnosticos_Def].[CostoUnitario] AS [CostoUnitario], 
+    [Diagnosticos_Def].[CostoTotalObra] AS [CostoTotalObra], 
+    [Diagnosticos_Def].[Estatus] AS [Estatus], 
+    [Diagnosticos_Def].[CES1] AS [CES1], 
+    [Diagnosticos_Def].[CES2] AS [CES2], 
+    [Diagnosticos_Def].[InfraDa] AS [InfraDa], 
+    [Diagnosticos_Def].[Observaciones] AS [Observaciones], 
+    [Diagnosticos_Def].[Material] AS [Material], 
+    [Diagnosticos_Def].[Clave] AS [Clave], 
+    [Diagnosticos_Def].[NomSector] AS [NomSector], 
+    [Diagnosticos_Def].[AbrevMin] AS [AbrevMin], 
+    [Diagnosticos_Def].[Ministerio] AS [Ministerio], 
+    [Diagnosticos_Def].[CostoAdmin] AS [CostoAdmin], 
+    [Diagnosticos_Def].[CostoTotalR] AS [CostoTotalR], 
+    [Diagnosticos_Def].[Fenomeno] AS [Fenomeno], 
+    [Diagnosticos_Def].[FechaExpira] AS [FechaExpira], 
+    [Diagnosticos_Def].[FContactoTel] AS [FContactoTel], 
+    [Diagnosticos_Def].[FContactoMail] AS [FContactoMail], 
+    [Diagnosticos_Def].[CES1Activo] AS [CES1Activo], 
+    [Diagnosticos_Def].[CES2Activo] AS [CES2Activo], 
+    [Diagnosticos_Def].[FechaSiembra] AS [FechaSiembra], 
+    [Diagnosticos_Def].[Localidad] AS [Localidad], 
+    [Diagnosticos_Def].[TipoAdmin] AS [TipoAdmin], 
+    [Diagnosticos_Def].[Nivel] AS [Nivel], 
+    [Diagnosticos_Def].[AreaTerreno] AS [AreaTerreno], 
+    [Diagnosticos_Def].[AguaPotable] AS [AguaPotable], 
+    [Diagnosticos_Def].[Drenaje] AS [Drenaje], 
+    [Diagnosticos_Def].[Energia] AS [Energia], 
+    [Diagnosticos_Def].[FechaCaptura] AS [FechaCaptura], 
+    [Diagnosticos_Def].[AccesoInm] AS [AccesoInm], 
+    [Diagnosticos_Def].[AreaConstruccion] AS [AreaConstruccion], 
+    [Diagnosticos_Def].[DrenajePluvial] AS [DrenajePluvial], 
+    [Diagnosticos_Def].[TrenAseo] AS [TrenAseo], 
+    [Diagnosticos_Def].[Unidades] AS [Unidades]
+    FROM [dbo].[Diagnosticos_Def] AS [Diagnosticos_Def]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Diagnosticos_Pre" EntityType="Self.Diagnosticos_Pre" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Diagnosticos_Pre].[IDActivo] AS [IDActivo], 
+    [Diagnosticos_Pre].[IDAccion] AS [IDAccion], 
+    [Diagnosticos_Pre].[IDUsuario] AS [IDUsuario], 
+    [Diagnosticos_Pre].[IDDIVADMIN1] AS [IDDIVADMIN1], 
+    [Diagnosticos_Pre].[DIVADMIN1] AS [DIVADMIN1], 
+    [Diagnosticos_Pre].[IDDIVADMIN3] AS [IDDIVADMIN3], 
+    [Diagnosticos_Pre].[DIVADMIN3] AS [DIVADMIN3], 
+    [Diagnosticos_Pre].[IDDIVADMIN2] AS [IDDIVADMIN2], 
+    [Diagnosticos_Pre].[DIVADMIN2] AS [DIVADMIN2], 
+    [Diagnosticos_Pre].[Reunion] AS [Reunion], 
+    [Diagnosticos_Pre].[Domicilio] AS [Domicilio], 
+    [Diagnosticos_Pre].[Longitud] AS [Longitud], 
+    [Diagnosticos_Pre].[Latitud] AS [Latitud], 
+    [Diagnosticos_Pre].[Foto1] AS [Foto1], 
+    [Diagnosticos_Pre].[Foto2] AS [Foto2], 
+    [Diagnosticos_Pre].[Foto3] AS [Foto3], 
+    [Diagnosticos_Pre].[Foto4] AS [Foto4], 
+    [Diagnosticos_Pre].[IDSector] AS [IDSector], 
+    [Diagnosticos_Pre].[CPS] AS [CPS], 
+    [Diagnosticos_Pre].[EstatusAseguramiento] AS [EstatusAseguramiento], 
+    [Diagnosticos_Pre].[ApoyosAnteriores] AS [ApoyosAnteriores], 
+    [Diagnosticos_Pre].[PoblacionAfectada] AS [PoblacionAfectada], 
+    [Diagnosticos_Pre].[UnidadMedida] AS [UnidadMedida], 
+    [Diagnosticos_Pre].[ZonaAfectada] AS [ZonaAfectada], 
+    [Diagnosticos_Pre].[TipoZonaAfectada] AS [TipoZonaAfectada], 
+    [Diagnosticos_Pre].[InmuebleDaniado] AS [InmuebleDaniado], 
+    [Diagnosticos_Pre].[Responsable] AS [Responsable], 
+    [Diagnosticos_Pre].[Titular] AS [Titular], 
+    [Diagnosticos_Pre].[Cargo] AS [Cargo], 
+    [Diagnosticos_Pre].[IDEvento] AS [IDEvento], 
+    [Diagnosticos_Pre].[FechaCreacion] AS [FechaCreacion], 
+    [Diagnosticos_Pre].[FechaModificacion] AS [FechaModificacion], 
+    [Diagnosticos_Pre].[Diagnostico] AS [Diagnostico], 
+    [Diagnosticos_Pre].[Restauracion] AS [Restauracion], 
+    [Diagnosticos_Pre].[TipoDanio] AS [TipoDanio], 
+    [Diagnosticos_Pre].[CostoUnitario] AS [CostoUnitario], 
+    [Diagnosticos_Pre].[CostoTotalObra] AS [CostoTotalObra], 
+    [Diagnosticos_Pre].[Estatus] AS [Estatus], 
+    [Diagnosticos_Pre].[CES1] AS [CES1], 
+    [Diagnosticos_Pre].[CES2] AS [CES2], 
+    [Diagnosticos_Pre].[InfraDa] AS [InfraDa], 
+    [Diagnosticos_Pre].[Observaciones] AS [Observaciones], 
+    [Diagnosticos_Pre].[Material] AS [Material], 
+    [Diagnosticos_Pre].[Clave] AS [Clave], 
+    [Diagnosticos_Pre].[NomSector] AS [NomSector], 
+    [Diagnosticos_Pre].[AbrevMin] AS [AbrevMin], 
+    [Diagnosticos_Pre].[Ministerio] AS [Ministerio], 
+    [Diagnosticos_Pre].[CostoAdmin] AS [CostoAdmin], 
+    [Diagnosticos_Pre].[CostoTotalR] AS [CostoTotalR], 
+    [Diagnosticos_Pre].[Fenomeno] AS [Fenomeno], 
+    [Diagnosticos_Pre].[FechaExpira] AS [FechaExpira], 
+    [Diagnosticos_Pre].[FContactoTel] AS [FContactoTel], 
+    [Diagnosticos_Pre].[FContactoMail] AS [FContactoMail], 
+    [Diagnosticos_Pre].[CES1Activo] AS [CES1Activo], 
+    [Diagnosticos_Pre].[CES2Activo] AS [CES2Activo], 
+    [Diagnosticos_Pre].[FechaSiembra] AS [FechaSiembra], 
+    [Diagnosticos_Pre].[Localidad] AS [Localidad], 
+    [Diagnosticos_Pre].[TipoAdmin] AS [TipoAdmin], 
+    [Diagnosticos_Pre].[Nivel] AS [Nivel], 
+    [Diagnosticos_Pre].[AreaTerreno] AS [AreaTerreno], 
+    [Diagnosticos_Pre].[AguaPotable] AS [AguaPotable], 
+    [Diagnosticos_Pre].[Drenaje] AS [Drenaje], 
+    [Diagnosticos_Pre].[Energia] AS [Energia], 
+    [Diagnosticos_Pre].[FechaCaptura] AS [FechaCaptura], 
+    [Diagnosticos_Pre].[AccesoInm] AS [AccesoInm], 
+    [Diagnosticos_Pre].[AreaConstruccion] AS [AreaConstruccion], 
+    [Diagnosticos_Pre].[DrenajePluvial] AS [DrenajePluvial], 
+    [Diagnosticos_Pre].[TrenAseo] AS [TrenAseo], 
+    [Diagnosticos_Pre].[Unidades] AS [Unidades]
+    FROM [dbo].[Diagnosticos_Pre] AS [Diagnosticos_Pre]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Usuarios_View" EntityType="Self.Usuarios_View" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Usuarios_View].[IDUsuario] AS [IDUsuario], 
+    [Usuarios_View].[NomUsuario] AS [NomUsuario], 
+    [Usuarios_View].[Password] AS [Password], 
+    [Usuarios_View].[Nombre] AS [Nombre], 
+    [Usuarios_View].[Apellidos] AS [Apellidos], 
+    [Usuarios_View].[IDEvento] AS [IDEvento], 
+    [Usuarios_View].[Token] AS [Token], 
+    [Usuarios_View].[Key1] AS [Key1], 
+    [Usuarios_View].[IV] AS [IV], 
+    [Usuarios_View].[Sesiones] AS [Sesiones], 
+    [Usuarios_View].[LimiteSesiones] AS [LimiteSesiones], 
+    [Usuarios_View].[IDPerfil] AS [IDPerfil], 
+    [Usuarios_View].[Nivel] AS [Nivel], 
+    [Usuarios_View].[Descripcion] AS [Descripcion], 
+    [Usuarios_View].[Tipo] AS [Tipo], 
+    [Usuarios_View].[FechaCreado] AS [FechaCreado], 
+    [Usuarios_View].[FechaModificado] AS [FechaModificado], 
+    [Usuarios_View].[Sector] AS [Sector], 
+    [Usuarios_View].[NomSector] AS [NomSector], 
+    [Usuarios_View].[FechaExpira] AS [FechaExpira], 
+    [Usuarios_View].[IDProvincia] AS [IDProvincia], 
+    [Usuarios_View].[Correo] AS [Correo], 
+    [Usuarios_View].[Cargo] AS [Cargo], 
+    [Usuarios_View].[Telefono] AS [Telefono], 
+    [Usuarios_View].[Provincia] AS [Provincia]
+    FROM [dbo].[Usuarios_View] AS [Usuarios_View]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_AccionDef_ActivoDef" Association="Self.FK_AccionDef_ActivoDef">
+            <End Role="ActivoDef" EntitySet="ActivoDef" />
+            <End Role="AccionDef" EntitySet="AccionDef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccionPre_ActivoPre" Association="Self.FK_AccionPre_ActivoPre">
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+            <End Role="AccionPre" EntitySet="AccionPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Eventos" Association="Self.FK_ActivoPre_Eventos">
+            <End Role="Eventos" EntitySet="Eventos" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Sectores" Association="Self.FK_ActivoPre_Sectores">
+            <End Role="Sectores" EntitySet="Sectores" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Usuarios" Association="Self.FK_ActivoPre_Usuarios">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Perfil" Association="Self.FK_Usuarios_Perfil">
+            <End Role="Perfil" EntitySet="Perfil" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SIRED_HNDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SIRED_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccionDef" EntityType="SIRED_HNDModel.AccionDef" />
+          <EntitySet Name="AccionPre" EntityType="SIRED_HNDModel.AccionPre" />
+          <EntitySet Name="ActivoDef" EntityType="SIRED_HNDModel.ActivoDef" />
+          <EntitySet Name="ActivoPre" EntityType="SIRED_HNDModel.ActivoPre" />
+          <EntitySet Name="Catalogos" EntityType="SIRED_HNDModel.Catalogos" />
+          <EntitySet Name="DIV_ADMIN1" EntityType="SIRED_HNDModel.DIV_ADMIN1" />
+          <EntitySet Name="DIV_ADMIN2" EntityType="SIRED_HNDModel.DIV_ADMIN2" />
+          <EntitySet Name="DIV_ADMIN3" EntityType="SIRED_HNDModel.DIV_ADMIN3" />
+          <EntitySet Name="Entrevista" EntityType="SIRED_HNDModel.Entrevista" />
+          <EntitySet Name="Eventos" EntityType="SIRED_HNDModel.Eventos" />
+          <EntitySet Name="Perfil" EntityType="SIRED_HNDModel.Perfil" />
+          <EntitySet Name="Sectores" EntityType="SIRED_HNDModel.Sectores" />
+          <EntitySet Name="Usuarios" EntityType="SIRED_HNDModel.Usuarios" />
+          <EntitySet Name="VersionCatalog" EntityType="SIRED_HNDModel.VersionCatalog" />
+          <EntitySet Name="Diagnosticos_Def" EntityType="SIRED_HNDModel.Diagnosticos_Def" />
+          <EntitySet Name="Diagnosticos_Pre" EntityType="SIRED_HNDModel.Diagnosticos_Pre" />
+          <EntitySet Name="Usuarios_View" EntityType="SIRED_HNDModel.Usuarios_View" />
+          <AssociationSet Name="FK_AccionDef_ActivoDef" Association="SIRED_HNDModel.FK_AccionDef_ActivoDef">
+            <End Role="ActivoDef" EntitySet="ActivoDef" />
+            <End Role="AccionDef" EntitySet="AccionDef" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccionPre_ActivoPre" Association="SIRED_HNDModel.FK_AccionPre_ActivoPre">
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+            <End Role="AccionPre" EntitySet="AccionPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Eventos" Association="SIRED_HNDModel.FK_ActivoPre_Eventos">
+            <End Role="Eventos" EntitySet="Eventos" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Sectores" Association="SIRED_HNDModel.FK_ActivoPre_Sectores">
+            <End Role="Sectores" EntitySet="Sectores" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivoPre_Usuarios" Association="SIRED_HNDModel.FK_ActivoPre_Usuarios">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="ActivoPre" EntitySet="ActivoPre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Perfil" Association="SIRED_HNDModel.FK_Usuarios_Perfil">
+            <End Role="Perfil" EntitySet="Perfil" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccionDef">
+          <Key>
+            <PropertyRef Name="IDAccion" />
+          </Key>
+          <Property Name="IDAccion" Type="Int32" Nullable="false" />
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Unidades" Type="Double" Nullable="false" />
+          <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+          <Property Name="Eliminado" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ActivoDef" Relationship="SIRED_HNDModel.FK_AccionDef_ActivoDef" FromRole="AccionDef" ToRole="ActivoDef" />
+        </EntityType>
+        <EntityType Name="AccionPre">
+          <Key>
+            <PropertyRef Name="IDAccion" />
+          </Key>
+          <Property Name="IDAccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Unidades" Type="Double" Nullable="false" />
+          <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+          <Property Name="Eliminado" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ActivoPre" Relationship="SIRED_HNDModel.FK_AccionPre_ActivoPre" FromRole="AccionPre" ToRole="ActivoPre" />
+        </EntityType>
+        <EntityType Name="ActivoDef">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+          </Key>
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="Double" Nullable="false" />
+          <Property Name="Latitud" Type="Double" Nullable="false" />
+          <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSector" Type="Int32" Nullable="false" />
+          <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ministerio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+          <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InmuebleDaniado" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eliminado" Type="Int32" Nullable="false" />
+          <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+          <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+          <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+          <Property Name="Drenaje" Type="Int32" Nullable="false" />
+          <Property Name="Energia" Type="Int32" Nullable="false" />
+          <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+          <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+          <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AccionDef" Relationship="SIRED_HNDModel.FK_AccionDef_ActivoDef" FromRole="ActivoDef" ToRole="AccionDef" />
+        </EntityType>
+        <EntityType Name="ActivoPre">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+          </Key>
+          <Property Name="IDActivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="Double" Nullable="false" />
+          <Property Name="Latitud" Type="Double" Nullable="false" />
+          <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSector" Type="Int32" Nullable="false" />
+          <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ministerio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+          <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InmuebleDaniado" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eliminado" Type="Int32" Nullable="false" />
+          <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+          <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+          <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+          <Property Name="Drenaje" Type="Int32" Nullable="false" />
+          <Property Name="Energia" Type="Int32" Nullable="false" />
+          <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+          <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+          <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AccionPre" Relationship="SIRED_HNDModel.FK_AccionPre_ActivoPre" FromRole="ActivoPre" ToRole="AccionPre" />
+          <NavigationProperty Name="Eventos" Relationship="SIRED_HNDModel.FK_ActivoPre_Eventos" FromRole="ActivoPre" ToRole="Eventos" />
+          <NavigationProperty Name="Sectores" Relationship="SIRED_HNDModel.FK_ActivoPre_Sectores" FromRole="ActivoPre" ToRole="Sectores" />
+          <NavigationProperty Name="Usuarios" Relationship="SIRED_HNDModel.FK_ActivoPre_Usuarios" FromRole="ActivoPre" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Catalogos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Grupo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Valor" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Sectores" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN1">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shape" Type="Geometry" />
+          <Property Name="NOMBRE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN2">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shape" Type="Geometry" />
+          <Property Name="NOMBRE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CVE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DIV_ADMIN3">
+          <Key>
+            <PropertyRef Name="OBJECTID" />
+          </Key>
+          <Property Name="OBJECTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shape" Type="Geometry" />
+          <Property Name="NOMBRE" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DIVADMIN3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CVE" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Entrevista">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoDoc" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Identificacion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Genero" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Edo_Civil" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="F_Nacimiento" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Idioma" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoProd" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre_2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono_2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email_2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Eventos">
+          <Key>
+            <PropertyRef Name="IDEvento" />
+          </Key>
+          <Property Name="IDEvento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaEvento" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Eliminado" Type="Int32" />
+          <Property Name="Autoriza" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ActivoPre" Relationship="SIRED_HNDModel.FK_ActivoPre_Eventos" FromRole="Eventos" ToRole="ActivoPre" />
+        </EntityType>
+        <EntityType Name="Perfil">
+          <Key>
+            <PropertyRef Name="IDPerfil" />
+          </Key>
+          <Property Name="IDPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Usuarios" Relationship="SIRED_HNDModel.FK_Usuarios_Perfil" FromRole="Perfil" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Sectores">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClaveSector" Type="Int32" Nullable="false" />
+          <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tipo" Type="Int32" />
+          <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Activo" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VersionCat" Type="Int32" Nullable="false" />
+          <Property Name="FechaVersionCat" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="ActivoPre" Relationship="SIRED_HNDModel.FK_ActivoPre_Sectores" FromRole="Sectores" ToRole="ActivoPre" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+          </Key>
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="IDPerfil" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NomUsuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Key1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sesiones" Type="Int32" Nullable="false" />
+          <Property Name="LimiteSesiones" Type="Int32" Nullable="false" />
+          <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Bloqueo" Type="Int32" />
+          <Property Name="Hit" Type="Int32" />
+          <Property Name="Sector" Type="Int32" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDProvincia" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ActivoPre" Relationship="SIRED_HNDModel.FK_ActivoPre_Usuarios" FromRole="Usuarios" ToRole="ActivoPre" />
+          <NavigationProperty Name="Perfil" Relationship="SIRED_HNDModel.FK_Usuarios_Perfil" FromRole="Usuarios" ToRole="Perfil" />
+        </EntityType>
+        <EntityType Name="VersionCatalog">
+          <Key>
+            <PropertyRef Name="VersionCatalogos" />
+          </Key>
+          <Property Name="VersionCatalogos" Type="Int32" Nullable="false" />
+          <Property Name="Fecha_Actualizacion" Type="DateTime" Precision="3" />
+          <Property Name="Sectores" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Diagnosticos_Def">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+            <PropertyRef Name="IDAccion" />
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="IDDIVADMIN1" />
+            <PropertyRef Name="DIVADMIN1" />
+            <PropertyRef Name="IDDIVADMIN3" />
+            <PropertyRef Name="DIVADMIN3" />
+            <PropertyRef Name="IDDIVADMIN2" />
+            <PropertyRef Name="Reunion" />
+            <PropertyRef Name="Domicilio" />
+            <PropertyRef Name="Longitud" />
+            <PropertyRef Name="Latitud" />
+            <PropertyRef Name="Foto1" />
+            <PropertyRef Name="Foto2" />
+            <PropertyRef Name="Foto3" />
+            <PropertyRef Name="Foto4" />
+            <PropertyRef Name="IDSector" />
+            <PropertyRef Name="EstatusAseguramiento" />
+            <PropertyRef Name="ApoyosAnteriores" />
+            <PropertyRef Name="PoblacionAfectada" />
+            <PropertyRef Name="UnidadMedida" />
+            <PropertyRef Name="ZonaAfectada" />
+            <PropertyRef Name="TipoZonaAfectada" />
+            <PropertyRef Name="InmuebleDaniado" />
+            <PropertyRef Name="Responsable" />
+            <PropertyRef Name="Titular" />
+            <PropertyRef Name="Cargo" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="FechaCreacion" />
+            <PropertyRef Name="FechaModificacion" />
+            <PropertyRef Name="Diagnostico" />
+            <PropertyRef Name="Restauracion" />
+            <PropertyRef Name="TipoDanio" />
+            <PropertyRef Name="CostoUnitario" />
+            <PropertyRef Name="CostoTotalObra" />
+            <PropertyRef Name="NomSector" />
+            <PropertyRef Name="AbrevMin" />
+            <PropertyRef Name="CostoAdmin" />
+            <PropertyRef Name="CostoTotalR" />
+            <PropertyRef Name="Fenomeno" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="FContactoMail" />
+            <PropertyRef Name="CES1Activo" />
+            <PropertyRef Name="CES2Activo" />
+            <PropertyRef Name="Localidad" />
+            <PropertyRef Name="TipoAdmin" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="AreaTerreno" />
+            <PropertyRef Name="AguaPotable" />
+            <PropertyRef Name="Drenaje" />
+            <PropertyRef Name="Energia" />
+            <PropertyRef Name="AccesoInm" />
+            <PropertyRef Name="AreaConstruccion" />
+            <PropertyRef Name="DrenajePluvial" />
+            <PropertyRef Name="TrenAseo" />
+            <PropertyRef Name="Unidades" />
+          </Key>
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="IDAccion" Type="Int32" Nullable="false" />
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="Double" Nullable="false" />
+          <Property Name="Latitud" Type="Double" Nullable="false" />
+          <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSector" Type="Int32" Nullable="false" />
+          <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+          <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InmuebleDaniado" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+          <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+          <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+          <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+          <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+          <Property Name="Drenaje" Type="Int32" Nullable="false" />
+          <Property Name="Energia" Type="Int32" Nullable="false" />
+          <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+          <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+          <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+          <Property Name="Unidades" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Diagnosticos_Pre">
+          <Key>
+            <PropertyRef Name="IDActivo" />
+            <PropertyRef Name="IDAccion" />
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="IDDIVADMIN1" />
+            <PropertyRef Name="DIVADMIN1" />
+            <PropertyRef Name="IDDIVADMIN3" />
+            <PropertyRef Name="DIVADMIN3" />
+            <PropertyRef Name="IDDIVADMIN2" />
+            <PropertyRef Name="Reunion" />
+            <PropertyRef Name="Domicilio" />
+            <PropertyRef Name="Longitud" />
+            <PropertyRef Name="Latitud" />
+            <PropertyRef Name="Foto1" />
+            <PropertyRef Name="Foto2" />
+            <PropertyRef Name="Foto3" />
+            <PropertyRef Name="Foto4" />
+            <PropertyRef Name="IDSector" />
+            <PropertyRef Name="EstatusAseguramiento" />
+            <PropertyRef Name="ApoyosAnteriores" />
+            <PropertyRef Name="PoblacionAfectada" />
+            <PropertyRef Name="UnidadMedida" />
+            <PropertyRef Name="ZonaAfectada" />
+            <PropertyRef Name="TipoZonaAfectada" />
+            <PropertyRef Name="Responsable" />
+            <PropertyRef Name="Titular" />
+            <PropertyRef Name="Cargo" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="FechaCreacion" />
+            <PropertyRef Name="FechaModificacion" />
+            <PropertyRef Name="Diagnostico" />
+            <PropertyRef Name="Restauracion" />
+            <PropertyRef Name="TipoDanio" />
+            <PropertyRef Name="CostoUnitario" />
+            <PropertyRef Name="CostoTotalObra" />
+            <PropertyRef Name="NomSector" />
+            <PropertyRef Name="AbrevMin" />
+            <PropertyRef Name="CostoAdmin" />
+            <PropertyRef Name="CostoTotalR" />
+            <PropertyRef Name="Fenomeno" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="FContactoMail" />
+            <PropertyRef Name="CES1Activo" />
+            <PropertyRef Name="CES2Activo" />
+            <PropertyRef Name="Localidad" />
+            <PropertyRef Name="TipoAdmin" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="AreaTerreno" />
+            <PropertyRef Name="AguaPotable" />
+            <PropertyRef Name="Drenaje" />
+            <PropertyRef Name="Energia" />
+            <PropertyRef Name="AccesoInm" />
+            <PropertyRef Name="AreaConstruccion" />
+            <PropertyRef Name="DrenajePluvial" />
+            <PropertyRef Name="TrenAseo" />
+            <PropertyRef Name="Unidades" />
+          </Key>
+          <Property Name="IDActivo" Type="Int32" Nullable="false" />
+          <Property Name="IDAccion" Type="Int32" Nullable="false" />
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+          <Property Name="IDDIVADMIN1" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN3" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN3" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDDIVADMIN2" Type="Int32" Nullable="false" />
+          <Property Name="DIVADMIN2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Reunion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="Double" Nullable="false" />
+          <Property Name="Latitud" Type="Double" Nullable="false" />
+          <Property Name="Foto1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto3" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Foto4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSector" Type="Int32" Nullable="false" />
+          <Property Name="CPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EstatusAseguramiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApoyosAnteriores" Type="Int32" Nullable="false" />
+          <Property Name="PoblacionAfectada" Type="Double" Nullable="false" />
+          <Property Name="UnidadMedida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoZonaAfectada" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InmuebleDaniado" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Responsable" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titular" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Diagnostico" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Restauracion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TipoDanio" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoUnitario" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalObra" Type="Double" Nullable="false" />
+          <Property Name="Estatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InfraDa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Material" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NomSector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AbrevMin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ministerio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CostoAdmin" Type="Double" Nullable="false" />
+          <Property Name="CostoTotalR" Type="Double" Nullable="false" />
+          <Property Name="Fenomeno" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FContactoTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FContactoMail" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CES1Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CES2Activo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaSiembra" Type="DateTime" Precision="3" />
+          <Property Name="Localidad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TipoAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaTerreno" Type="Double" Nullable="false" />
+          <Property Name="AguaPotable" Type="Int32" Nullable="false" />
+          <Property Name="Drenaje" Type="Int32" Nullable="false" />
+          <Property Name="Energia" Type="Int32" Nullable="false" />
+          <Property Name="FechaCaptura" Type="DateTime" Precision="3" />
+          <Property Name="AccesoInm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AreaConstruccion" Type="Double" Nullable="false" />
+          <Property Name="DrenajePluvial" Type="Int32" Nullable="false" />
+          <Property Name="TrenAseo" Type="Int32" Nullable="false" />
+          <Property Name="Unidades" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios_View">
+          <Key>
+            <PropertyRef Name="IDUsuario" />
+            <PropertyRef Name="NomUsuario" />
+            <PropertyRef Name="Password" />
+            <PropertyRef Name="Nombre" />
+            <PropertyRef Name="Apellidos" />
+            <PropertyRef Name="IDEvento" />
+            <PropertyRef Name="Sesiones" />
+            <PropertyRef Name="LimiteSesiones" />
+            <PropertyRef Name="IDPerfil" />
+            <PropertyRef Name="Nivel" />
+            <PropertyRef Name="Descripcion" />
+            <PropertyRef Name="Tipo" />
+            <PropertyRef Name="FechaCreado" />
+            <PropertyRef Name="FechaModificado" />
+            <PropertyRef Name="FechaExpira" />
+            <PropertyRef Name="IDProvincia" />
+          </Key>
+          <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+          <Property Name="NomUsuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDEvento" Type="Int32" Nullable="false" />
+          <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Key1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sesiones" Type="Int32" Nullable="false" />
+          <Property Name="LimiteSesiones" Type="Int32" Nullable="false" />
+          <Property Name="IDPerfil" Type="Int32" Nullable="false" />
+          <Property Name="Nivel" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FechaCreado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaModificado" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Sector" Type="Int32" />
+          <Property Name="NomSector" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaExpira" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IDProvincia" Type="Int32" Nullable="false" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Provincia" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_AccionDef_ActivoDef">
+          <End Type="SIRED_HNDModel.ActivoDef" Role="ActivoDef" Multiplicity="1" />
+          <End Type="SIRED_HNDModel.AccionDef" Role="AccionDef" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActivoDef">
+              <PropertyRef Name="IDActivo" />
+            </Principal>
+            <Dependent Role="AccionDef">
+              <PropertyRef Name="IDActivo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccionPre_ActivoPre">
+          <End Type="SIRED_HNDModel.ActivoPre" Role="ActivoPre" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SIRED_HNDModel.AccionPre" Role="AccionPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActivoPre">
+              <PropertyRef Name="IDActivo" />
+            </Principal>
+            <Dependent Role="AccionPre">
+              <PropertyRef Name="IDActivo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Eventos">
+          <End Type="SIRED_HNDModel.Eventos" Role="Eventos" Multiplicity="1" />
+          <End Type="SIRED_HNDModel.ActivoPre" Role="ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eventos">
+              <PropertyRef Name="IDEvento" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDEvento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Sectores">
+          <End Type="SIRED_HNDModel.Sectores" Role="Sectores" Multiplicity="1" />
+          <End Type="SIRED_HNDModel.ActivoPre" Role="ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sectores">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDSector" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivoPre_Usuarios">
+          <End Type="SIRED_HNDModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+          <End Type="SIRED_HNDModel.ActivoPre" Role="ActivoPre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="IDUsuario" />
+            </Principal>
+            <Dependent Role="ActivoPre">
+              <PropertyRef Name="IDUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Perfil">
+          <End Type="SIRED_HNDModel.Perfil" Role="Perfil" Multiplicity="1" />
+          <End Type="SIRED_HNDModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Perfil">
+              <PropertyRef Name="IDPerfil" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IDPerfil" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SIRED_HNDModelStoreContainer" CdmEntityContainer="SIRED_Entities">
+          <EntitySetMapping Name="AccionDef">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.AccionDef">
+              <MappingFragment StoreEntitySet="AccionDef">
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+                <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+                <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+                <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="CES2" ColumnName="CES2" />
+                <ScalarProperty Name="CES1" ColumnName="CES1" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+                <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+                <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+                <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+                <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+                <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AccionPre">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.AccionPre">
+              <MappingFragment StoreEntitySet="AccionPre">
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+                <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+                <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+                <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="CES2" ColumnName="CES2" />
+                <ScalarProperty Name="CES1" ColumnName="CES1" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+                <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+                <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+                <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+                <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+                <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActivoDef">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.ActivoDef">
+              <MappingFragment StoreEntitySet="ActivoDef">
+                <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+                <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+                <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+                <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+                <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+                <ScalarProperty Name="Energia" ColumnName="Energia" />
+                <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+                <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+                <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+                <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+                <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+                <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+                <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+                <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Titular" ColumnName="Titular" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+                <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+                <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+                <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+                <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+                <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+                <ScalarProperty Name="CPS" ColumnName="CPS" />
+                <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+                <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+                <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+                <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+                <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+                <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+                <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActivoPre">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.ActivoPre">
+              <MappingFragment StoreEntitySet="ActivoPre">
+                <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+                <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+                <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+                <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+                <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+                <ScalarProperty Name="Energia" ColumnName="Energia" />
+                <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+                <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+                <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+                <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+                <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+                <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+                <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+                <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Titular" ColumnName="Titular" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+                <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+                <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+                <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+                <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+                <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+                <ScalarProperty Name="CPS" ColumnName="CPS" />
+                <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+                <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+                <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+                <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+                <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+                <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+                <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Catalogos">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Catalogos">
+              <MappingFragment StoreEntitySet="Catalogos">
+                <ScalarProperty Name="Sectores" ColumnName="Sectores" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIV_ADMIN1">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN1">
+              <MappingFragment StoreEntitySet="DIV_ADMIN1">
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="Shape" ColumnName="Shape" />
+                <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIV_ADMIN2">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN2">
+              <MappingFragment StoreEntitySet="DIV_ADMIN2">
+                <ScalarProperty Name="CVE" ColumnName="CVE" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="Shape" ColumnName="Shape" />
+                <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIV_ADMIN3">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN3">
+              <MappingFragment StoreEntitySet="DIV_ADMIN3">
+                <ScalarProperty Name="CVE" ColumnName="CVE" />
+                <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="Shape" ColumnName="Shape" />
+                <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Entrevista">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Entrevista">
+              <MappingFragment StoreEntitySet="Entrevista">
+                <ScalarProperty Name="Email_2" ColumnName="Email_2" />
+                <ScalarProperty Name="Telefono_2" ColumnName="Telefono_2" />
+                <ScalarProperty Name="Nombre_2" ColumnName="Nombre_2" />
+                <ScalarProperty Name="TipoProd" ColumnName="TipoProd" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="F_Nacimiento" ColumnName="F_Nacimiento" />
+                <ScalarProperty Name="Edo_Civil" ColumnName="Edo_Civil" />
+                <ScalarProperty Name="Genero" ColumnName="Genero" />
+                <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+                <ScalarProperty Name="TipoDoc" ColumnName="TipoDoc" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Eventos">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Eventos">
+              <MappingFragment StoreEntitySet="Eventos">
+                <ScalarProperty Name="Autoriza" ColumnName="Autoriza" />
+                <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="FechaEvento" ColumnName="FechaEvento" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Perfil">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Perfil">
+              <MappingFragment StoreEntitySet="Perfil">
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sectores">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Sectores">
+              <MappingFragment StoreEntitySet="Sectores">
+                <ScalarProperty Name="FechaVersionCat" ColumnName="FechaVersionCat" />
+                <ScalarProperty Name="VersionCat" ColumnName="VersionCat" />
+                <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+                <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+                <ScalarProperty Name="Activo" ColumnName="Activo" />
+                <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+                <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+                <ScalarProperty Name="ClaveSector" ColumnName="ClaveSector" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="IDProvincia" ColumnName="IDProvincia" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Hit" ColumnName="Hit" />
+                <ScalarProperty Name="Bloqueo" ColumnName="Bloqueo" />
+                <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+                <ScalarProperty Name="LimiteSesiones" ColumnName="LimiteSesiones" />
+                <ScalarProperty Name="Sesiones" ColumnName="Sesiones" />
+                <ScalarProperty Name="IV" ColumnName="IV" />
+                <ScalarProperty Name="Key1" ColumnName="Key1" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+                <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="NomUsuario" ColumnName="NomUsuario" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VersionCatalog">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.VersionCatalog">
+              <MappingFragment StoreEntitySet="VersionCatalog">
+                <ScalarProperty Name="Sectores" ColumnName="Sectores" />
+                <ScalarProperty Name="Fecha_Actualizacion" ColumnName="Fecha_Actualizacion" />
+                <ScalarProperty Name="VersionCatalogos" ColumnName="VersionCatalogos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Diagnosticos_Def">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Diagnosticos_Def">
+              <MappingFragment StoreEntitySet="Diagnosticos_Def">
+                <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+                <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+                <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+                <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+                <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+                <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+                <ScalarProperty Name="Energia" ColumnName="Energia" />
+                <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+                <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+                <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+                <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+                <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+                <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+                <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+                <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+                <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+                <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+                <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+                <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+                <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+                <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+                <ScalarProperty Name="CES2" ColumnName="CES2" />
+                <ScalarProperty Name="CES1" ColumnName="CES1" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+                <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+                <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+                <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+                <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Titular" ColumnName="Titular" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+                <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+                <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+                <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+                <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+                <ScalarProperty Name="CPS" ColumnName="CPS" />
+                <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+                <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+                <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+                <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+                <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+                <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+                <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Diagnosticos_Pre">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Diagnosticos_Pre">
+              <MappingFragment StoreEntitySet="Diagnosticos_Pre">
+                <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+                <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+                <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+                <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+                <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+                <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+                <ScalarProperty Name="Energia" ColumnName="Energia" />
+                <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+                <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+                <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+                <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+                <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+                <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+                <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+                <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+                <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+                <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+                <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+                <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+                <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+                <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+                <ScalarProperty Name="CES2" ColumnName="CES2" />
+                <ScalarProperty Name="CES1" ColumnName="CES1" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+                <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+                <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+                <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+                <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Titular" ColumnName="Titular" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+                <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+                <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+                <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+                <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+                <ScalarProperty Name="CPS" ColumnName="CPS" />
+                <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+                <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+                <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+                <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+                <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+                <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+                <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+                <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+                <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+                <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+                <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+                <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+                <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+                <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios_View">
+            <EntityTypeMapping TypeName="SIRED_HNDModel.Usuarios_View">
+              <MappingFragment StoreEntitySet="Usuarios_View">
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="IDProvincia" ColumnName="IDProvincia" />
+                <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+                <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+                <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+                <ScalarProperty Name="LimiteSesiones" ColumnName="LimiteSesiones" />
+                <ScalarProperty Name="Sesiones" ColumnName="Sesiones" />
+                <ScalarProperty Name="IV" ColumnName="IV" />
+                <ScalarProperty Name="Key1" ColumnName="Key1" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="NomUsuario" ColumnName="NomUsuario" />
+                <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,74 @@
+{
+  "version": "1.0.3",
+  "reporte": {
+    "excell": [
+      { "campo": "Fenomeno", "alias": "Fenómeno" },
+      { "campo": "IDActivo", "alias": "Clave" },
+      { "campo": "IDAccion", "alias": "Clave daño" },
+      { "campo": "Longitud", "alias": "Longitud" },
+      { "campo": "Latitud", "alias": "Latitud" },
+      { "campo": "IDDIVADMIN2", "alias": "Código Distrito" },
+      { "campo": "DIVADMIN2", "alias": "Distrito" },
+      { "campo": "IDDIVADMIN3", "alias": "Código Corregimiento" },
+      { "campo": "DIVADMIN3", "alias": "Corregimiento" },
+      { "campo": "Localidad", "alias": "Lugar poblado (aldea finca etc.)" },
+      { "campo": "PoblacionAfectada", "alias": "Total familias afectadas" },
+      { "campo": "TipoDanio", "alias": "Tipo de Necesidad" },
+      { "campo": "Domicilio", "alias": "Domicilio calle y número" },
+      { "campo": "TipoAdmin", "alias": "Propiedad de la tierra" },
+      { "campo": "Nivel", "alias": "Tipo de bien agrícola" },
+      { "campo": "FechaSiembra", "alias": "Fecha de siembra" },
+      { "campo": "InfraDa", "alias": "Descripción de la tipología" },
+      { "campo": "UnidadMedida", "alias": "Unidad de medida" },
+      { "campo": "AreaTerreno", "alias": "Superficie sembrada" },
+      { "campo": "AguaPotable", "alias": "¿Tiene agua de riego?" },
+      { "campo": "ZonaAfectada", "alias": "Zona Afectada" },
+      { "campo": "Foto1", "alias": "Foto1" },
+      { "campo": "Foto2", "alias": "Foto2" },
+      { "campo": "Foto3", "alias": "Foto3" },
+      { "campo": "Foto4", "alias": "Foto4" },
+      { "campo": "Responsable", "alias": "Institución responsable" },
+      { "campo": "CES1", "alias": "Etapa Fenológica" },
+      { "campo": "Diagnostico", "alias": "Descripción del daño" },
+      { "campo": "Restauracion", "alias": "Acciones de Restauración" },
+      {
+        "campo": "Unidades",
+        "alias": "Área afectada animales ó infraestructura"
+      },
+      { "campo": "CostoUnitario", "alias": "Costo por unidad" },
+      { "campo": "CostoTotalObra", "alias": "Costo Total del Daño" },
+      { "campo": "CostoAdmin", "alias": "Costos Administrativos" },
+      { "campo": "CostoTotalR", "alias": "Costo Total de la Obra" },
+      { "campo": "Observaciones", "alias": "Observaciones" }
+    ],
+    "titulo1": "*Informe __predef__ de Daños Agrícolas Y Pecuarios*",
+    "titulo2": "*__evento__*",
+    "titulo3": "__today__",
+    "textos": [
+      {
+        "titulo": "header",
+        "texto": ""
+      },
+      {
+        "titulo": "footer",
+        "texto": ""
+      },
+      {
+        "titulo": "",
+        "texto": "En el territorio Nacional los departamentos de *__deptos__* reportan daños a *__losses__*. Se estima un área dañada de *__area__ hectáreas*, y *__familias__* familias afectadas. La estimación de la pérdida económica es de *B __montototal__*"
+      },
+      {
+        "titulo": "*__depto__*",
+        "texto": "Reporta daños de *__losses__* en el municipio de *__mpios__* se estima un área dañada de *__area__ hectáreas*, afectando en total a *__familias__* familias. La estimación de la pérdida económica es de B *__montototal__*"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños Agrícolas*",
+        "texto": "Departamentos|Suma de Familias Afectadas (Total)|Suma de Estimación de área dañada (Hectáreas)|Suma de Estimación de Pérdida en Balboas"
+      },
+      {
+        "titulo": "*Estimación Preliminar de Daños Agrícolas por Municipio*",
+        "texto": "Departamentos|Suma de Familias Afectadas (Total)|Suma de Estimación de área dañada (Hectáreas)|Suma de Estimación de Pérdida en Balboas"
+      }
+    ]
+  }
+}

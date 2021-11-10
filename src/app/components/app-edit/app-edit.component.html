@@ -1,0 +1,97 @@
+<!-- [# version: 6.4.16 #] -->
+<form>
+  <div>
+    <label
+      class="form-label"
+      *ngIf="editable && h.tipo !== 'imagen'"
+      [ngStyle]="{
+        'min-width': Get_Style_MinWidth(h.campo),
+        'text-align': Get_Style_Left(h.campo)
+      }"
+    >
+      <div *ngIf="h.tipo === 'switch'">
+        {{ item[h.campo] | fswitch }}
+      </div>
+      <div *ngIf="h.tipo === 'date'">
+        {{ item[h.campo] | date: "dd/MM/yyyy" }}
+      </div>
+      <div *ngIf="es_label">
+        {{ item[h.campo] | fnumber: h.formato }}
+      </div>
+      <div *ngIf="h.tipo === 'slider'" style="font-size: 12px">
+        {{ item[h.campo] | fslider: h.lista || "" }}
+      </div>
+      <div *ngIf="h.tipo === 'stepper'">
+        <div
+          style="margin-bottom: -10px"
+          *ngFor="let ls of lista_stepper; let idx = index"
+        >
+          <label style="font-size: 12px">
+            {{ ls }}:
+            <strong>{{ item[h.campo] | fstepper: idx }}</strong>
+          </label>
+        </div>
+      </div>
+    </label>
+    <!-- Controles de edición -->
+    <!-- Input -->
+    <app-tool-input
+      *ngIf="control_editable && h.tipo === 'text'"
+      [formato]="h.formato"
+      [req]="h.required"
+      [h]="h"
+      [item]="item"
+      (On_Change_Data)="Change_Row($event)"
+    ></app-tool-input>
+    <!-- Stepper -->
+    <app-tool-stepper
+      *ngIf="control_editable && h.tipo === 'stepper'"
+      [formato]="h.formato"
+      [req]="h.required"
+      [h]="h"
+      [item]="item"
+    ></app-tool-stepper>
+    <!-- Slider -->
+    <app-tool-slider
+      *ngIf="control_editable && h.tipo === 'slider'"
+      [formato]="h.formato"
+      [req]="h.required"
+      [h]="h"
+      [item]="item"
+      (On_Change_Data)="Change_Row($event)"
+    ></app-tool-slider>
+    <!-- Select -->
+    <app-tool-select
+      *ngIf="control_editable && Es_Lista(h.tipo)"
+      [lista]="lista"
+      [h]="h"
+      [item]="item"
+      (On_Change_Data)="Change_Row($event)"
+    ></app-tool-select>
+    <!-- Date -->
+    <app-tool-date
+      *ngIf="control_editable && h.tipo === 'date'"
+      [h]="h"
+      [item]="item"
+    >
+    </app-tool-date>
+    <!-- Check -->
+    <app-tool-check
+      *ngIf="control_editable && h.tipo === 'switch'"
+      [h]="h"
+      [item]="item"
+    >
+    </app-tool-check>
+    <!-- Image -->
+    <app-tool-image *ngIf="h.tipo === 'imagen'" [h]="h" [item]="item">
+    </app-tool-image>
+    <!-- TextArea -->
+    <app-tool-textarea
+      *ngIf="control_editable && h.tipo === 'textArea'"
+      [h]="h"
+      [item]="item"
+    >
+    </app-tool-textarea>
+    <app-tool-ver-mas> </app-tool-ver-mas>
+  </div>
+</form>

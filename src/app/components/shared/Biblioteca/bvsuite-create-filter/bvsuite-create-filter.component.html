@@ -1,0 +1,93 @@
+<!-- [# version: 6.4.2 #] -->
+<div class="modal fade"
+     id="biblioteca_virtual_filter"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h4 class="modal-title">{{this.language.lbl_reporte_filtro}}</h4>
+            <div class="modal-header">
+                <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li [ngClass]="{ activeBvSuite: ubicacion }"
+                            class="breadcrumb-item"
+                            (click)="App = 0">
+                            <div style="border-right: 1px solid #b3b7bc" class="pe-2">
+                                <br />
+                                {{this.language.lbl_ubicacion}}
+                            </div>
+                        </li>
+                        <li [ngClass]="{ activeBvSuite: nivel_educativo }"
+                            class="breadcrumb-item"
+                            (click)="App = 1">
+                            <div style="border-right: 1px solid #b3b7bc" class="pe-2">
+                               {{this.language.lbl_nivel_educativo}} <br>
+                               {{this.language.lbl_nivel_educativo_2}}
+                            </div>
+                        </li>
+                        <li [ngClass]="{ activeBvSuite: nivel_danio }"
+                            class="breadcrumb-item"
+                            (click)="App = 2">
+                            <div style="border-right: 1px solid #b3b7bc" class="pe-2">
+                               {{this.language.lbl_nivel_danio}} <br>
+                               {{this.language.lbl_nivel_danio_2}}
+                            </div>
+                        </li>
+                        <!-- <li
+                          [ngClass]="{ activeBvSuite: tipo_ambiente_evaluado }"
+                          class="breadcrumb-item"
+                          (click)="App = 3"
+                        >
+                          <div style="border-right: 1px solid #b3b7bc" class="pe-2">
+                            Tipo <br />
+                            Ambiente
+                          </div>
+                        </li>
+                        <li
+                          [ngClass]="{ activeBvSuite: matricula }"
+                          class="breadcrumb-item"
+                          (click)="App = 4"
+                        >
+                          <br />
+                          <div class="pe-2">Matricula</div>
+                        </li> -->
+                    </ol>
+                </nav>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- [formGroup]="formFirma" #f="ngForm" -->
+                <div *ngIf="ubicacion">
+                    <app-bvsuite-filter-ubicacion [items]="departamentos"></app-bvsuite-filter-ubicacion>
+                </div>
+                <div *ngIf="nivel_educativo">
+                    <app-bvsuite-filter-educativo></app-bvsuite-filter-educativo>
+                </div>
+                <div *ngIf="nivel_danio">
+                    <app-bvsuite-filter-danio>
+                    </app-bvsuite-filter-danio>
+                </div>
+                <div *ngIf="tipo_ambiente_evaluado">
+                    <app-bvsuite-filter-ambiente [tipo]="tipo"
+                                                 [es_reporte_filtro]="es_reporte_filtro"></app-bvsuite-filter-ambiente>
+                </div>
+                <div *ngIf="matricula">
+                    <app-bvsuite-filter-matricula [tipo]="tipo"
+                                                  [es_reporte_filtro]="es_reporte_filtro"></app-bvsuite-filter-matricula>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button (click)="On_Generar_Documento()" type="button" class="btn btn-secondary">
+                   {{this.language.btn_generar}}
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    {{this.language.btn_cancelar}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

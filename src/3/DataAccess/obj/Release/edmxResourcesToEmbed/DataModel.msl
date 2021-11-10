@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SIRED_HNDModelStoreContainer" CdmEntityContainer="SIRED_Entities">
+    <EntitySetMapping Name="AccionDef">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.AccionDef">
+        <MappingFragment StoreEntitySet="AccionDef">
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+          <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+          <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="CES2" ColumnName="CES2" />
+          <ScalarProperty Name="CES1" ColumnName="CES1" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+          <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+          <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+          <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+          <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+          <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccionPre">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.AccionPre">
+        <MappingFragment StoreEntitySet="AccionPre">
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+          <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+          <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="CES2" ColumnName="CES2" />
+          <ScalarProperty Name="CES1" ColumnName="CES1" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+          <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+          <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+          <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+          <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+          <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivoDef">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.ActivoDef">
+        <MappingFragment StoreEntitySet="ActivoDef">
+          <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+          <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+          <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+          <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="Energia" ColumnName="Energia" />
+          <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+          <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+          <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+          <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+          <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+          <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+          <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+          <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+          <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+          <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+          <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+          <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+          <ScalarProperty Name="CPS" ColumnName="CPS" />
+          <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+          <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+          <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+          <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+          <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+          <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivoPre">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.ActivoPre">
+        <MappingFragment StoreEntitySet="ActivoPre">
+          <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+          <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+          <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+          <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="Energia" ColumnName="Energia" />
+          <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+          <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+          <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+          <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+          <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+          <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+          <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+          <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+          <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+          <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+          <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+          <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+          <ScalarProperty Name="CPS" ColumnName="CPS" />
+          <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+          <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+          <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+          <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+          <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+          <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogos">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Catalogos">
+        <MappingFragment StoreEntitySet="Catalogos">
+          <ScalarProperty Name="Sectores" ColumnName="Sectores" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIV_ADMIN1">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN1">
+        <MappingFragment StoreEntitySet="DIV_ADMIN1">
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+          <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIV_ADMIN2">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN2">
+        <MappingFragment StoreEntitySet="DIV_ADMIN2">
+          <ScalarProperty Name="CVE" ColumnName="CVE" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+          <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIV_ADMIN3">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.DIV_ADMIN3">
+        <MappingFragment StoreEntitySet="DIV_ADMIN3">
+          <ScalarProperty Name="CVE" ColumnName="CVE" />
+          <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="Shape" ColumnName="Shape" />
+          <ScalarProperty Name="OBJECTID" ColumnName="OBJECTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entrevista">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Entrevista">
+        <MappingFragment StoreEntitySet="Entrevista">
+          <ScalarProperty Name="Email_2" ColumnName="Email_2" />
+          <ScalarProperty Name="Telefono_2" ColumnName="Telefono_2" />
+          <ScalarProperty Name="Nombre_2" ColumnName="Nombre_2" />
+          <ScalarProperty Name="TipoProd" ColumnName="TipoProd" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+          <ScalarProperty Name="F_Nacimiento" ColumnName="F_Nacimiento" />
+          <ScalarProperty Name="Edo_Civil" ColumnName="Edo_Civil" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="TipoDoc" ColumnName="TipoDoc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Eventos">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Eventos">
+        <MappingFragment StoreEntitySet="Eventos">
+          <ScalarProperty Name="Autoriza" ColumnName="Autoriza" />
+          <ScalarProperty Name="Eliminado" ColumnName="Eliminado" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaEvento" ColumnName="FechaEvento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sectores">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Sectores">
+        <MappingFragment StoreEntitySet="Sectores">
+          <ScalarProperty Name="FechaVersionCat" ColumnName="FechaVersionCat" />
+          <ScalarProperty Name="VersionCat" ColumnName="VersionCat" />
+          <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+          <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+          <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+          <ScalarProperty Name="ClaveSector" ColumnName="ClaveSector" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="IDProvincia" ColumnName="IDProvincia" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Hit" ColumnName="Hit" />
+          <ScalarProperty Name="Bloqueo" ColumnName="Bloqueo" />
+          <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+          <ScalarProperty Name="LimiteSesiones" ColumnName="LimiteSesiones" />
+          <ScalarProperty Name="Sesiones" ColumnName="Sesiones" />
+          <ScalarProperty Name="IV" ColumnName="IV" />
+          <ScalarProperty Name="Key1" ColumnName="Key1" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+          <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="NomUsuario" ColumnName="NomUsuario" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VersionCatalog">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.VersionCatalog">
+        <MappingFragment StoreEntitySet="VersionCatalog">
+          <ScalarProperty Name="Sectores" ColumnName="Sectores" />
+          <ScalarProperty Name="Fecha_Actualizacion" ColumnName="Fecha_Actualizacion" />
+          <ScalarProperty Name="VersionCatalogos" ColumnName="VersionCatalogos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diagnosticos_Def">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Diagnosticos_Def">
+        <MappingFragment StoreEntitySet="Diagnosticos_Def">
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+          <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+          <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+          <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="Energia" ColumnName="Energia" />
+          <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+          <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+          <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+          <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+          <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+          <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+          <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+          <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+          <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+          <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+          <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+          <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+          <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+          <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+          <ScalarProperty Name="CES2" ColumnName="CES2" />
+          <ScalarProperty Name="CES1" ColumnName="CES1" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+          <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+          <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+          <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+          <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+          <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+          <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+          <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+          <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+          <ScalarProperty Name="CPS" ColumnName="CPS" />
+          <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+          <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+          <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+          <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+          <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+          <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diagnosticos_Pre">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Diagnosticos_Pre">
+        <MappingFragment StoreEntitySet="Diagnosticos_Pre">
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="TrenAseo" ColumnName="TrenAseo" />
+          <ScalarProperty Name="DrenajePluvial" ColumnName="DrenajePluvial" />
+          <ScalarProperty Name="AreaConstruccion" ColumnName="AreaConstruccion" />
+          <ScalarProperty Name="AccesoInm" ColumnName="AccesoInm" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="Energia" ColumnName="Energia" />
+          <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+          <ScalarProperty Name="AguaPotable" ColumnName="AguaPotable" />
+          <ScalarProperty Name="AreaTerreno" ColumnName="AreaTerreno" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="TipoAdmin" ColumnName="TipoAdmin" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="FechaSiembra" ColumnName="FechaSiembra" />
+          <ScalarProperty Name="CES2Activo" ColumnName="CES2Activo" />
+          <ScalarProperty Name="CES1Activo" ColumnName="CES1Activo" />
+          <ScalarProperty Name="FContactoMail" ColumnName="FContactoMail" />
+          <ScalarProperty Name="FContactoTel" ColumnName="FContactoTel" />
+          <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+          <ScalarProperty Name="Fenomeno" ColumnName="Fenomeno" />
+          <ScalarProperty Name="CostoTotalR" ColumnName="CostoTotalR" />
+          <ScalarProperty Name="CostoAdmin" ColumnName="CostoAdmin" />
+          <ScalarProperty Name="Ministerio" ColumnName="Ministerio" />
+          <ScalarProperty Name="AbrevMin" ColumnName="AbrevMin" />
+          <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="InfraDa" ColumnName="InfraDa" />
+          <ScalarProperty Name="CES2" ColumnName="CES2" />
+          <ScalarProperty Name="CES1" ColumnName="CES1" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="CostoTotalObra" ColumnName="CostoTotalObra" />
+          <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+          <ScalarProperty Name="TipoDanio" ColumnName="TipoDanio" />
+          <ScalarProperty Name="Restauracion" ColumnName="Restauracion" />
+          <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="InmuebleDaniado" ColumnName="InmuebleDaniado" />
+          <ScalarProperty Name="TipoZonaAfectada" ColumnName="TipoZonaAfectada" />
+          <ScalarProperty Name="ZonaAfectada" ColumnName="ZonaAfectada" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="PoblacionAfectada" ColumnName="PoblacionAfectada" />
+          <ScalarProperty Name="ApoyosAnteriores" ColumnName="ApoyosAnteriores" />
+          <ScalarProperty Name="EstatusAseguramiento" ColumnName="EstatusAseguramiento" />
+          <ScalarProperty Name="CPS" ColumnName="CPS" />
+          <ScalarProperty Name="IDSector" ColumnName="IDSector" />
+          <ScalarProperty Name="Foto4" ColumnName="Foto4" />
+          <ScalarProperty Name="Foto3" ColumnName="Foto3" />
+          <ScalarProperty Name="Foto2" ColumnName="Foto2" />
+          <ScalarProperty Name="Foto1" ColumnName="Foto1" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Reunion" ColumnName="Reunion" />
+          <ScalarProperty Name="DIVADMIN2" ColumnName="DIVADMIN2" />
+          <ScalarProperty Name="IDDIVADMIN2" ColumnName="IDDIVADMIN2" />
+          <ScalarProperty Name="DIVADMIN3" ColumnName="DIVADMIN3" />
+          <ScalarProperty Name="IDDIVADMIN3" ColumnName="IDDIVADMIN3" />
+          <ScalarProperty Name="DIVADMIN1" ColumnName="DIVADMIN1" />
+          <ScalarProperty Name="IDDIVADMIN1" ColumnName="IDDIVADMIN1" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="IDAccion" ColumnName="IDAccion" />
+          <ScalarProperty Name="IDActivo" ColumnName="IDActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios_View">
+      <EntityTypeMapping TypeName="SIRED_HNDModel.Usuarios_View">
+        <MappingFragment StoreEntitySet="Usuarios_View">
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="IDProvincia" ColumnName="IDProvincia" />
+          <ScalarProperty Name="FechaExpira" ColumnName="FechaExpira" />
+          <ScalarProperty Name="NomSector" ColumnName="NomSector" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="FechaModificado" ColumnName="FechaModificado" />
+          <ScalarProperty Name="FechaCreado" ColumnName="FechaCreado" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+          <ScalarProperty Name="LimiteSesiones" ColumnName="LimiteSesiones" />
+          <ScalarProperty Name="Sesiones" ColumnName="Sesiones" />
+          <ScalarProperty Name="IV" ColumnName="IV" />
+          <ScalarProperty Name="Key1" ColumnName="Key1" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="IDEvento" ColumnName="IDEvento" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="NomUsuario" ColumnName="NomUsuario" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

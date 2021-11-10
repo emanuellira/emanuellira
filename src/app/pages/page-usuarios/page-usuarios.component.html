@@ -1,0 +1,22 @@
+<!-- [# version: 6.4.4 #] -->
+<div class="text-center height-container p-5">
+  <app-navbar    
+    [menus_items]="menu_items"
+    [items]="items"
+    [items_headers]="items_headers"
+    [modulo]="modulo"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+    (On_Item_Change)="Item_NavBar_Change($event)"
+  ></app-navbar>
+  <app-header-info [count]="items.length" label="Usuarios"></app-header-info>
+  <app-dynamic-table
+    *ngIf="items.length"
+    [items]="items"
+    [editar]="editar"
+    [IDAccion]="IDUsuario"
+    [items_headers]="items_headers"
+    [btn_items]="btns_items"
+    [IDData]="'IDUsuario'"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+  ></app-dynamic-table>
+</div>

@@ -1,0 +1,22 @@
+<!-- [# version: 6.4.2 #] -->
+<div class="text-center height-container p-5">
+  <app-navbar
+    [menus_items]="menu_items"
+    (On_Item_Click)="Item_NavBar_Click($event)"
+  ></app-navbar>
+  <div class="table-wrapper">
+    <div class="row row-cols-1 row-cols-md-2 g-4" style="max-width: 95%">
+      <div *ngFor="let indi of this.indicadores; let idx = index" class="col">
+        <div class="card px-2" style="width: 50rem; height: auto">
+          <app-bar-chart
+            [index_indicador]="idx"
+            [data_aux]="indi.data || []"
+            (On_Filter)="On_Filter_Chart($event)"
+            (On_Delete)="On_Delete_Chart($event)"
+            [indicador]="indi"
+          ></app-bar-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
